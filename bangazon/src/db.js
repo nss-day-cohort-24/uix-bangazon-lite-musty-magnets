@@ -14,18 +14,18 @@ export class UserInfo extends Component {
         if (count === 2){
 
           console.log("2");
-          // let fakeData = new XMLHttpRequest();
-          // fakeData.open("POST", "http://localhost:3000/order");
-          // fakeData.send();
+          let fakeData = new XMLHttpRequest();
+          fakeData.open("POST", "http://localhost:3000/users");
+          fakeData.send();
     
-          // fakeData.addEventListener("load", function(){
+          fakeData.addEventListener("load", function(){
     
-          //   var data = JSON.parse(this.responseText);
-          //   console.log("Data: ", data);
-        }
+            var data = JSON.parse(this.responseText);
+            console.log("Data: ", data);
+        });
     }
-
-    compon
+  }
+   
     render() {
       
       return (
