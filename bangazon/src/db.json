@@ -1,38 +1,88 @@
-
 {
-    "order" : 
+  "order": {
+    "orderId": 0,
+    "userId": null,
+    "isCompleted?": null,
+    "total": null
+  },
+  "user": [
     {
-      "orderId": 0,
-      "userId": null,
-      "isCompleted?": null,
-      "total": null
-      
+      "uid": 4401,
+      "first_name": "Vivien",
+      "last_name": "Kozey",
+      "address": "0919 Mohr Trail",
+      "phone": "1-013-554-1184",
+      "seller": true,
+      "image": "http://lorempixel.com/640/480/abstract"
     },
-    "user": 
-      {
-        "uid": null,
-        "firstName": null,
-        "lastName": null,
-        "address": null,
-        "phoneNumber": null,
-        "paymentOptions": null,
-        "image": null,
-        "seller" : false
-      },
-    "product": 
-      {
-        "userId": null,
-        "productId": null,
-        "price": null,
-        "quantity": null,
-        "description": null,
-        "rating": null,
-        "likes": null
-      },
-    "orders_Products" : {
-      "orderId" : null,
-      "productId": null,
-      "userId": null,
-      "sellerId": null
+    {
+      "uid": 79164,
+      "first_name": "Lavon",
+      "last_name": "Keebler",
+      "address": "0625 Margaret Union",
+      "phone": "(992) 488-6873 x76046",
+      "seller": false,
+      "image": "http://lorempixel.com/640/480/city"
+    },
+    {
+      "uid": 85540,
+      "first_name": "Jammie",
+      "last_name": "Franecki",
+      "address": "813 Jimmie Forks",
+      "phone": "1-196-005-0021",
+      "seller": false,
+      "image": "http://lorempixel.com/640/480/city"
+    },
+    {
+      "uid": 15225,
+      "first_name": "Kareem",
+      "last_name": "Mitchell",
+      "address": "397 Drake Prairie",
+      "phone": "411-105-1955 x7450",
+      "seller": false,
+      "image": "http://lorempixel.com/640/480/food"
+    },
+    {
+      "uid": 91181,
+      "first_name": "Rosendo",
+      "last_name": "Conroy",
+      "address": "51917 Prosacco Curve",
+      "phone": "835.022.4054 x742",
+      "seller": false,
+      "image": "http://lorempixel.com/640/480/transport"
+    },
+    {
+      "uid": 74838,
+      "first_name": "Dwight",
+      "last_name": "Kutch",
+      "address": "0740 Raymundo Unions",
+      "phone": "(764) 538-2385 x97612",
+      "seller": false,
+      "image": "http://lorempixel.com/640/480/people"
+    },
+    {
+      "uid": 81917,
+      "first_name": "Jacey",
+      "last_name": "Johnston",
+      "address": "8315 Maria Turnpike",
+      "phone": "480.070.0190 x591",
+      "seller": true,
+      "image": "http://lorempixel.com/640/480/nightlife"
     }
+  ],
+  "product": {
+    "userId": null,
+    "productId": null,
+    "price": null,
+    "quantity": null,
+    "description": null,
+    "rating": null,
+    "likes": null
+  },
+  "orders_Products": {
+    "orderId": null,
+    "productId": null,
+    "userId": null,
+    "sellerId": null
   }
+}
