@@ -16,6 +16,7 @@
         "address": null,
         "phoneNumber": null,
         "paymentOptions": null,
+        "image": null,
         "seller" : false
       },
     "product": 
