@@ -8,13 +8,13 @@ import Display from './components/Display';
 class App extends Component {
   render() {
     return (
+      <BrowserRouter>
         <div className="App">
-          <BrowserRouter />
               <Topnavbar />
               <Sidenav />
               <Display />
-          <BrowserRouter />
-      </div>
+              </div>
+          </BrowserRouter>
     );
   }
 }
