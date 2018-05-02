@@ -5,7 +5,7 @@ let faker = require('faker');
 export class UserInfo extends Component {
     componentWillMount(){
       let users = [];
-      for(let i=0;i<7;i++){
+      for(let i=0;i<10;i++){
         let uid = faker.random.number();
         let userFName = faker.name.firstName();
         let userLName = faker.name.lastName();
