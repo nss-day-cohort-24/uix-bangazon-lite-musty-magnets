@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { UserInfo } from './db.js';
+import { UserInfo } from './db';
+
 
 import { BrowserRouter } from 'react-router-dom';
 import Topnavbar from './components/Topnavbar';
