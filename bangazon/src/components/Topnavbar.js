@@ -1,19 +1,18 @@
 import React, { Component } from 'react';
-import './topnav.css';
-import { Input } from 'reactstrap';
 import CartDropDown from './CartDropDown';
-// import { Route, NavLink } from 'react-router-dom';
+import { Input } from 'reactstrap';
+import { NavLink, Route } from 'react-router-dom';
 
 
 
-class TopNav extends Component {
+class topNavbar extends Component {
     render() {
-        return (
+        return(
             <div className="d-flex align-items-center justify-content-around border">
                 <h2>BANGAZON</h2>   
                 <Input className="col-3" type="search" name="search" id="search" placeholder="Search..." />
                 <div className="d-flex">
-                    <a className="nav-link" href="#">Sell</a>
+                    <NavLink className="nav-link" to="/ProductsSellForm">Sell</NavLink>
                     <CartDropDown />
                 </div>
             </div>
@@ -21,6 +20,4 @@ class TopNav extends Component {
     }
 }
 
-
-
-export default TopNav;
+export default topNavbar;

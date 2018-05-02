@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 import { BrowserRouter } from 'react-router-dom';
-import Topnav from './components/Topnav';
+import Topnavbar from './components/Topnavbar';
 import Sidenav from './components/Sidenav';
 import Display from './components/Display';
 
@@ -10,7 +10,7 @@ class App extends Component {
     return (
         <div className="App">
           <BrowserRouter />
-              <Topnav />
+              <Topnavbar />
               <Sidenav />
               <Display />
           <BrowserRouter />
