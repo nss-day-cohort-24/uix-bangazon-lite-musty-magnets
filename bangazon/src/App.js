@@ -13,8 +13,8 @@ class App extends Component {
               <Topnavbar />
               <Sidenav />
               <Display />
-              </div>
-          </BrowserRouter>
+        </div>
+      </BrowserRouter>
     );
   }
 }
