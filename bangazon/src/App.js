@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import UserInfo from './db.js';
+import { UserInfo } from './db.js';
 
 class App extends Component {
   render() {
