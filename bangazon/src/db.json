@@ -1,0 +1,38 @@
+
+{
+	"order" : 
+	{
+	  "orderId": 0,
+	  "userId": null,
+	  "isCompleted?": null,
+	  "total": null
+	  
+	},
+	"user": 
+	  {
+		"uid": null,
+		"firstName": null,
+		"lastName": null,
+		"address": null,
+		"phoneNumber": null,
+		"paymentOptions": null,
+		"seller" : false
+	  },
+	"product": 
+	  {
+		"userId": null,
+		"productId": null,
+		"price": null,
+		"quantity": null,
+		"description": null,
+		"rating": null,
+		"likes": null
+	  },
+	"orders_Products" : {
+	  "orderId" : null,
+	  "productId": null,
+	  "userId": null,
+	  "sellerId": null
+	}
+  }
+  
