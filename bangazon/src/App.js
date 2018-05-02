@@ -4,7 +4,7 @@ import './App.css';
 import { UserInfo } from './db.js';
 
 import { BrowserRouter } from 'react-router-dom';
-import Topnav from './components/Topnav';
+import Topnavbar from './components/Topnavbar';
 import Sidenav from './components/Sidenav';
 import Display from './components/Display';
 
@@ -12,14 +12,15 @@ import Display from './components/Display';
 class App extends Component {
   render() {
     return (
+     <div>
+       <BrowserRouter>
         <div className="App">
-          <BrowserRouter />
               <UserInfo />
-              <Topnav />
+              <Topnavbar />
               <Sidenav />
               <Display />
-          <BrowserRouter />    
         </div>
+      </BrowserRouter>
     );
   }
 }
