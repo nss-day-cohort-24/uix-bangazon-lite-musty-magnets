@@ -12,18 +12,14 @@ import Display from './components/Display';
 class App extends Component {
   render() {
     return (
-      <BrowserRouter />
-      <div className="App">
-      <UserInfo />
-
-
+        <div className="App">
+          <BrowserRouter />
+              <UserInfo />
               <Topnav />
               <Sidenav />
               <Display />
-       </div>
-          <BrowserRouter />
-
-
+          <BrowserRouter />    
+        </div>
     );
   }
 }
