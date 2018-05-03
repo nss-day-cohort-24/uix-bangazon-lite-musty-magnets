@@ -130,7 +130,7 @@
   "product": [
     {
       "name": "Stegosaurus",
-      "category": "2",
+      "category": "Outdoor",
       "image": "https://www.newdinosaurs.com/wp-content/uploads/2016/01/27_stegosaurus_tom_miller.jpg",
       "description": "Your very own handmade living Stegosaurus. Your kids will love it!",
       "quantity": "34",
@@ -139,7 +139,7 @@
     },
     {
       "name": "Mega Man Helmet",
-      "category": "4",
+      "category": "Electronics",
       "image": "https://img.etsystatic.com/il/1d6c53/1511628405/il_570xN.1511628405_4nd1.jpg?version=1",
       "description": "This is what you need! Get it while they are still in stock!",
       "quantity": "3",
@@ -148,7 +148,7 @@
     },
     {
       "name": "Pokemon Earbuds",
-      "category": "4",
+      "category": "Electronics",
       "image": "https://img.etsystatic.com/il/0577d2/1416188684/il_570xN.1416188684_t7yh.jpg?version=1",
       "description": "These are beautiful and unique and great and stellar and outstanding and you should purchase them. Oh you don't like Pokemon? Deal with it. Buy these anyways.",
       "quantity": "40",
@@ -157,7 +157,7 @@
     },
     {
       "name": "Lightsabre",
-      "category": "3",
+      "category": "Electronics",
       "image": "https://img.etsystatic.com/il/65e2f7/1062570773/il_570xN.1062570773_bh24.jpg?version=1",
       "description": "Buy this for Brenda and she will get you a job. You will become a billionaire. Also she will save the world. ",
       "quantity": "1",
@@ -166,7 +166,7 @@
     },
     {
       "name": "Cotton Candy Scented Oil",
-      "category": "1",
+      "category": "Miscellaneous",
       "image": "https://img.etsystatic.com/il/864565/941087594/il_570xN.941087594_70dj.jpg?version=0",
       "description": "It's literally exactly what it sounds like. Not that cool, but its cheap atleast.",
       "quantity": "99",
@@ -175,12 +175,21 @@
     },
     {
       "name": "Food",
-      "category": "3",
+      "category": "Miscellaneous",
       "image": "https://img.etsystatic.com/il/e26ddb/1062302642/il_570xN.1062302642_audy.jpg?version=0",
       "description": "This is called food. Put it into your mouth and chew as much as necessary. They contract your esophageal muscles to force the soft moist \"food\" matter into body to be used as energy.",
       "quantity": "45",
       "price": "$34.00",
       "id": 6
+    },
+    {
+      "name": "Witchcraft Book",
+      "category": "Books",
+      "image": "https://img.etsystatic.com/il/278656/1077616975/il_570xN.1077616975_ycqy.jpg?version=0",
+      "description": "Take a break from programming and learn to hack the laws of the universe.",
+      "quantity": "666",
+      "price": "$6.66",
+      "id": 7
     }
   ],
   "orders_Products": {

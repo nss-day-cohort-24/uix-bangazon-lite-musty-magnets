@@ -13,11 +13,11 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
                 <FormGroup>
                     <Label for="prodCategory">Product Category</Label>
                     <Input type="select" name="prodCategory" id="prodCategory">
-                        <option>1</option>
-                        <option>2</option>
-                        <option>3</option>
-                        <option>4</option>
-                        <option>5</option>
+                        <option>Electronics</option>
+                        <option>Outdoor</option>
+                        <option>Books</option>
+                        <option>Video Games</option>
+                        <option>Miscellaneous</option>
                     </Input>
                 </FormGroup>
                 <FormGroup>
