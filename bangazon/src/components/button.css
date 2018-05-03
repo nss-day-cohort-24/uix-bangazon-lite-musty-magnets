@@ -1,0 +1,84 @@
+Button {
+    font-family: Helvetica;
+    font-weight: bold;
+  }
+  
+  .btn-account-save,  .btn-sell-list {
+    background-color: #1FA56F;
+    font-size: 1rem;
+    width: 15rem;
+    border-radius: 2px;
+    border: none;
+    font-weight: bold;
+  }
+  
+  .btn-account-cancel, .btn-sell-cancel{
+    background-color: transparent;
+    font-size: 1rem;
+    width: 15rem;
+    border-radius: 2px;
+    border: 2px solid #F2682E;
+    font-weight: bold;
+    height: 36px;
+    line-height: 1px;
+    color: #0B110B;
+  }
+  
+  .btn-remove{
+    background-color: #707070;
+    font-size: .8rem;
+    border-radius: 2px;
+    border: none;
+    height: 25px;
+    line-height: 4px;
+    font-weight: bold;
+  }
+  
+  .btn-checkout{
+    background-color: #0B110B;
+    width: 15rem;
+    border-radius: 2px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+  }
+
+  .btn-add-to-cart{
+    background-color: #3A3A3A;
+    height: 50px;
+    border-radius: 2px;
+    border: none;
+    font-size: 1.6rem;
+    font-weight: bold;
+  }
+  
+  .btn-keep-shopping{
+    background-color: #1FA56F;
+    font-size: .8rem;
+    border-radius: 2px;
+    border: none;
+    font-weight: bold;
+    height: 36px;
+  }
+  
+  .btn-place-order{
+    background-color: #0B110B;
+    border-radius: 2px;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 15rem;
+  }
+  
+  
+  .btn-edit{
+    border: 2px solid #4BE5A7;
+    border-radius: 2px 0 0 2px;
+    font-size: .8rem;
+    font-weight: bold;
+    background-color: transparent;
+    color: #0B110B;
+    height: 28px;
+    line-height: 4px;
+    width: 4.5rem;
+  }
