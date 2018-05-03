@@ -2,6 +2,10 @@
 	font-size: 2rem;
 }
 
+Label {
+	font-weight: 600;
+}
+
 img {
 	width: 100%;
 	height: 50%;
