@@ -19,7 +19,7 @@ class App extends Component {
               <Topnavbar />
               
               <div className="row">
-                <Sidenav className="col-3"/>
+                <Sidenav className="col-2"/>
                 <Display className="col-9"/>
               </div>
              
