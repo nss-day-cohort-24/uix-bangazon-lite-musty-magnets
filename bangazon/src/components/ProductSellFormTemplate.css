@@ -1,0 +1,30 @@
+.sell_product {
+	font-size: 2rem;
+}
+
+img {
+	width: 100%;
+	height: 50%;
+}
+
+.sell_product_buttons {
+	justify-content: space-between;
+	height: 25%;
+}
+
+.btn-cancel, .btn-add {
+	color: white;
+	border: none;
+}
+
+.btn-add {
+	background-color: #F2682E;
+}
+
+.btn-cancel {
+	background-color: #1FA56F;
+}
+
+.image_column {
+	justify-content: space-between;
+}
