@@ -1,8 +1,11 @@
 .sideNav {
     background-color: #cdcdcd;
-    height: 650px;
-    padding: 4rem 3rem;
+    height: 700px;
     z-index: -1;
+}
+
+.sideNav-wrap {
+    margin: 4rem 3rem;
 }
 
 h5.sideNav-label {
@@ -12,4 +15,5 @@ h5.sideNav-label {
     text-transform: uppercase;
     color:#707070;
     padding-bottom: 1rem;
+    text-align: left;
 }
