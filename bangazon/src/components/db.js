@@ -7,10 +7,6 @@ export class UserInfo extends Component {
 
     }
     render() {
-      for(let i=0;i<10;i++){
-        let newImage = faker.image.people();
-        console.log(newImage);
-      }
       return (
         
         <div className="UserInfo">
