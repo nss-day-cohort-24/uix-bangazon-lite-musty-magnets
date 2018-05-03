@@ -38,7 +38,7 @@ export class UserInfo extends Component {
     body: JSON.stringify(users)
 })
     }
-  }
+  
    
     render() {
       
@@ -48,41 +48,22 @@ export class UserInfo extends Component {
         </div>
       );
     }
- 
-
-
-
-
-
-
-
-
-
-
+  
 
 
     componentWillMount(){
       
       count++;
-      if (count === 1){
-        let fakeData = new XMLHttpRequest();
-        fakeData.open("GET", "http://localhost:3000/order");
-        fakeData.send();
+        if (count === 1){
+          let fakeData = new XMLHttpRequest();
+          fakeData.open("GET", "http://localhost:3000/order");
+          fakeData.send();
 
-        fakeData.addEventListener("load", function(){
+          fakeData.addEventListener("load", function(){
 
-          var data = JSON.parse(this.responseText);
-          console.log("Data: ", data);
-    });
-    
-
-
-
-    
-  } 
-
-
-
-}
-
+            var data = JSON.parse(this.responseText);
+            console.log("Data: ", data);
+      });
+      } 
+    }
 }
