@@ -5,24 +5,38 @@ let count = 0;
 
 
 export class UserInfo extends Component {
-  
-  
-    componentDidMount(){
+    componentWillMount(){
+      let users = [];
+      for(let i=0;i<7;i++){
+        let uid = faker.random.number();
+        let userFName = faker.name.firstName();
+        let userLName = faker.name.lastName();
+        let userAddress = faker.address.streetAddress();
+        let userPhone = faker.phone.phoneNumber();
+        let seller = faker.random.boolean();
         let userImage = faker.image.image();
-        console.log(userImage);
-      count++;
-        if (count === 2){
 
-          console.log("2");
-          let fakeData = new XMLHttpRequest();
-          fakeData.open("POST", "http://localhost:3000/users");
-          fakeData.send();
-    
-          fakeData.addEventListener("load", function(){
-    
-            var data = JSON.parse(this.responseText);
-            console.log("Data: ", data);
-        });
+      users.push({
+        "uid": uid,
+        "first_name": userFName,
+        "last_name": userLName,
+        "address": userAddress,
+        "phone": userPhone,
+        "seller": seller,
+        "image":userImage
+
+      })
+    }
+      console.log(users);
+      fetch("http://localhost:3000/user",
+{
+    headers: {
+      'Accept': 'application/json',
+      'Content-Type': 'application/json'
+    },
+    method: "POST",
+    body: JSON.stringify(users)
+})
     }
   }
    
