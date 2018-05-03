@@ -1,0 +1,15 @@
+.sideNav {
+    background-color: #cdcdcd;
+    height: 650px;
+    padding: 4rem 3rem;
+    z-index: -1;
+}
+
+h5.sideNav-label {
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color:#707070;
+    padding-bottom: 1rem;
+}
