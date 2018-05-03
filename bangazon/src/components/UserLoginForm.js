@@ -1,9 +1,9 @@
 import React from 'react';
 import UserLoginFormTemplate from './UserLoginFormTemplate';
 
-export default class UserLoginForm extends React.Component {
+class UserLoginForm extends React.Component {
 
-    getValues() {
+    getUserValues() {
         let userEmail = document.getElementById('userEmail').value;
         let userPassword = document.getElementById('userPassword').value;
         console.log("user login values", userEmail, userPassword);
@@ -13,8 +13,10 @@ export default class UserLoginForm extends React.Component {
         return (
             <div>
                 <UserLoginFormTemplate
-                    getValues={this.getValues} />
+                getUserValues = {this.getUserValues} />
             </div>
         );
     }
 }
+
+export default UserLoginForm;

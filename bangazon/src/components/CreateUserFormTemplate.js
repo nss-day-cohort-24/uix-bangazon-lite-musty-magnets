@@ -14,12 +14,12 @@ let CreateUserFormTemplate = (props) => {
           <Input type="text" name="lastName" id="lastName" placeholder="Bobby" />
         </FormGroup>
         <FormGroup>
-          <Label for="userEmail">Email</Label>
-          <Input type="email" name="userEmail" id="userEmail" placeholder="RickyBobby@gmail.com" />
+          <Label for="newUserEmail">Email</Label>
+          <Input type="email" name="newUserEmail" id="newUserEmail" placeholder="RickyBobby@gmail.com" />
         </FormGroup>
         <FormGroup>
-          <Label for="userPass">Password</Label>
-          <Input type="password" name="userPass" id="userPass" placeholder="Enter a unique password" />
+          <Label for="newUserPass">Password</Label>
+          <Input type="password" name="newUserPass" id="newUserPass" placeholder="Enter a unique password" />
         </FormGroup>
         <FormGroup>
           <Label for="userAddress">Address</Label>
@@ -50,7 +50,7 @@ let CreateUserFormTemplate = (props) => {
           <Input type="number" name="userCRV" id="userCRV" placeholder="456" />
         </FormGroup>
 
-        <Button>Submit</Button>
+        <Button onClick={() => { props.getNewUserValues() }}>Submit</Button>
       </Form>
     );
   }

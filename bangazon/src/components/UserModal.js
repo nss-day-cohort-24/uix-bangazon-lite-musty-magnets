@@ -1,7 +1,8 @@
 import React from 'react';
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
-import UserLoginFormTemplate from "./UserLoginFormTemplate";
-import CreateUserFormTemplate from "./CreateUserFormTemplate";
+// import UserLoginFormTemplate from "./UserLoginFormTemplate";
+import UserLoginForm from './UserLoginForm';
+import CreateUserForm from "./CreateUserForm";
 
 
 class UserModal extends React.Component {
@@ -27,12 +28,10 @@ class UserModal extends React.Component {
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
           <ModalBody>
-            <UserLoginFormTemplate />
-            <CreateUserFormTemplate />
+                    <UserLoginForm />
+                    <CreateUserForm />
           </ModalBody>
           <ModalFooter>
-            <Button color="primary" onClick={this.toggle}>Do Something</Button>{' '}
-            <Button color="secondary" onClick={this.toggle}>Cancel</Button>
           </ModalFooter>
         </Modal>
       </div>

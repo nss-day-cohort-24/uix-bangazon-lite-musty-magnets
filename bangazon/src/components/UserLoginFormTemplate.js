@@ -12,10 +12,10 @@ let UserLoginFormTemplate = (props) => {
       </FormGroup>
       <FormGroup>
         <Label for="userPassword">Password</Label>
-        <Input type="password" name="password" id="userPassword" placeholder="Enter your password" />
+        <Input type="password" name="userPassword" id="userPassword" placeholder="Enter your password" />
       </FormGroup>
-      <Button>Submit</Button>
       <Button>Cancel</Button>
+      <Button onClick={() => { props.getUserValues() }}>Submit</Button>
     </Form>
   );
 }
