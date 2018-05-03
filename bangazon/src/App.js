@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { UserInfo } from './db';
+import { UserInfo } from './components/db';
 
 
 import { BrowserRouter } from 'react-router-dom';
