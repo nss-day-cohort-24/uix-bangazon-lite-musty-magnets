@@ -1,8 +1,20 @@
-.display-main{
-    padding: 3rem 5rem;
-    /* margin-left: 2rem;
-    margin-right: 2rem; */
+/* .display-main{
+    padding: 3rem 3rem;
+    
+} */
+
+h1.product-display {
+    color: #969696;
+    font-weight: lighter;
+    letter-spacing: .05rem;
+    /* text-transform: uppercase; */
+    
 }
+
+.product-top-display{
+    margin: 4rem 4rem;
+}
+
 
 /*PRODUCT CARD ITEM */
 img.card-img-top {
@@ -26,4 +38,5 @@ h2.card-title {
 
 .prod-qty {
     color: #969696;
+    font-size: .8rem;
 }
