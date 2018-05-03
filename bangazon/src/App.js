@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { UserInfo } from './db.js';
+import { UserInfo } from './db';
+
 
 import { BrowserRouter } from 'react-router-dom';
-import Topnav from './components/Topnav';
+import Topnavbar from './components/Topnavbar';
 import Sidenav from './components/Sidenav';
 import Display from './components/Display';
 
@@ -12,14 +13,18 @@ import Display from './components/Display';
 class App extends Component {
   render() {
     return (
+       <BrowserRouter>
         <div className="App">
-          <BrowserRouter />
               <UserInfo />
-              <Topnav />
-              <Sidenav />
-              <Display />
-          <BrowserRouter />    
+              <Topnavbar />
+              
+              <div className="row">
+                <Sidenav className="col-3"/>
+                <Display className="col-9"/>
+              </div>
+             
         </div>
+      </BrowserRouter>
     );
   }
 }
