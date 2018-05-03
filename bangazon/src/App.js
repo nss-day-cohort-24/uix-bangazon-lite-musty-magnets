@@ -17,8 +17,12 @@ class App extends Component {
         <div className="App">
               <UserInfo />
               <Topnavbar />
-              <Sidenav />
-              <Display />
+              
+              <div className="row">
+                <Sidenav className="col-3"/>
+                <Display className="col-9"/>
+              </div>
+             
         </div>
       </BrowserRouter>
     );
