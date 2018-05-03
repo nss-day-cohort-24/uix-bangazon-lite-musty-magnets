@@ -13,7 +13,10 @@
       "address": "53369 Murazik Mission",
       "phone": "1-614-679-3704 x71602",
       "seller": true,
-      "image": "http://lorempixel.com/640/480/transport"
+      "image": "http://lorempixel.com/640/480/people",
+      "cardtype": "Visa",
+      "cardnumber": 4556552163859333,
+      "crv": 350
     },
     {
       "uid": 26154,
@@ -22,7 +25,10 @@
       "address": "11165 Conor Prairie",
       "phone": "1-853-410-3583",
       "seller": false,
-      "image": "http://lorempixel.com/640/480/sports"
+      "image": "http://lorempixel.com/640/480/people",
+      "cardtype": "Discover",
+      "cardnumber": 6011677534110126,
+      "crv": 809
     },
     {
       "uid": 18681,
@@ -31,7 +37,10 @@
       "address": "96912 Hackett Ferry",
       "phone": "1-381-913-9582 x09059",
       "seller": false,
-      "image": "http://lorempixel.com/640/480/people"
+      "image": "http://lorempixel.com/640/480/people",
+      "cardtype": "MasterCard",
+      "cardnumber": 5275365514227861,
+      "crv": 913
     },
     {
       "uid": 66233,
@@ -40,7 +49,10 @@
       "address": "1729 Caleigh Via",
       "phone": "669-613-7394 x37954",
       "seller": true,
-      "image": "http://lorempixel.com/640/480/food"
+      "image": "http://lorempixel.com/640/480/people",
+      "cardtype": "American Express",
+      "cardnumber": 347916453959131,
+      "crv": 744
     },
     {
       "uid": 30343,
@@ -49,7 +61,10 @@
       "address": "4973 Alisa Knolls",
       "phone": "1-716-971-6111 x837",
       "seller": true,
-      "image": "http://lorempixel.com/640/480/animals"
+      "image": "http://lorempixel.com/640/480/people",
+      "cardtype": "Visa",
+      "cardnumber": 5510028378019353,
+      "crv": 791
     },
     {
       "uid": 96932,
@@ -58,7 +73,10 @@
       "address": "0503 Georgiana Ports",
       "phone": "971-187-5265 x29847",
       "seller": false,
-      "image": "http://lorempixel.com/640/480/people"
+      "image": "http://lorempixel.com/640/480/people",
+      "cardtype": "American Express",
+      "cardnumber": 346511299588011,
+      "crv": 128
     },
     {
       "uid": 58028,
@@ -67,7 +85,10 @@
       "address": "585 Pfannerstill Garden",
       "phone": "923.034.8420",
       "seller": true,
-      "image": "http://lorempixel.com/640/480/nightlife"
+      "image": "http://lorempixel.com/640/480/people",
+      "cardtype": "Discover",
+      "cardnumber": 6011144103839395,
+      "crv": 358
     },
     {
       "uid": 40551,
@@ -76,7 +97,10 @@
       "address": "93704 Sigurd Grove",
       "phone": "618.370.9338",
       "seller": true,
-      "image": "http://lorempixel.com/640/480/transport"
+      "image": "http://lorempixel.com/640/480/people",
+      "cardtype": "American Express",
+      "cardnumber": 375631530271104,
+      "crv": 522
     },
     {
       "uid": 16429,
@@ -85,7 +109,10 @@
       "address": "68916 Boris Meadows",
       "phone": "1-617-465-8133 x9653",
       "seller": true,
-      "image": "http://lorempixel.com/640/480/business"
+      "image": "http://lorempixel.com/640/480/people",
+      "cardtype": "Discover",
+      "cardnumber": 5597778260995443,
+      "crv": 739
     },
     {
       "uid": 65542,
@@ -94,18 +121,68 @@
       "address": "590 Metz Grove",
       "phone": "(297) 079-5946",
       "seller": true,
-      "image": "http://lorempixel.com/640/480/nightlife"
+      "image": "http://lorempixel.com/640/480/people",
+      "cardtype": "Visa",
+      "cardnumber": 4048142368110884,
+      "crv": 188
     }
   ],
-  "product": {
-    "userId": null,
-    "productId": null,
-    "price": null,
-    "quantity": null,
-    "description": null,
-    "rating": null,
-    "likes": null
-  },
+  "product": [
+    {
+      "name": "Stegosaurus",
+      "category": "2",
+      "image": "https://www.newdinosaurs.com/wp-content/uploads/2016/01/27_stegosaurus_tom_miller.jpg",
+      "description": "Your very own handmade living Stegosaurus. Your kids will love it!",
+      "quantity": "34",
+      "price": "$985,599.00",
+      "id": 1
+    },
+    {
+      "name": "Mega Man Helmet",
+      "category": "4",
+      "image": "https://img.etsystatic.com/il/1d6c53/1511628405/il_570xN.1511628405_4nd1.jpg?version=1",
+      "description": "This is what you need! Get it while they are still in stock!",
+      "quantity": "3",
+      "price": "$79.99",
+      "id": 2
+    },
+    {
+      "name": "Pokemon Earbuds",
+      "category": "4",
+      "image": "https://img.etsystatic.com/il/0577d2/1416188684/il_570xN.1416188684_t7yh.jpg?version=1",
+      "description": "These are beautiful and unique and great and stellar and outstanding and you should purchase them. Oh you don't like Pokemon? Deal with it. Buy these anyways.",
+      "quantity": "40",
+      "price": "$39.99",
+      "id": 3
+    },
+    {
+      "name": "Lightsabre",
+      "category": "3",
+      "image": "https://img.etsystatic.com/il/65e2f7/1062570773/il_570xN.1062570773_bh24.jpg?version=1",
+      "description": "Buy this for Brenda and she will get you a job. You will become a billionaire. Also she will save the world. ",
+      "quantity": "1",
+      "price": "$250.00",
+      "id": 4
+    },
+    {
+      "name": "Cotton Candy Scented Oil",
+      "category": "1",
+      "image": "https://img.etsystatic.com/il/864565/941087594/il_570xN.941087594_70dj.jpg?version=0",
+      "description": "It's literally exactly what it sounds like. Not that cool, but its cheap atleast.",
+      "quantity": "99",
+      "price": "$2.50",
+      "id": 5
+    },
+    {
+      "name": "Food",
+      "category": "3",
+      "image": "https://img.etsystatic.com/il/e26ddb/1062302642/il_570xN.1062302642_audy.jpg?version=0",
+      "description": "This is called food. Put it into your mouth and chew as much as necessary. They contract your esophageal muscles to force the soft moist \"food\" matter into body to be used as energy.",
+      "quantity": "45",
+      "price": "$34.00",
+      "id": 6
+    }
+  ],
   "orders_Products": {
     "orderId": null,
     "productId": null,

@@ -1,14 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import { UserInfo } from './db';
+import { UserInfo } from './components/db';
 
 
 import { BrowserRouter } from 'react-router-dom';
 import Topnavbar from './components/Topnavbar';
 import Sidenav from './components/Sidenav';
 import Display from './components/Display';
+import UserModal from './components/UserModal';
 
+import './components/button.css';
 
 class App extends Component {
   render() {
@@ -21,6 +23,7 @@ class App extends Component {
               <div className="row">
                 <Sidenav className="col-3"/>
                 <Display className="col-9"/>
+                <UserModal />
               </div>
              
         </div>

@@ -3,7 +3,7 @@ Button {
     font-weight: bold;
   }
   
-  .btn-account-save,  .btn-sell-list {
+  .btn-account-save,  .btn-list-item {
     background-color: #1FA56F;
     font-size: 1rem;
     width: 15rem;
@@ -12,7 +12,7 @@ Button {
     font-weight: bold;
   }
   
-  .btn-account-cancel, .btn-sell-cancel{
+  .btn-cancel{
     background-color: transparent;
     font-size: 1rem;
     width: 15rem;
