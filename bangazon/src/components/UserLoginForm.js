@@ -17,19 +17,18 @@ class UserLoginForm extends React.Component {
           }
         console.log("This is the existing user:", existingUser);
     
-        // fetch("http://localhost:3000/user",
-        //     {
-        //         headers: {
-        //         'Accept': 'application/json',
-        //         'Content-Type': 'application/json'
-        //         },
-        //         method: "GET"
-        //     }).then(function(response)
-        //         {
-        //             console.log("Response", response);
-        //         });
+        fetch("http://localhost:3000/user",
+            {
+                method: "GET"
+            }).then((resp)=>{ 
+                resp.json().then(
+                    (resolved) =>{
+                        
+                    }
+                );
+            });
+                 
             }
-
 
 
     render() {
