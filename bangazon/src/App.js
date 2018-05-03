@@ -1,13 +1,30 @@
 import React, { Component } from 'react';
 import './App.css';
-import { UserInfo } from './db.js';
+
+import { UserInfo } from './db';
+
+
+import { BrowserRouter } from 'react-router-dom';
+import Topnavbar from './components/Topnavbar';
+import Sidenav from './components/Sidenav';
+import Display from './components/Display';
+
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      <UserInfo />
-      </div>
+       <BrowserRouter>
+        <div className="App">
+              <UserInfo />
+              <Topnavbar />
+              
+              <div className="row">
+                <Sidenav className="col-3"/>
+                <Display className="col-9"/>
+              </div>
+             
+        </div>
+      </BrowserRouter>
     );
   }
 }
