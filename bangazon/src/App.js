@@ -10,6 +10,7 @@ import Sidenav from './components/Sidenav';
 import Display from './components/Display';
 import UserModal from './components/UserModal';
 
+import './components/button.css';
 
 class App extends Component {
   render() {
