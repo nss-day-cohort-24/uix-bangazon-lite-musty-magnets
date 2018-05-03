@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
 
+import Buttons from './Buttons';
+
 
 let UserLoginFormTemplate = (props) => {
 
@@ -14,7 +16,7 @@ let UserLoginFormTemplate = (props) => {
         <Label for="userPassword">Password</Label>
         <Input type="password" name="userPassword" id="userPassword" placeholder="Enter your password" />
       </FormGroup>
-      <Button>Cancel</Button>
+      <Buttons class={`btn-account-cancel`} label={"Cancel"} />
       <Button onClick={() => { props.getUserValues() }}>Submit</Button>
     </Form>
   );
