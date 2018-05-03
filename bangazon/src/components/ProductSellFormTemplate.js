@@ -10,22 +10,27 @@ import './ProductSellFormTemplate.css';
             <h3 className="sell_product">Sell a Product</h3>
             <Form>
                 <div className="row">
-                  <div className="col-5 image_column">
+                  <div className="col-5">
+
                     <img src="http://via.placeholder.com/250x250"></img>
+
                     <FormGroup> {/*Image URL*/}
                         <Label for="imageURL">Image URL</Label>
                         <Input type="url" name="imageURL" id="imageURL" placeholder="Enter an image url for your product here" />
                     </FormGroup>
-                    <div className="row">
+
+                    <div className="row align-self-end">
                       <FormGroup className="col">{/*Price per Unit*/}
                           <Label for="prodPrice">Product Price</Label>
                           <Input type="text" name="prodPrice" id="prodPrice" placeholder="$0.00" />
                       </FormGroup>
+
                       <FormGroup className="col"> {/*Quantity*/}
                         <Label for="prodQuantity">Units Available</Label>
                         <Input type="text" name="prodQuantity" id="prodQuantity" placeholder="0" />
                       </FormGroup>
-                    </div>                    
+                    </div>
+
                   </div>
 
                   <div className="col-7">
@@ -46,10 +51,10 @@ import './ProductSellFormTemplate.css';
                     </FormGroup>
                     <FormGroup>
                         <Label for="prodDescription">Product Description</Label>
-                        <Input type="textarea" name="prodDescription" id="prodDescription" />
+                        <Input type="textarea" name="prodDescription" id="prodDescription" rows="4" />
                     </FormGroup>
 
-                    <div className="row mx-auto sell_product_buttons align-items-end">
+                    <div className="row mx-auto sell_product_buttons align-items-start">
                       <Button className="col-5 btn btn-cancel">Cancel</Button>
                       <Button className="col-5 btn btn-add" onClick={() => { props.getValues() }}>Add Product</Button>
                     </div>
