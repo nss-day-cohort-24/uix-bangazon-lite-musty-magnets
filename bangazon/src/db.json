@@ -8,6 +8,8 @@
   "user": [
     {
       "uid": 56721,
+      "useremail": "jerdemalika@fake.com",
+      "userpassword" : "abcdefg",
       "first_name": "Malika",
       "last_name": "Jerde",
       "address": "53369 Murazik Mission",
