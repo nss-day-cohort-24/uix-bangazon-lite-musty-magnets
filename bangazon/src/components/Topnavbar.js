@@ -4,6 +4,7 @@ import { Input } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import './topnav.css';
 import Cart from '../images/Cart.svg'
+import UserModal from './UserModal';
 
 
 
@@ -16,6 +17,7 @@ class topNavbar extends Component {
                 <div className="d-flex">
                     <NavLink className="nav-link" to="/ProductsSellForm" >Sell</NavLink>
                     <CartDropDown />
+                    <UserModal />
                 </div>
             </div>
         )
