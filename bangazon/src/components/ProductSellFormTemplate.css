@@ -2,16 +2,6 @@
 	font-size: 2rem;
 }
 
-Label {
-	font-weight: 600;
-}
-
-img {
-	width: 100%;
-	height: 50%;
-	margin-bottom: 1rem;
-}
-
 .sell_product_buttons {
 	justify-content: space-between;
 	height: 25%;
@@ -30,6 +20,13 @@ img {
 	background-color: #1FA56F;
 }
 
-.image_column {
-	justify-content: space-between;
+Label {
+	font-weight: 600;
 }
+
+img {
+	width: 100%;
+	height: 50%;
+	margin-bottom: 1rem;
+}
+
