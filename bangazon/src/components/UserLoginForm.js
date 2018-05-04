@@ -1,5 +1,6 @@
 import React from 'react';
 import UserLoginFormTemplate from './UserLoginFormTemplate';
+let count = 0;
 
 class UserLoginForm extends React.Component {
 
@@ -8,15 +9,10 @@ class UserLoginForm extends React.Component {
     getUserValues() {
         let userEmail = document.getElementById('userEmail').value;
         let userPassword = document.getElementById('userPassword').value;
-        
-        let count = 0;
-
         let existingUser = {
             "useremail": userEmail,
             "userpassword": userPassword
           }
-        
-    
         fetch("http://localhost:3000/user",
             {
                 method: "GET"
@@ -27,33 +23,30 @@ class UserLoginForm extends React.Component {
                         resolved.forEach(element => {
                             try{
                                 if(element.useremail.includes(userEmail)){
-                                    console.log("Congratulations, you've been here before.");
+                                   // Do Something here.
+                                   console.log("Successful");
+
+
                                 }
-                            // console.log(element.useremail.includes(userEmail));
                             }
                             catch(e){
                                 if(count<1){
-                                    console.log("Doesn't exist, see?", e);
+                                    console.log("ERROR 6295: This number has been disconnected.", e);
                                     count++;
                                 }
-                                
                             }
-                            // if(element.useremail.includes(userEmail)){
-                            //     console.log("Found a useremail for element :", element);
-                            // }
-                            // else{
-                            //     console.log(":-(");
-                            // }
+                            finally{
+                                console.log("No element matched the query key.");
+                            }
                         });
                     },
                     (rejected) =>{
-
+                        console.log("ERROR 6295: This number has been disconnected.");
 
                     }
                 );
-            });
-                 
-            }
+            });   
+        }
 
 
     render() {
