@@ -4,6 +4,7 @@ import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 import Buttons from './Buttons.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProductSellFormTemplate.css';
+import Buttons from "./Buttons";
 
  let  ProductSellFormTemplate = (props) => {
 
@@ -57,8 +58,10 @@ import './ProductSellFormTemplate.css';
                     </FormGroup>
 
                     <div className="row mx-auto sell_product_buttons align-items-start">
-                      <Buttons class={`btn-cancel`} label={"Cancel"} function={this.function} />
-                      <Buttons class={`btn-list-item`} label={"List Item"} />
+
+                      <Buttons class={`btn-cancel`} label={"Cancel"} />
+                      <Buttons class={'btn-list-item'} label={"List Product"} onClick={() => { props.getValues() }} />
+
                     </div>
 
                   </div>
