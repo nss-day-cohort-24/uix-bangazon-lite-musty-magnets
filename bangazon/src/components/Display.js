@@ -8,13 +8,13 @@ import { BrowserRouter } from 'react-router-dom';
 class Display extends Component {
     render() {
         return(
-            <BrowserRouter>
-            <div className="col-9">
+            //<BrowserRouter>
+            <div className="container">
                 <Route exact path='/' component={ProductHomePage} />
                 <Route path='/ProductsSellForm' component={ProductSellForm} />
             </div>
 
-            </BrowserRouter>
+            //</BrowserRouter>
         )
     }
 
