@@ -6,7 +6,7 @@ import './ProductSellFormTemplate.css';
  let  ProductSellFormTemplate = (props) => {
 
     return (
-        <div className="container sell_product_window">
+        <div className="col-10 mx-auto sell_product_window">
             <h3 className="sell_product">Sell a Product</h3>
             <Form>
                 <div className="row">
