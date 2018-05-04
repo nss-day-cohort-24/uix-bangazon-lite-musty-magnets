@@ -202,25 +202,6 @@
       "quantity": "45",
       "price": "$34.00",
       "id": 6
-
-    },
-    {
-      "name": "Witchcraft Book",
-      "category": "Books",
-      "image": "https://img.etsystatic.com/il/278656/1077616975/il_570xN.1077616975_ycqy.jpg?version=0",
-      "description": "Take a break from programming and learn to hack the laws of the universe.",
-      "quantity": "666",
-      "price": "$6.66",
-      "id": 7
-    },
-    {
-      "name": "Fried Bologna Sandwichs",
-      "category": "Miscellaneous",
-      "image": "",
-      "description": "Recession Special, served with a PBR and a bag of chips.",
-      "quantity": "10",
-      "price": "5.00",
-      "id": 8
     }
   ],
   "orders_Products": {
