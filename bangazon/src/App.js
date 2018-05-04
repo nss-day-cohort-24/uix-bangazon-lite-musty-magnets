@@ -23,6 +23,7 @@ class App extends Component {
               <div className="row">
                 <Sidenav className="col-2"/>
                 <Display className="col-9"/>
+                <UserModal />
               </div>
              
         </div>
