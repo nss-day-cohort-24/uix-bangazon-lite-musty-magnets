@@ -1,14 +1,27 @@
-
+.sell_product_window {
+	padding-top: 4rem;
+}
 
 .sell_product {
 	font-size: 2rem;
-	text-align: left;
-	font-weight: 700;
 }
 
 .sell_product_buttons {
 	justify-content: space-between;
 	height: 25%;
+}
+
+.btn-cancel, .btn-add {
+	color: white;
+	border: none;
+}
+
+.btn-add {
+	background-color: #F2682E;
+}
+
+.btn-cancel {
+	background-color: #1FA56F;
 }
 
 Label {
