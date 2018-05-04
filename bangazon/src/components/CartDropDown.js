@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { Dropdown, DropdownMenu, DropdownToggle } from 'reactstrap';
 import './cartdropdown.css';
-import { ButtonDropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap';
 
-class CartDropDown extends Component {
+export default class CartDropDown extends React.Component {
   constructor(props) {
     super(props);
 
@@ -20,20 +20,23 @@ class CartDropDown extends Component {
 
   render() {
     return (
-      <ButtonDropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
-        <DropdownToggle caret>
-          Cart
+      <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
+        <DropdownToggle
+          tag="span"
+          onClick={this.toggle}
+          data-toggle="dropdown"
+          aria-expanded={this.state.dropdownOpen}
+        >
+        <i class="fas fa-shopping-cart"></i>
         </DropdownToggle>
         <DropdownMenu>
-          <DropdownItem header>Products</DropdownItem>
-          <DropdownItem>Product 1</DropdownItem>
-          <DropdownItem>Product 2</DropdownItem>
-          <DropdownItem>Product 3</DropdownItem>
+          <div onClick={this.toggle}>Custom dropdown item</div>
+          <div onClick={this.toggle}>Custom dropdown item</div>
+          <div onClick={this.toggle}>Custom dropdown item</div>
+          <div onClick={this.toggle}>Custom dropdown item</div>
         </DropdownMenu>
-      </ButtonDropdown>
+      </Dropdown>
     );
   }
 }
-
-export default CartDropDown;
 

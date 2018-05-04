@@ -10,7 +10,6 @@ export class UserInfo extends Component {
       return (
         
         <div className="UserInfo">
-        hey there
         </div>
       );
     }

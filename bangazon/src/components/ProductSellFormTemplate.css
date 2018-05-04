@@ -7,19 +7,6 @@
 	height: 25%;
 }
 
-.btn-cancel, .btn-add {
-	color: white;
-	border: none;
-}
-
-.btn-add {
-	background-color: #F2682E;
-}
-
-.btn-cancel {
-	background-color: #1FA56F;
-}
-
 Label {
 	font-weight: 600;
 }
