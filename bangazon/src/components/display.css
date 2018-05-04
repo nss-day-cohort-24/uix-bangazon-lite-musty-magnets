@@ -1,0 +1,42 @@
+/* .display-main{
+    padding: 3rem 3rem;
+    
+} */
+
+h1.product-display {
+    color: #969696;
+    font-weight: lighter;
+    letter-spacing: .05rem;
+    /* text-transform: uppercase; */
+    
+}
+
+.product-top-display{
+    margin: 4rem 4rem;
+}
+
+
+/*PRODUCT CARD ITEM */
+img.card-img-top {
+    width: 100%;
+    height: 150px; 
+    object-fit: cover;
+}
+
+.product-card {
+    width: 18%;
+}
+
+div.card-body {
+    padding-bottom: 0rem;
+}
+
+h2.card-title {
+    text-align: start;
+    font-size: 1.3rem;
+}
+
+.prod-qty {
+    color: #969696;
+    font-size: .8rem;
+}

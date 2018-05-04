@@ -1,11 +1,33 @@
 import React, { Component } from 'react';
 import './App.css';
 
+import { UserInfo } from './components/db';
+
+
+import { BrowserRouter } from 'react-router-dom';
+import Topnavbar from './components/Topnavbar';
+import Sidenav from './components/Sidenav';
+import Display from './components/Display';
+import UserModal from './components/UserModal';
+
+import './components/button.css';
+
 class App extends Component {
   render() {
     return (
-      <div className="App">
-      </div>
+       <BrowserRouter>
+        <div className="App">
+              <UserInfo />
+              <Topnavbar />
+              
+              <div className="row">
+                <Sidenav className="col-2"/>
+                <Display className="col-9"/>
+                <UserModal />
+              </div>
+             
+        </div>
+      </BrowserRouter>
     );
   }
 }
