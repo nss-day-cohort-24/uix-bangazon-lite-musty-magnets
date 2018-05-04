@@ -1,7 +1,5 @@
 import React from 'react';
 import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
-
-import Buttons from './Buttons.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProductSellFormTemplate.css';
 import Buttons from "./Buttons";
