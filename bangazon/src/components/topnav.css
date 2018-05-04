@@ -35,3 +35,13 @@ input#search:focus{
     color: rgb(75, 229, 167);
     transition: .1s ease-in-out;
 }
+
+.nav-link p {
+    color: #212529;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 0px;
+}
+
+.navIcons {
+    margin-bottom: -1rem;
+}
