@@ -3,6 +3,7 @@ import CartDropDown from './CartDropDown';
 import { Input } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import './topnav.css';
+import Cart from '../images/Cart.svg'
 import UserModal from './UserModal';
 
 

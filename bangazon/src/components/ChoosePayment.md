@@ -1,5 +1,0 @@
-ChoosePayment example:
-
-```js
-<ChoosePayment />
-```
