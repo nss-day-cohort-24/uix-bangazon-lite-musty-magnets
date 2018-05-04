@@ -6,7 +6,7 @@ let ProductHomePage = () => {
             <h1 className="product-display">A marketplace for handmade goods</h1>
 
             <div className="d-flex flex-wrap mt-3">
-                <div className="card mt-4 mr-2 ml-2 product-card" >
+                <div className="card mt-4su mr-2 ml-2 product-card" >
                     <img className="card-img-top" src="https://img.etsystatic.com/il/17906a/1270947660/il_570xN.1270947660_p1ea.jpg?version=0" alt="Card cap" />
                     <div className="card-body ">
                         <h2 className="card-title">Dinasour planters</h2>
