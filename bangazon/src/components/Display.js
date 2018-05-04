@@ -9,7 +9,7 @@ class Display extends Component {
     render() {
         return(
             //<BrowserRouter>
-            <div className="container">
+            <div className="col-9">
                 <Route exact path='/' component={ProductHomePage} />
                 <Route path='/ProductsSellForm' component={ProductSellForm} />
             </div>
