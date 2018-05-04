@@ -16,7 +16,7 @@ let UserLoginFormTemplate = (props) => {
         <Label for="userPassword">Password</Label>
         <Input type="password" name="userPassword" id="userPassword" placeholder="Enter your password" />
       </FormGroup>
-      <Buttons class={`btn-account-cancel`} label={"Cancel"} />
+      <Buttons class={`btn-cancel`} label={"Cancel"} />
       <Button onClick={() => { props.getUserValues() }}>Submit</Button>
     </Form>
   );
