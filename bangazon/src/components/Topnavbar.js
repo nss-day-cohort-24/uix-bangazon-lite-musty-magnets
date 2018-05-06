@@ -13,8 +13,8 @@ class topNavbar extends Component {
             <div className="d-flex align-items-center justify-content-between navbar">
                 <h2 className="col-2 bang-logo">BANGAZON</h2>   
                 <Input className="col-6" type="search" name="search" id="search" placeholder="Search..." />
-                <div className="navIcons col-3 d-flex">
-                    <NavLink className="nav-link" to="/ProductsSellForm" ><i class="fas fa-tag"></i>
+                <div className="navIcons col-3 d-flex text-center">
+                    <NavLink className="nav-link" to="/ProductsSellForm" ><i className="fas fa-tag"></i>
                     <p>sell</p>
                     </NavLink>
                     <CartDropDown />

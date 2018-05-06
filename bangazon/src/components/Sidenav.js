@@ -5,7 +5,7 @@ class Sidenav extends Component {
         return(
             <div className="sideNav col-2">
                 <div className="sideNav-wrap">
-                <h5 className="sideNav-label">Product Catergories</h5>
+                <h5 className="sideNav-label">Product Categories</h5>
                 </div>
             </div>
         )
