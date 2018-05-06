@@ -4,7 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductItem from './ProductItem';
 
 
-class ProductDetail extends React.Component {
+class ProductDetail extends React.Component  {
     constructor(props) {
       super(props);
       this.state = {
@@ -29,7 +29,7 @@ class ProductDetail extends React.Component {
           <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
           <ModalBody>
                 
-                <ProductItem />
+              <ProductItem />
                     
           </ModalBody>
           <ModalFooter>
@@ -37,6 +37,7 @@ class ProductDetail extends React.Component {
         </Modal>
       </div>
     )
+  }
 }
 
-export default ProductDetail ;
+export default ProductDetail;
