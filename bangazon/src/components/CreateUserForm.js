@@ -29,26 +29,24 @@ getNewUserValues() {
     let userCRV = document.getElementById('userCRV').value;
     //excluded state, zipcode..
     let count = 1;
-
+    // Get the users,
     fetch("http://localhost:3000/user",
     {
         method: "GET"
-    }).then((resp)=>{ 
-        resp.json().then(
-            (resolved) =>{
-                // for each element of the array
-                resolved.forEach((element, index)=>{
+    }).then((resp)=>{ //then pass the response
+        resp.json().then( //take that response and turn it into a json, then...
+            (resolved) =>{ // the thenable is ready, and 
+                // for each element of the array like object
+                resolved.forEach((element, index)=>{ // take the element and it's index
                     // if the email includes the string
-                    try{
-                        if(element.email.includes(newUserEmail)){
+                    try{ //try this block
+                        if(element.email.includes(newUserEmail)){ //if it is true that email includes this string...
                         console.log("User found. Not a new address", element);
-                        newRegistration=false; //
+                        newRegistration=false; //set to false
                     }// if the email doesn't include the string
-                    else if(!element.email.includes(newUserEmail)){
-                        console.log("Not a match", count);
+                    else if(!element.email.includes(newUserEmail)){ //if false then run this block of code
                         count++;
-                        console.log((resolved.length-1===index), count > 0);
-                        if((resolved.length-1===index) && count > 0)
+                        if((resolved.length-1===index) && count > 0) // if the array is at its end, and count is greater than one...
                         {   
                             
                             newRegistration = true;
@@ -74,6 +72,8 @@ getNewUserValues() {
                 cardnumber : userCC,
                 crv : userCRV
                 }
+
+
             console.log("True?", newRegistration, "Object?", newuserobject); 
 
             if(newRegistration){
