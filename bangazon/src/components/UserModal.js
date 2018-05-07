@@ -27,7 +27,7 @@ class UserModal extends React.Component {
   render() {
     return (
       <div className="userDiv">
-        <i class="fas fa-user" onClick={this.toggle}>{this.props.buttonLabel}</i>
+        <i className="fas fa-user" onClick={this.toggle}>{this.props.buttonLabel}</i>
         <p>profile</p>
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>

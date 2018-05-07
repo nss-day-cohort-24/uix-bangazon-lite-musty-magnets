@@ -30,52 +30,51 @@ class Sidenav extends Component {
         let electLength = "";
         let electronics;
         fetch('http://localhost:3000/product?category=Electronics')
-        .then(function(response) {
-        return response.json();
-        })
-        .then((data) => {
-        console.log(data.length,"datalength");
-        this.setState({
-            ElectArray:data ,
-        })
-        
-        });
-        fetch('http://localhost:3000/product?category=Books')
-        .then(function(response) {
-        return response.json();
-        })
-        .then((data) => {
-        console.log(data.length,"datalength");
-        this.setState({
-            BookArray: data,
-            // OutdoorArray: outdoorArray,
-            // VidGameArray: vidGamesArray,
-            // MiscArray: miscArray,
-            // electLength: electLength
-        })
-        
-        });
-        fetch('http://localhost:3000/product?category=Outdoor')
-        .then(function(response) {
-        return response.json();
-        })
-        .then((data) => {
-        console.log(data.length,"datalength");
-        this.setState({
-            OutdoorArray: data
-            // VidGameArray: vidGamesArray,
-            // MiscArray: miscArray,
-            // electLength: electLength
-        })
-        
-        });
-
-
-        
-
-
-
+        // .then(response => response.json())
+        .then((response) => response.json() )
+        .then((response) => {
+            console.log('response2: ', response);
+            this.setState({
+                ElectArray:response ,
+            })
+        })  
     }
+        // fetch('http://localhost:3000/product?category=Books')
+        // .then(function(response) {
+        // return response.json();
+        // })
+        // .then((data) => {
+        // console.log(data.length,"datalength");
+        // this.setState({
+        //     BookArray: data,
+        //     // OutdoorArray: outdoorArray,
+        //     // VidGameArray: vidGamesArray,
+        //     // MiscArray: miscArray,
+        //     // electLength: electLength
+        // })
+        
+        // });
+        // fetch('http://localhost:3000/product?category=Outdoor')
+        // .then(function(response) {
+        // return response.json();
+        // })
+        // .then((data) => {
+        // console.log(data.length,"datalength");
+        // this.setState({
+        //     OutdoorArray: data
+        //     // VidGameArray: vidGamesArray,
+        //     // MiscArray: miscArray,
+        //     // electLength: electLength
+        // })
+        
+        // });
+
+
+        
+
+
+
+    
 
 
     render() {
