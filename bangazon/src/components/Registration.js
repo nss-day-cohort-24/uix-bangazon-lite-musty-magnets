@@ -1,48 +1,29 @@
-import React, {Component} from 'react';
-import ReactDOM from 'react-dom';
+// import React, {Component} from 'react';
+// import ReactDOM from 'react-dom';
 
 
-export class Registration extends Component {
+// export class Registration extends Component {
 
 
-componentWillMount() {
+// componentWillMount() {
 
 
 
     
-    fetch("http://localhost:3000/user",
-    {
-        headers: {
-          'Accept': 'application/json',
-          'Content-Type': 'application/json'
-        },
-        method: "POST",
-        body: JSON.stringify(users)
-    })
-        }
+//     fetch("http://localhost:3000/user",
+//     {
+//         headers: {
+//           'Accept': 'application/json',
+//           'Content-Type': 'application/json'
+//         },
+//         method: "POST",
+//         body: JSON.stringify(users)
+//     })
+//         }
 
 
-}
+// }
 
 
-render(){
+// render() 
 
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-}

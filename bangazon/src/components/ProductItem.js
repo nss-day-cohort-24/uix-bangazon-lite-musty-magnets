@@ -33,3 +33,5 @@ let ProductItem = (props) => {
         </div>
     )
 }
+
+export default ProductItem;
