@@ -1,3 +1,44 @@
+.product-card {
+    border: none;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0, .1);
+    padding: .2rem;
+    border-radius: 2px;
+}
+
 .productImageDiv {
     height: 150px;
+    position: relative;
+}
+
+.card-title{
+    position: absolute;
+    background-color: rgba(255, 255, 255);
+    padding: .1rem .3rem;
+    bottom: -12px;
+    left: 0px;
+    display: block;
+    font-size: 1.1rem !important;
+}
+
+.card-body {
+    background-color: #313131;
+    color: #77F9D2;
+    padding: 2px;
+    border: none !important;
+}
+
+.card-body p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin: .3rem;
+    letter-spacing: 1px;
+    align-self: center;
+}
+
+.card-body .prod-qty {
+    font-size: .8rem;
+    color: #77F9D2;
+    margin: 0.3rem;
+    align-self: center;
+    font-weight: 300;
 }
