@@ -53,8 +53,10 @@ getExistingUser(existingUser){
         crv : existingUser.crv
     }
 
-
-    this.setState( {User});
+    console.log("Logging in existing user.");
+    this.setState( {User}, function(){
+        console.log("Logged in:", this.state);
+    });
 
 
 }
@@ -122,7 +124,7 @@ getNewUserValues() {
                 }
 
 
-            console.log("True?", newRegistration, "Object?", User); 
+            console.log("End of code block:", !newRegistration); 
 
             if(newRegistration){
 
