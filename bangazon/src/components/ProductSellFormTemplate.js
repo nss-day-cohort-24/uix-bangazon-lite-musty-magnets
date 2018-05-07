@@ -42,7 +42,7 @@ import Buttons from "./Buttons";
                     <FormGroup> {/*Category*/}
                         <Label for="prodCategory">Product Category</Label>
                         <Input type="select" name="prodCategory" id="prodCategory">
-                            <option selected>Select a category</option>
+                            <option>Select a category</option>
                             <option>Electronics</option>
                             <option>Outdoor</option>
                             <option>Books</option>
@@ -58,7 +58,7 @@ import Buttons from "./Buttons";
                     <div className="row mx-auto sell_product_buttons align-items-start">
 
                       <Buttons class={`btn-cancel`} label={"Cancel"} />
-                      <Buttons class={'btn-list-item'} label={"List Product"} onClick={() => { props.getValues() }} />
+                      <Buttons class={'btn-list-item'} label={"List Product"} function={props.getValues} />
 
                     </div>
 
