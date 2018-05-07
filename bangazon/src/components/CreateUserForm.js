@@ -1,19 +1,62 @@
 import React from 'react';
 import CreateUserFormTemplate from './CreateUserFormTemplate';
-let newuserobject = {};
-let newRegistration = false;
+
+
+let User = {
+
+    id: null,
+    first_name : null,
+    last_name : null,
+    email: null,
+    userpassword : null,
+    address : null,
+    seller : null,
+    city : null,  
+    phone : null, 
+    cardnumber : null,
+    crv : null
+};
+
+function getRandomInt(max) {
+    return Math.floor(Math.random() * Math.floor(max));
+  }
 
 export default class CreateUserForm extends React.Component {
 constructor(props){
         super(props);
-        // this.state = existingUser;
-        // this.getUserValues = this.getUserValues.bind(this);
-
+        this.state = {User};
+        this.getNewUserValues = this.getNewUserValues.bind(this);
+        this.getExistingUser = this.getExistingUser.bind(this);
     }
 
 componentDidMount(){
     // this.setState({existingUser});
     // console.log("The componennpt has rendered. " , this.state);
+}
+
+
+
+
+getExistingUser(existingUser){
+// Set existing user to login
+    User = {
+        uid: getRandomInt(99999 - 10000),
+        id: existingUser.id,
+        first_name : existingUser.first_name,
+        last_name : existingUser.last_Name,
+        email: existingUser.email,
+        userpassword : existingUser.password,
+        address : existingUser.address,
+        seller: existingUser.seller,  
+        phone : existingUser.phone, 
+        cardnumber : existingUser.cardnumber,
+        crv : existingUser.crv
+    }
+
+
+    this.setState( {User});
+
+
 }
 getNewUserValues() {
     let firstName = document.getElementById('firstName').value;
@@ -29,11 +72,13 @@ getNewUserValues() {
     let userCRV = document.getElementById('userCRV').value;
     //excluded state, zipcode..
     let count = 1;
+
     // Get the users,
     fetch("http://localhost:3000/user",
     {
         method: "GET"
     }).then((resp)=>{ //then pass the response
+        let newRegistration = false;
         resp.json().then( //take that response and turn it into a json, then...
             (resolved) =>{ // the thenable is ready, and 
                 // for each element of the array like object
@@ -41,8 +86,9 @@ getNewUserValues() {
                     // if the email includes the string
                     try{ //try this block
                         if(element.email.includes(newUserEmail)){ //if it is true that email includes this string...
-                        console.log("User found. Not a new address", element);
                         newRegistration=false; //set to false
+                        console.log("User found. Not a new address", element, "new Registration set to", newRegistration);
+                        this.getExistingUser(element);
                     }// if the email doesn't include the string
                     else if(!element.email.includes(newUserEmail)){ //if false then run this block of code
                         count++;
@@ -60,7 +106,8 @@ getNewUserValues() {
                 });
                 
             
-            newuserobject = {
+            User = {
+                uid: getRandomInt(99999 - 10000),
                 id: count,
                 first_name : firstName,
                 last_name : lastName,
@@ -70,17 +117,18 @@ getNewUserValues() {
                 city : userCity,  
                 phone : userTel, 
                 cardnumber : userCC,
+                seller : null,
                 crv : userCRV
                 }
 
 
-            console.log("True?", newRegistration, "Object?", newuserobject); 
+            console.log("True?", newRegistration, "Object?", User); 
 
             if(newRegistration){
 
                     
                     console.log("create user form values", firstName, lastName, newUserEmail, newUserPass, userAddress, userCity, userState, userZip, userTel, userCC, userCRV);
-                    console.log("Object to pass: ", JSON.stringify(newuserobject));
+                    console.log("Object to pass: ", JSON.stringify(User));
                     fetch("http://localhost:3000/user",
                     {
                         headers: {
@@ -88,7 +136,7 @@ getNewUserValues() {
                             'Content-Type': 'application/json'
                             },
                         method: "POST",
-                        body: JSON.stringify(newuserobject)
+                        body: JSON.stringify(User)
                         // Id field added to Db.json users
                 
                     }).then((resp)=>{ 
@@ -96,21 +144,17 @@ getNewUserValues() {
                         }).catch((error)=>{
                             console.log("Error :", error.statusText,".");;
                         }); 
+                        
+                        
+                        this.setState({User}, function(){
+                            console.log("Updated:", this);
+                        });
             }
         }
         
         )
     });
 }
-
-    
-
-
-
-
-
-
-
 
 
   render() {

@@ -1,16 +1,16 @@
 import React from 'react';
 import UserLoginFormTemplate from './UserLoginFormTemplate';
 let count = 0;
-let existingUser = { useremail: null, userpassword: null};
+let User = { useremail: null, userpassword: null};
 class UserLoginForm extends React.Component {
     constructor(props){
         super(props);
-        this.state = existingUser;
+        this.state = {User};
         this.getUserValues = this.getUserValues.bind(this);
 
     }
     componentDidMount(){
-        this.setState({existingUser});
+        this.setState({User});
         console.log("The component has rendered. " , this.state);
     }
     getUserValues() {
@@ -30,8 +30,8 @@ class UserLoginForm extends React.Component {
                             if(element.useremail.includes(userEmail)){
                                 // Do Something here.
                                 console.log("Login found user. Email:", userEmail," Password:", userPassword);
-                                existingUser = {useremail: userEmail, userpassword: userPassword}
-                                this.setState({existingUser},function(){
+                                User = {useremail: userEmail, userpassword: userPassword}
+                                this.setState({User},function(){
                                     console.log("User is now registered in updated state: ", this);
                                     });  
                                 }

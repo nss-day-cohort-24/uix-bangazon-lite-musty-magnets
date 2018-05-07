@@ -157,6 +157,7 @@
       "crv": 188
     },
     {
+      "uid": 68303,
       "id": 11,
       "first_name": "",
       "last_name": "",
@@ -166,6 +167,7 @@
       "city": "",
       "phone": "",
       "cardnumber": "",
+      "seller": null,
       "crv": ""
     }
   ],
