@@ -12,7 +12,7 @@ constructor(props){
 
 componentDidMount(){
     // this.setState({existingUser});
-    // console.log("The component has rendered. " , this.state);
+    // console.log("The componennpt has rendered. " , this.state);
 }
 getNewUserValues() {
     let firstName = document.getElementById('firstName').value;
@@ -29,8 +29,7 @@ getNewUserValues() {
     //excluded state, zipcode..
 
     newuserobject = {
-
-        
+           
         first_name : firstName,
         last_name : lastName,
         useremail: newUserEmail,
