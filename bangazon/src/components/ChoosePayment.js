@@ -4,28 +4,27 @@ import './ChoosePayment.css';
 
 export default function ChoosePayment() {
 	return (
-			<div className="col-10 mx-auto choose_payment">
-				<div className="header">
-					<h1>Choose your payment options</h1>
-					<div class="input-group">
-					  <div class="input-group-prepend">
-					    <div class="input-group-text">
-					    <input type="radio" aria-label="Radio button for following text input" />
-					    </div>
-					  </div>
-					  <input type="text" class="form-control" aria-label="Text input with radio button" />
-						</div>
+			<div className="container mx-auto choose_payment">
+				<h1 className="col-2 bang-logo">BANGAZON</h1>
+				<hr />
+
+				<div className="col-8 mx-auto main_body">
+					<h2 className="col-12 body-title"><span>Payment Information</span><button className="btn btn-light">Back</button></h2>
+
+					<div className="col-12 payment_box">
+
+						<button className="btn btn-secondary disabled">Apple Pay</button>
+						<p>OR</p>
+						<button className="btn btn-secondary">Credit Card</button>
+						<button className="btn btn-secondary disabled">PayPal</button>						
+
 					</div>
 
-				<div className="row">
-					<div className="col">
-						Payment Options
-					</div>
-					<div className="col">
-						Payment Form
-					</div>
 				</div>
 
+				<hr />
+				<p className="copyright">©Bangazon Worldwide 2018</p>
 			</div>
+
 		)
 }

@@ -1,23 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
 .choose_payment{
 	height: 500px;
-	border: 1px solid black;
-	border-radius: 5px;
-	padding: 0;
 }
 
-.payment_col {
-	height: 100%;
+.main_body {
+	padding-top: 3rem;
+	padding-bottom: 3rem;
 }
 
-.header {
-	background-color: grey;
-	margin: 0;
-	padding: 0;
-	height: 10%;
+h1.bang-logo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    color: rgb(255, 94, 65);
+    font-size: 2rem;
+    word-spacing: -1rem;
+    letter-spacing: .1rem;
 }
 
-.header h1 {
-	color: white;
+.payment_box {
+	width: 100%;
+	padding: 1rem;
+}
+
+.btn-secondary {
+	width: 100%;
+	margin-bottom: .5rem;
+	
+}
+
+p {
+	font-weight: bold;
 	text-align: center;
-	/*text-transform: uppercase;*/
+	color: grey;
+}
+
+.body-title {
+	margin: 1.5em 0 0;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+}
+
+.body-title > * {
+	flex: 0 1 auto;
+}
+
+h2.body-title {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.btn-light {
+	width: 4rem;
+	margin: 0;
+}
+
+p.copyright {
+	font-family: 'Montserrat', sans-serif;
+	font-size: .5rem;
+	text-align: left;
+}
+
+hr {
+	margin: .5rem 0;
 }
