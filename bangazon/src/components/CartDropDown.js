@@ -28,7 +28,7 @@ export default class CartDropDown extends React.Component {
           aria-expanded={this.state.dropdownOpen}
         >
         <div className="cartDiv align-items-center justify-content-center">
-        <i class="fas fa-shopping-cart"></i>
+        <i className="fas fa-shopping-cart"></i>
         <p>cart</p>
         </div>
         </DropdownToggle>

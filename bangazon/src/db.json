@@ -1,10 +1,11 @@
 {
-  "order": {
+  "order": [
+    {
     "orderId": 0,
     "userId": null,
     "isCompleted?": null,
     "total": null
-  },
+  }],
   "user": [
     {
       "id": 1,
