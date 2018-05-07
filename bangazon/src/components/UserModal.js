@@ -16,6 +16,8 @@ class UserModal extends React.Component {
     this.toggle = this.toggle.bind(this);
   }
 
+  
+
   toggle() {
     this.setState({
       modal: !this.state.modal
@@ -30,7 +32,7 @@ class UserModal extends React.Component {
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
           <ModalBody>
-                    <UserLoginForm />
+                    <UserLoginForm login = {this.state.existingUser}/>
                     <CreateUserForm />
           </ModalBody>
           <ModalFooter>
