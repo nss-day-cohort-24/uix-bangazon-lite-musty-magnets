@@ -8,8 +8,9 @@
   "user": [
     {
       "uid": 56721,
-      "useremail": "jerdemalika@fake.com",
-      "userpassword" : "abcdefg",
+      "email":"triquelmedesouzax@cul0.ga",
+      "password":"uo8nnehwql",
+
       "first_name": "Malika",
       "last_name": "Jerde",
       "address": "53369 Murazik Mission",
@@ -22,6 +23,8 @@
     },
     {
       "uid": 26154,
+      "email":"KWunsch@gmail.com",
+      "password":"k0jyhxtyvl",
       "first_name": "Kimberly",
       "last_name": "Wunsch",
       "address": "11165 Conor Prairie",
@@ -34,6 +37,8 @@
     },
     {
       "uid": 18681,
+      "email":"macbren@comcast.net",
+      "password":"6m9vw4a4xz",
       "first_name": "Brendan",
       "last_name": "MacGyver",
       "address": "96912 Hackett Ferry",
@@ -46,6 +51,8 @@
     },
     {
       "uid": 66233,
+      "email":"bikinglover@gmail.com",
+      "password":"escll3rafh",
       "first_name": "Chase",
       "last_name": "Erdman",
       "address": "1729 Caleigh Via",
@@ -58,6 +65,8 @@
     },
     {
       "uid": 30343,
+      "email":"thomyorke@gmail.com",
+      "password":"r0exj8d8ti",
       "first_name": "Katarina",
       "last_name": "Emard",
       "address": "4973 Alisa Knolls",
@@ -70,6 +79,8 @@
     },
     {
       "uid": 96932,
+      "email":"cubsfan132@comcast.net",
+      "password":"pl034rxdev",
       "first_name": "Carlos",
       "last_name": "Emmerich",
       "address": "0503 Georgiana Ports",
@@ -82,6 +93,8 @@
     },
     {
       "uid": 58028,
+      "email":"ilovethebeach1943@gmail.com",
+      "password":"6hxr64u7xu",
       "first_name": "Olin",
       "last_name": "Howe",
       "address": "585 Pfannerstill Garden",
@@ -94,6 +107,8 @@
     },
     {
       "uid": 40551,
+      "email":"dinosaurusrex965@comcast.net",
+      "password":"2swtq6qm6q",
       "first_name": "Sarina",
       "last_name": "Schuppe",
       "address": "93704 Sigurd Grove",
@@ -106,6 +121,8 @@
     },
     {
       "uid": 16429,
+      "email":"cali4lyfe568@comcast.net",
+      "password":"2f3g4whhml",
       "first_name": "Ed",
       "last_name": "Gaylord",
       "address": "68916 Boris Meadows",
@@ -118,6 +135,8 @@
     },
     {
       "uid": 65542,
+      "email":"heythisisanemail@gmail.com",
+      "password":"6b9djyf8pv",
       "first_name": "Reese",
       "last_name": "Ratke",
       "address": "590 Metz Grove",
@@ -183,6 +202,7 @@
       "quantity": "45",
       "price": "$34.00",
       "id": 6
+
     },
     {
       "name": "Witchcraft Book",
@@ -192,6 +212,15 @@
       "quantity": "666",
       "price": "$6.66",
       "id": 7
+    },
+    {
+      "name": "Fried Bologna Sandwichs",
+      "category": "Miscellaneous",
+      "image": "",
+      "description": "Recession Special, served with a PBR and a bag of chips.",
+      "quantity": "10",
+      "price": "5.00",
+      "id": 8
     }
   ],
   "orders_Products": {
