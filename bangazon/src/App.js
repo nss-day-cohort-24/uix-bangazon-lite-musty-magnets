@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import { UserInfo } from './components/db';
-
+import  ProductDetail from './components/ProductDetail';
 
 import { BrowserRouter } from 'react-router-dom';
 import Topnavbar from './components/Topnavbar';
@@ -22,6 +22,7 @@ class App extends Component {
               
               <div className="row">
                 <Sidenav className="col-2"/>
+               
                 <Display />
               </div>
              
