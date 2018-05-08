@@ -29,12 +29,11 @@ export default class CartDropDown extends React.Component {
   })
   .then(data => this.setState({dropdownItems:data,
 dropdownLoaded:true}))
-  
   };
 
   render() {
     console.log(this.state.dropdownItems, "dropdownItems");
-    console.log(this.state.dropdownLoaded,"this.state");
+    console.log(this.props,"this.propsssss");
     if(this.state.dropdownLoaded == true){
     return (
       <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
