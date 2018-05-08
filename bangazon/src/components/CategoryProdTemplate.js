@@ -4,10 +4,13 @@ import "./productThumbnail.css";
 
 let CategoryProdTemplate = (props) => {
     function handleClick(data) {
+        console.log("data",data);
         let addCartObj = {
             "productId": data.id,
             "userId": 23498809787097098,
             "sellerId": 56721,
+            "productName":data.name,
+            "productImage":data.image
         }
 
         fetch("http://localhost:3000/orders_Products",

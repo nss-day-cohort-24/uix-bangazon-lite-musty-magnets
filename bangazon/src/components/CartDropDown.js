@@ -8,7 +8,9 @@ export default class CartDropDown extends React.Component {
 
     this.toggle = this.toggle.bind(this);
     this.state = {
-      dropdownOpen: false
+      dropdownOpen: false,
+      dropdownItems: [],
+      dropdownLoaded:false
     };
   }
 
@@ -18,16 +20,22 @@ export default class CartDropDown extends React.Component {
     });
   }
   componentDidMount() {
-    fetch("http://localhost:3000/orders_Products")
+
+    let userID = 23498809787097096
+    
+    fetch(`http://localhost:3000/orders_Products?userId=${userID}`)
   .then(function(response) {
     return response.json();
   })
-  .then(function(data) {
-    console.log(data);
-  });
-  }
+  .then(data => this.setState({dropdownItems:data,
+dropdownLoaded:true}))
+  
+  };
 
   render() {
+    console.log(this.state.dropdownItems, "dropdownItems");
+    console.log(this.state.dropdownLoaded,"this.state");
+    if(this.state.dropdownLoaded == true){
     return (
       <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle
@@ -42,13 +50,16 @@ export default class CartDropDown extends React.Component {
         </div>
         </DropdownToggle>
         <DropdownMenu>
-          <div onClick={this.toggle}>Custom dropdown item</div>
-          <div onClick={this.toggle}>Custom dropdown item</div>
-          <div onClick={this.toggle}>Custom dropdown item</div>
-          <div onClick={this.toggle}>Custom dropdown item</div>
+        {this.state.dropdownItems.map((product,index) =>
+        <div key={index} onClick={this.toggle}><img src={product.productImage} className="w-25 h-25" />{product.productName}</div>)}
         </DropdownMenu>
       </Dropdown>
     );
+  }else if(!this.state.dropdownLoaded) {
+    return(
+    <div>Loading...</div>
+    )
+  }
   }
 }
 
