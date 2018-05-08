@@ -44,7 +44,7 @@ class ProductDetail extends React.Component  {
           
           <ModalFooter>
             <Button color="btn-add-to-cart" onClick={this.toggle}>Add to cart</Button>{' '}
-            <Buttons className={`btn-cancel`} label={"Cancel"} function={this.function} />
+            <Buttons className={`btn-cancel`} label={"Cancel"} function={this.toggle} />
           </ModalFooter>
          
         </Modal>
