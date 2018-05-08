@@ -25,6 +25,7 @@ let CategoryProdTemplate = (props) => {
     const categoryItems = props.data.map((product, index) =>
     <div key={index} className="card mt-4 mr-2 ml-2 product-card" >
             <img className="card-img-top" src={product.image} alt="Card cap" />
+
             <h2 className="card-title">{product.name}</h2>
             <div className="card-body ">
                 <div className="row">
@@ -32,11 +33,12 @@ let CategoryProdTemplate = (props) => {
                     <p className="card-text col text-right prod-qty">{product.quantity}</p>
                 </div>
                 <button id={"add_" + product.id} onClick={((e) => handleClick(product))} className="btn-list-item w-100">Add To Cart</button>         
+
             </div>
     </div>
     )
     return(
-        <div>
+        <div className="d-flex flex-wrap">
             {categoryItems}
         </div>
     )

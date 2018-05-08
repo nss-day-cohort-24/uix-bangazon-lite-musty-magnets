@@ -9,8 +9,8 @@ let ProductThumbnail = (props) => {
                 </div>
                 <h2 className="card-title text-center">DINOSAUR PLANTER</h2>
                 <div className="card-body">
-                <div className="row align-items-center">
-                    <p className="card-text col text-left">$15.00</p>
+                <div className="row align-items-between">
+                    <p className="card-text col text-left">$15.00 </p>
                     <p className="card-text col text-right prod-qty">Qty 13</p>
                 </div>         
             </div>

@@ -21,7 +21,7 @@ class App extends Component {
               
               <div className="row">
                 <Sidenav className="col-2"/>
-                <Display />
+                <Display className="col-10" />
               </div>
              
         </div>
