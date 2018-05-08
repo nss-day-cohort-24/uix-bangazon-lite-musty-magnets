@@ -12,7 +12,7 @@ getValues() {
     let prodDescription = document.getElementById('prodDescription').value;
     let prodQuantity = document.getElementById('prodQuantity').value;
     let prodPrice = document.getElementById('prodPrice').value;
-    console.log("form values", productName, prodCategory, imageURL, prodDescription, prodQuantity, prodPrice);
+
     let newProduct = {
         "name": productName,
         "category": prodCategory,
@@ -22,7 +22,7 @@ getValues() {
         "price": prodPrice
 
       }
-    console.log(newProduct);
+
 
 
     fetch("http://localhost:3000/product",
