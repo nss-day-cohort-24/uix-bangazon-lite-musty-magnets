@@ -11,12 +11,57 @@ import Display from './components/Display';
 import './components/button.css';
 
 class App extends Component {
+  constructor(props){
+    super(props);
+    this.state = {
+        User : {},
+        auth: false
+    };
+    this.getUserValues = this.getUserValues.bind(this);
+
+}
+
+getUserValues() {
+    let userEmail = document.getElementById('userEmail').value;
+    let userPassword = document.getElementById('userPassword').value;
+    //Get the user.
+    fetch(`http://localhost:3000/user?email=${userEmail}&&password=${userPassword}`,
+    {
+        method: "GET"
+    }).then((resp)=>{ 
+        resp.json().then(
+            (resolved) =>{
+                console.log("Returned? ", resolved);
+                if (resolved.length === 0 ){
+                    console.log("No users. ");
+                }
+
+                else{
+                    console.log("New User, set the state.");
+                    this.setState({
+                        User : resolved[0], 
+                        auth: true
+                    }, function(){
+                        console.log("You're registered: ", this.state.User);
+                    });
+
+                }
+           
+                },
+                (rejected) =>{
+                    console.log("ERROR 6295: This number has been disconnected.");
+                }
+            );
+        });   
+    }
+
+
   render() {
     return (
        <BrowserRouter>
         <div className="App">
               <UserInfo />
-              <Topnavbar />
+              <Topnavbar getUserValues={this.getUserValues} auth={this.state.auth}/>
               
               <div className="row">
                 <Sidenav className="col-2"/>

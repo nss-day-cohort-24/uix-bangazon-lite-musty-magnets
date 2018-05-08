@@ -15,14 +15,42 @@ class ProductDetail extends React.Component  {
       };
   
       this.toggle = this.toggle.bind(this);
+      this.addToCart = this.addToCart.bind(this);
     }
   
     toggle() {
       this.setState({
         modal: !this.state.modal
       });
+      
+
     }
-  
+
+    addToCart(){
+      console.log("these here props",this.props);
+      let addCartObj = {
+          "productId": this.props.id,
+          "userId": 23498809787097098,
+          "sellerId": 56721,
+          "productName":this.props.name,
+          "productImage":this.props.image
+      }
+
+      fetch("http://localhost:3000/orders_Products",
+      {
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          method: "POST",
+          body: JSON.stringify(addCartObj)
+      })
+
+      this.setState({
+        modal: !this.state.modal
+      });
+
+    }
     render() {
       return (
 
@@ -43,7 +71,7 @@ class ProductDetail extends React.Component  {
           </ModalBody>
           
           <ModalFooter>
-            <Button color="btn-add-to-cart" onClick={this.toggle}>Add to cart</Button>{' '}
+            <Button color="btn-add-to-cart" onClick={this.addToCart}>Add to cart</Button>{' '}
             <Buttons className={`btn-cancel`} label={"Cancel"} function={this.toggle} />
           </ModalFooter>
          

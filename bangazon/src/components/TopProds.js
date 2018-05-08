@@ -4,7 +4,7 @@ import React from 'react';
 let TopProds = (props) => {
     const topProds = props.data.map((product, index) =>
         <div key={index} className="">
-            <p>{product.name}</p>
+            <small>{product.name}</small>
         </div>
     )
     return(
