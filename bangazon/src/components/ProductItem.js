@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Label } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProductItem.css';
 
