@@ -32,7 +32,13 @@ class ProductDetail extends React.Component  {
           <ModalHeader toggle={this.toggle}></ModalHeader>
           <ModalBody>
                 
-            <ProductItem />
+            <ProductItem 
+            image={this.props.image}
+            price={this.props.price}
+            quantity={this.props.quantity}
+            name={this.props.name}
+            category={this.props.category}
+            description={this.props.description}/>
                     
           </ModalBody>
           

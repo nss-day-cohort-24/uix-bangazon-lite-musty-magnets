@@ -1,8 +1,7 @@
 import React from 'react';
 import { Dropdown, DropdownMenu, DropdownToggle } from 'reactstrap';
-import './cartdropdown.css';
 
-export default class CartDropDown extends React.Component {
+export default class CartDrop extends React.Component {
   constructor(props) {
     super(props);
 
@@ -17,15 +16,6 @@ export default class CartDropDown extends React.Component {
       dropdownOpen: !this.state.dropdownOpen
     });
   }
-  componentDidMount() {
-    fetch("http://localhost:3000/orders_Products")
-  .then(function(response) {
-    return response.json();
-  })
-  .then(function(data) {
-    console.log(data);
-  });
-  }
 
   render() {
     return (
@@ -36,10 +26,7 @@ export default class CartDropDown extends React.Component {
           data-toggle="dropdown"
           aria-expanded={this.state.dropdownOpen}
         >
-        <div className="cartDiv align-items-center justify-content-center">
-        <i className="fas fa-shopping-cart"></i>
-        <p>cart</p>
-        </div>
+          Cart
         </DropdownToggle>
         <DropdownMenu>
           <div onClick={this.toggle}>Custom dropdown item</div>
@@ -51,4 +38,3 @@ export default class CartDropDown extends React.Component {
     );
   }
 }
-
