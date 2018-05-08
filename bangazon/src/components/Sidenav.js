@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './sidenav.css';
 import { NavLink } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 class Sidenav extends Component {
@@ -71,7 +72,7 @@ class Sidenav extends Component {
     render() {
         return(
             <div className="sideNav col-2">
-                <div className="sideNav-wrap">
+                <div className="d-flex sideNav-wrap justify-content-center">
                 <h5 className="sideNav-label">Product Categories</h5>
                 </div>
                 <div className="">
