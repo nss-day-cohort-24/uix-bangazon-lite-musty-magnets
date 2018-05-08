@@ -1,10 +1,11 @@
 {
-  "order": {
+  "order": [
+    {
     "orderId": 0,
     "userId": null,
     "isCompleted?": null,
     "total": null
-  },
+  }],
   "user": [
     {
       "id": 1,
@@ -157,16 +158,16 @@
       "crv": 188
     },
     {
+      "id": 11,
       "first_name": "",
       "last_name": "",
-      "useremail": "jerdemalika@fake.com",
+      "email": "jerdemalika@fake.com",
       "userpassword": "abcdefg",
       "address": "",
       "city": "",
       "phone": "",
       "cardnumber": "",
-      "crv": "",
-      "id": 11
+      "crv": ""
     }
   ],
   "product": [

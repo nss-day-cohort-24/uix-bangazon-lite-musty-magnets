@@ -1,0 +1,19 @@
+
+  
+Modal.Product-Item-modal {
+    width: 600px;
+}
+  
+
+ .Product-item {
+     margin: 1rem 3rem;
+ }
+
+ .Product-item-row {
+    padding-bottom: 1rem;
+ }
+
+ .Product-item-img{
+     object-fit: cover;
+     width: 100%;
+ }

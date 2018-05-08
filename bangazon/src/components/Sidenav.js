@@ -2,13 +2,9 @@ import React, { Component } from 'react';
 import './sidenav.css';
 import { NavLink } from 'react-router-dom';
 
-
-
 class Sidenav extends Component {
-
     constructor(props){
         super(props);
-
         this.state = {
             CategoriesLoaded: false,
             ElectArray: [],
@@ -17,28 +13,14 @@ class Sidenav extends Component {
             VidGameArray: [],
             MiscArray: []
         }
-
-
-
     }
-
     componentDidMount = () => {
-        
-        let electronicsArray = [];
-        let booksArray = [];
-        let outdoorArray = [];
-        let vidGamesArray = [];
-        let miscArray = [];
-        let electLength = "";
-        let electronics;
-
-
+     
         fetch('http://localhost:3000/product?category=Electronics')
         .then(function(response) {
         return response.json();
         })
         .then((data) => {
-        console.log(data.length,"electronicsdatalength");
         this.setState({
             ElectArray:data 
         })
@@ -49,7 +31,6 @@ class Sidenav extends Component {
         return response.json();
         })
         .then((data) => {
-        console.log(data.length,"booksdatalength");
         this.setState({
             BookArray: data
         })
@@ -60,45 +41,32 @@ class Sidenav extends Component {
         return response.json();
         })
         .then((data) => {
-        console.log(data.length,"Outdoordatalength");
         this.setState({
             OutdoorArray: data
         })
         });
-
-
         fetch('http://localhost:3000/product?category=Miscellaneous')
         .then(function(response) {
         return response.json();
         })
         .then((data) => {
-        console.log(data.length,"Miscellaneousdatalength");
         this.setState({
             MiscArray: data
         })
         
         });
-
         fetch('http://localhost:3000/product?category=Video Games')
         .then(function(response) {
         return response.json();
         })
         .then((data) => {
-        console.log(data.length,"VideoGamesaneousdatalength");
         this.setState({
             VidGameArray: data
         })
         
         });
-
-
         
-
-
-
     }
-
-
     render() {
         return(
             <div className="sideNav col-2">
@@ -129,9 +97,7 @@ class Sidenav extends Component {
                     </div>
             </div>
         )
-
     }
-
 }
 
 export default Sidenav;

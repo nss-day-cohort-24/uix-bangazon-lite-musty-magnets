@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 
 import { UserInfo } from './components/db';
-
+import  ProductDetail from './components/ProductDetail';
 
 import { BrowserRouter } from 'react-router-dom';
 import Topnavbar from './components/Topnavbar';
@@ -17,13 +17,11 @@ class App extends Component {
        <BrowserRouter>
         <div className="App">
               <UserInfo />
-              <Topnavbar />
-              
+              <Topnavbar />             
               <div className="row">
-                <Sidenav />
+                <Sidenav className="col-2"/>               
                 <Display />
-              </div>
-             
+              </div>             
         </div>
       </BrowserRouter>
     );

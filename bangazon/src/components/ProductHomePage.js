@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductThumbnail from "./ProductThumbnail.js";
+import ProductThumbnail from './ProductThumbnail';
 
 let ProductHomePage = () => {
     return(
