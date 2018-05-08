@@ -1,5 +1,8 @@
 import React from 'react';
 import "./productThumbnail.css";
+import ProductDetail from './ProductDetail';
+import './cartdropdown.css';
+
 
 
 let CategoryProdTemplate = (props) => {
@@ -35,7 +38,14 @@ let CategoryProdTemplate = (props) => {
                     <p className="card-text col text-left">{product.price}</p>
                     <p className="card-text col text-right prod-qty">{product.quantity}</p>
                 </div>
-                <button id={"add_" + product.id} onClick={((e) => handleClick(product))} className="btn-list-item w-100">Add To Cart</button>         
+                <i className="fas fa-shopping-cart cart-small" id={"add_" + product.id} onClick={((e) => handleClick(product))}></i>
+                <ProductDetail 
+                image={product.image}
+                price={product.price}
+                quantity={product.quantity}
+                name={product.name}
+                category={product.category}
+                description={product.description}/>         
 
             </div>
     </div>

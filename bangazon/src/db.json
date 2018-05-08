@@ -245,87 +245,6 @@
       "id": 8
     },
     {
-      "name": "arthur test",
-      "category": "Miscellaneous",
-      "image": "",
-      "description": "",
-      "quantity": "",
-      "price": "",
-      "id": 9
-    },
-    {
-      "name": "arthur test",
-      "category": "Books",
-      "image": "",
-      "description": "",
-      "quantity": "",
-      "price": "",
-      "id": 10
-    },
-    {
-      "name": "arthur test",
-      "category": "Video Games",
-      "image": "",
-      "description": "",
-      "quantity": "",
-      "price": "",
-      "id": 11
-    },
-    {
-      "name": "arthur test",
-      "category": "Video-Games",
-      "image": "",
-      "description": "",
-      "quantity": "",
-      "price": "",
-      "id": 12
-    },
-    {
-      "name": "arthur",
-      "category": "VideoGames",
-      "image": "",
-      "description": "",
-      "quantity": "",
-      "price": "",
-      "id": 13
-    },
-    {
-      "name": "testy testmon",
-      "category": "Electronics",
-      "image": "",
-      "description": "",
-      "quantity": "",
-      "price": "",
-      "id": 14
-    },
-    {
-      "name": "lindsay",
-      "category": "Books",
-      "image": "",
-      "description": "baller as fuck yo",
-      "quantity": "70",
-      "price": "4",
-      "id": 15
-    },
-    {
-      "name": "1234",
-      "category": "Outdoor",
-      "image": "",
-      "description": "",
-      "quantity": "",
-      "price": "",
-      "id": 16
-    },
-    {
-      "name": "this is a test",
-      "category": "Video Games",
-      "image": "https://www.google.com/search?q=image+of+video+games&tbm=isch&source=iu&ictx=1&fir=L_cEjH5hvPXo7M%253A%252C3rErbdY5c9ZRMM%252C_&usg=__YRMnWSNZZzal6z9ES09xJrNpIcw%3D&sa=X&ved=0ahUKEwiat9ifm_XaAhXI11MKHYdSAgYQ9QEILTAB#imgrc=L_cEjH5hvPXo7M:",
-      "description": "pay me all da moneys",
-      "quantity": "1",
-      "price": "2000000000",
-      "id": 17
-    },
-    {
       "name": "I Don't Know",
       "category": "Outdoor",
       "image": "http://cdn.shopify.com/s/files/1/1365/2497/products/unicorn-squirrel-feeder_grande.jpg?v=1520535227",
@@ -351,15 +270,6 @@
       "quantity": "900",
       "price": "20.00",
       "id": 20
-    },
-    {
-      "name": "",
-      "category": "Select a category",
-      "image": "20.00",
-      "description": "",
-      "quantity": "",
-      "price": "",
-      "id": 21
     }
   ],
   "orders_Products": [
@@ -385,6 +295,7 @@
       "sellerId": 56721,
       "productName": "Mega Man Helmet",
       "productImage": "https://img.etsystatic.com/il/1d6c53/1511628405/il_570xN.1511628405_4nd1.jpg?version=1",
-      "id": 3}
+      "id": 3
+    }
   ]
-}
+    }

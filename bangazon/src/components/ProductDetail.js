@@ -32,13 +32,19 @@ class ProductDetail extends React.Component  {
           <ModalHeader toggle={this.toggle}></ModalHeader>
           <ModalBody>
                 
-            <ProductItem />
+            <ProductItem 
+            image={this.props.image}
+            price={this.props.price}
+            quantity={this.props.quantity}
+            name={this.props.name}
+            category={this.props.category}
+            description={this.props.description}/>
                     
           </ModalBody>
           
           <ModalFooter>
             <Button color="btn-add-to-cart" onClick={this.toggle}>Add to cart</Button>{' '}
-            <Buttons className={`btn-cancel`} label={"Cancel"} function={this.function} />
+            <Buttons className={`btn-cancel`} label={"Cancel"} function={this.toggle} />
           </ModalFooter>
          
         </Modal>
