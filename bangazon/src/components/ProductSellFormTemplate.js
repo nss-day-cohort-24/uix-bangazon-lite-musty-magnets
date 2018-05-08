@@ -1,8 +1,9 @@
 import React from 'react';
-import { Form, FormGroup, Label, Input } from 'reactstrap';
+import { Form, FormGroup, Label, Input, InputGroup, InputGroupAddon } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProductSellFormTemplate.css';
 import Buttons from "./Buttons";
+import { NavLink } from 'react-router-dom';
 
  let  ProductSellFormTemplate = (props) => {
 
@@ -23,7 +24,10 @@ import Buttons from "./Buttons";
                     <div className="row align-self-end">
                       <FormGroup className="col">{/*Price per Unit*/}
                           <Label for="prodPrice">Product Price</Label>
-                          <Input type="text" name="prodPrice" id="prodPrice" placeholder="$0.00" />
+                          <InputGroup>
+                            <InputGroupAddon addonType="prepend">$</InputGroupAddon>
+                            <Input placeholder="Dollar Amount" type="number" step="1" className="priceInput" name="prodPrice" id="prodPrice" />
+                        </InputGroup>
                       </FormGroup>
 
                       <FormGroup className="col"> {/*Quantity*/}
@@ -58,7 +62,7 @@ import Buttons from "./Buttons";
                     <div className="row mx-auto sell_product_buttons align-items-start">
 
                       <Buttons class={`btn-cancel`} label={"Cancel"} />
-                      <Buttons class={'btn-list-item'} label={"List Product"} function={props.getValues} />
+                      <NavLink to="/"><Buttons class={'btn-list-item'} label={"List Product"} function={props.getValues} /></NavLink>
 
                     </div>
 

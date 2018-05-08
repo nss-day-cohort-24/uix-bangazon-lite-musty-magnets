@@ -360,6 +360,33 @@
       "quantity": "",
       "price": "",
       "id": 21
+    },
+    {
+      "name": "",
+      "category": "Select a category",
+      "image": "",
+      "description": "",
+      "quantity": "",
+      "price": "234",
+      "id": 22
+    },
+    {
+      "name": "",
+      "category": "Select a category",
+      "image": "",
+      "description": "",
+      "quantity": "",
+      "price": "30.30",
+      "id": 23
+    },
+    {
+      "name": "",
+      "category": "Select a category",
+      "image": "",
+      "description": "",
+      "quantity": "",
+      "price": "",
+      "id": 24
     }
   ],
   "orders_Products": {
