@@ -159,4 +159,5 @@ Button {
 
   .circleInfo:hover {
     background: #4BE5A7;
+    cursor: pointer;
   }
