@@ -3,48 +3,16 @@ import "./productThumbnail.css";
 import CategoryProdTemplate from './CategoryProdTemplate'
 
 
-class CategoryProds extends Component {
-
-    constructor(props){
-        super(props);
-
-        this.state = {
-            CategoriesLoaded: false,
-            ElectArray: [],
-            BookArray: [],
-            OutdoorArray: [],
-            VidGameArray: [],
-            MiscArray: []
-        }
 
 
 
-    }
-
-    componentDidMount = () => {
-        let ElectArray = [];
-        let booksArray = [];
-        let outdoorArray = [];
-        let vidGamesArray = [];
-        let miscArray = [];
-
-        fetch('http://localhost:3000/product?category=Electronics')
-            .then(function(response) {
-            return response.json();
-            })
-            .then((data) => {
-            console.log(data,"electronics data");
-            this.setState({
-                ElectArray:data 
-            })
-            });
-    }
-    render () {
+let CategoryProds = (props) => {
+    let data = props.location.state;
+    console.log(data.objresult);
         return(
             <div>
-                <CategoryProdTemplate data={this.state.ElectArray} />
+                <CategoryProdTemplate data={data.objresult} />
             </div>
         )
-    }
 }
 export default CategoryProds;

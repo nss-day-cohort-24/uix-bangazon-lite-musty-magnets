@@ -107,23 +107,23 @@ class Sidenav extends Component {
                 </div>
                 <div className="">
                     <li className="d-flex justify-content-between align-items-center">
-                        <NavLink className="nav-link" to="/CategoryProduct" >Electronics</NavLink>
-                        <span className="badge badge-primary badge-pill">{Object.keys(this.state.ElectArray).length}</span>
-                    </li>
-                    <li className="d-flex justify-content-between align-items-center">
-                        <NavLink className="nav-link" to="/CategoryProduct">Books</NavLink>
+                        <NavLink className="nav-link" to={{ pathname: '/CategoryProduct', state: { objresult: this.state.BookArray    } }}>Books</NavLink>
                         <span className="badge badge-primary badge-pill">{Object.keys(this.state.BookArray).length}</span>
                     </li>
                     <li className="d-flex justify-content-between align-items-center">
-                        <NavLink className="nav-link" to="/CategoryProduct" >Outdoor</NavLink>
+                        <NavLink className="nav-link" to={{ pathname: '/CategoryProduct', state: { objresult: this.state.ElectArray    } }} >Electronics</NavLink>
+                        <span className="badge badge-primary badge-pill">{Object.keys(this.state.ElectArray).length}</span>
+                    </li>
+                    <li className="d-flex justify-content-between align-items-center">
+                        <NavLink className="nav-link" to={{ pathname: '/CategoryProduct', state: { objresult: this.state.OutdoorArray    } }} >Outdoor</NavLink>
                         <span className="badge badge-primary badge-pill">{Object.keys(this.state.OutdoorArray).length}</span>
                     </li>
                     <li className=" d-flex justify-content-between align-items-center">
-                        <NavLink className="nav-link" to="/CategoryProduct" >Video Games</NavLink>
+                        <NavLink className="nav-link" to={{ pathname: '/CategoryProduct', state: { objresult: this.state.VidGameArray    } }} >Video Games</NavLink>
                         <span className="badge badge-primary badge-pill">{Object.keys(this.state.VidGameArray).length}</span>
                     </li>
                     <li className=" d-flex justify-content-between align-items-center">
-                        <NavLink className="nav-link" to="/CategoryProduct" >Miscellaneous</NavLink>
+                        <NavLink className="nav-link" to={{ pathname: '/CategoryProduct', state: { objresult: this.state.MiscArray    } }} >Miscellaneous</NavLink>
                         <span className="badge badge-primary badge-pill">{Object.keys(this.state.MiscArray).length}</span>
                     </li>
                     </div>
