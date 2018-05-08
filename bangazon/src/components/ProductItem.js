@@ -19,7 +19,7 @@ let ProductItem = (props) => {
                         <div className="col text-right"> QTY {props.quantity} </div>
                     </div>
                     
-                       
+                      
                 </div>
 
                 <div className="col">
