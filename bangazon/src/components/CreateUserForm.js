@@ -3,12 +3,7 @@ import CreateUserFormTemplate from './CreateUserFormTemplate';
 let newuserobject = {};
 
 export default class CreateUserForm extends React.Component {
-constructor(props){
-        super(props);
-        // this.state = existingUser;
-        // this.getUserValues = this.getUserValues.bind(this);
 
-    }
 
 componentDidMount(){
     // this.setState({existingUser});

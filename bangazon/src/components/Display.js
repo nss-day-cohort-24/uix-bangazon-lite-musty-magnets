@@ -3,7 +3,6 @@ import ProductSellForm from './ProductSellForm';
 import { Route } from 'react-router-dom';
 import ProductHomePage from './ProductHomePage';
 import './display.css'
-import { BrowserRouter } from 'react-router-dom';
 import CategoryProds from './CategoryProds';
 
 class Display extends Component {

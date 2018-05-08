@@ -23,14 +23,7 @@ class Sidenav extends Component {
     }
 
     componentDidMount = () => {
-        
-        let electronicsArray = [];
-        let booksArray = [];
-        let outdoorArray = [];
-        let vidGamesArray = [];
-        let miscArray = [];
-        let electLength = "";
-        let electronics;
+     
 
 
         fetch('http://localhost:3000/product?category=Electronics')
@@ -38,7 +31,6 @@ class Sidenav extends Component {
         return response.json();
         })
         .then((data) => {
-        console.log(data.length,"electronicsdatalength");
         this.setState({
             ElectArray:data 
         })
@@ -49,7 +41,6 @@ class Sidenav extends Component {
         return response.json();
         })
         .then((data) => {
-        console.log(data.length,"booksdatalength");
         this.setState({
             BookArray: data
         })
@@ -60,7 +51,6 @@ class Sidenav extends Component {
         return response.json();
         })
         .then((data) => {
-        console.log(data.length,"Outdoordatalength");
         this.setState({
             OutdoorArray: data
         })
@@ -72,7 +62,6 @@ class Sidenav extends Component {
         return response.json();
         })
         .then((data) => {
-        console.log(data.length,"Miscellaneousdatalength");
         this.setState({
             MiscArray: data
         })
@@ -84,7 +73,6 @@ class Sidenav extends Component {
         return response.json();
         })
         .then((data) => {
-        console.log(data.length,"VideoGamesaneousdatalength");
         this.setState({
             VidGameArray: data
         })

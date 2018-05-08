@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Form, FormGroup, Label, Input } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProductSellFormTemplate.css';
 import Buttons from "./Buttons";
@@ -13,7 +13,7 @@ import Buttons from "./Buttons";
                 <div className="row">
                   <div className="col-5">
 
-                    <img src="http://via.placeholder.com/250x250"></img>
+                    <img src="http://via.placeholder.com/250x250" alt=""></img>
 
                     <FormGroup> {/*Image URL*/}
                         <Label for="imageURL">Image URL</Label>

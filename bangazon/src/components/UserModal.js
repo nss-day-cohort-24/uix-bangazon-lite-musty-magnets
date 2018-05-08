@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 // import UserLoginFormTemplate from "./UserLoginFormTemplate";
 import UserLoginForm from './UserLoginForm';
 import CreateUserForm from "./CreateUserForm";
