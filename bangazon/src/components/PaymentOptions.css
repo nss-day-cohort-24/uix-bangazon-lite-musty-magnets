@@ -3,6 +3,7 @@
 .payment_box {
 	width: 100%;
 	padding: 1rem;
+	margin: 1rem 0;
 }
 
 .btn-secondary {
@@ -14,4 +15,8 @@
 .btn-light {
 	width: 4rem;
 	margin: 0;
+}
+
+p {
+	text-align: center;
 }
