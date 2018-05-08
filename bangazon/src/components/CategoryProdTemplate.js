@@ -29,10 +29,10 @@ let CategoryProdTemplate = (props) => {
     <div key={index} className="card mt-4 mr-2 ml-2 product-card" >
             <img className="card-img-top" src={product.image} alt="Card cap" />
 
-            <h2 className="card-title">{product.name}</h2>
+            <h2 className="card-title text-center">{product.name}</h2>
             <div className="card-body ">
                 <div className="row">
-                    <p className="card-text col text-left">{product.price}</p>
+                    <p className="card-text col text-left">${product.price}</p>
                     <p className="card-text col text-right prod-qty">{product.quantity}</p>
                 </div>
                 <i className="fas fa-shopping-cart cart-small" id={"add_" + product.id} onClick={((e) => handleClick(product))}></i>
