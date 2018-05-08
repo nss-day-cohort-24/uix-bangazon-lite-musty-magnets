@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 import Buttons from './Buttons';
 
@@ -16,8 +16,8 @@ let UserLoginFormTemplate = (props) => {
         <Label for="userPassword">Password</Label>
         <Input type="password" name="userPassword" id="userPassword" placeholder="Enter your password" />
       </FormGroup>
-      <Buttons class={`btn-cancel`} label={"Cancel"} />
-      <Button onClick={() => { props.getUserValues() }}>Submit</Button>
+  {/* <Buttons class={`btn-cancel`} label={"Cancel"} /> */}
+      <Button className="float-right" onClick={() => { props.getUserValues() }}>Login</Button>
     </Form>
   );
 }
