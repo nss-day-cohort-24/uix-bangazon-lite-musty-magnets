@@ -26,6 +26,8 @@ let CategoryProdTemplate = (props) => {
             body: JSON.stringify(addCartObj)
         })
 
+        window.alert("Added to Cart")
+
 
     }
     const categoryItems = props.data.map((product, index) =>
@@ -45,7 +47,8 @@ let CategoryProdTemplate = (props) => {
                 quantity={product.quantity}
                 name={product.name}
                 category={product.category}
-                description={product.description}/>         
+                description={product.description}
+                id={product.id}/>         
 
             </div>
     </div>
