@@ -4,6 +4,10 @@
 	font-size: 2rem;
 	text-align: left;
 	font-weight: 700;
+	padding-bottom: .8rem;
+	border-bottom: 1px solid #ced4da;
+	margin-bottom: 2rem;
+	color: #303539;
 }
 
 .sell_product_buttons {
@@ -16,7 +20,9 @@ Label {
 }
 
 img {
-	margin-bottom: 1rem;
+	display: block;
+	margin: 0 auto 1rem;
+	width: 198px;
 }
 
 .prependDollar span{
