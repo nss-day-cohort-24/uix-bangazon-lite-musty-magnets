@@ -1,11 +1,12 @@
 {
   "order": [
     {
-    "orderId": 0,
-    "userId": null,
-    "isCompleted?": null,
-    "total": null
-  }],
+      "orderId": 0,
+      "userId": null,
+      "isCompleted?": null,
+      "total": null
+    }
+  ],
   "user": [
     {
       "id": 1,
@@ -323,12 +324,47 @@
       "quantity": "1",
       "price": "2000000000",
       "id": 17
+    },
+    {
+      "name": "Pulse Rifle DIY Kit",
+      "category": "Electronics",
+      "image": "https://img.etsystatic.com/il/59bd45/1489100832/il_570xN.1489100832_37i6.jpg?version=0",
+      "description": "All parts necessary for building a pulse rifle. Build this with your kids, and take them to Mars to hunt wicked aliens. You can shoot the aliens in the head. Your kids will never forget the time they spent on Mars with you blowing aliens to pieces.",
+      "quantity": "3",
+      "price": "$79.99",
+      "id": 18
     }
   ],
-  "orders_Products": {
-    "orderId": null,
-    "productId": null,
-    "userId": null,
-    "sellerId": null
-  }
+  "orders_Products": [
+    {
+      "productId": 18,
+      "userId": 23498809787097096,
+      "sellerId": 56721,
+      "id": 1
+    },
+    {
+      "productId": 3,
+      "userId": 23498809787097096,
+      "sellerId": 56721,
+      "id": 2
+    },
+    {
+      "productId": 18,
+      "userId": 23498809787097096,
+      "sellerId": 56721,
+      "id": 3
+    },
+    {
+      "productId": 7,
+      "userId": 23498809787097096,
+      "sellerId": 56721,
+      "id": 4
+    },
+    {
+      "productId": 6,
+      "userId": 23498809787097096,
+      "sellerId": 56721,
+      "id": 5
+    }
+  ]
 }

@@ -17,6 +17,15 @@ export default class CartDropDown extends React.Component {
       dropdownOpen: !this.state.dropdownOpen
     });
   }
+  componentDidMount() {
+    fetch("http://localhost:3000/orders_Products")
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(data) {
+    console.log(data);
+  });
+  }
 
   render() {
     return (
