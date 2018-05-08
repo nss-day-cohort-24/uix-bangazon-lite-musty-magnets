@@ -8,31 +8,6 @@
 	padding: 1rem;
 }
 
-h1.bang-logo{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    color: rgb(255, 94, 65);
-    font-size: 2rem;
-    word-spacing: -1rem;
-    letter-spacing: .1rem;
-}
-
-.payment_box {
-	width: 100%;
-	padding: 1rem;
-}
-
-.btn-secondary {
-	width: 100%;
-	margin-bottom: .5rem;
-	
-}
-
-p {
-	font-weight: bold;
-	text-align: center;
-	color: grey;
-}
 
 .body-title {
 	margin: 0;
@@ -54,14 +29,4 @@ h2.body-title {
 .btn-light {
 	width: 4rem;
 	margin: 0;
-}
-
-p.copyright {
-	font-family: 'Montserrat', sans-serif;
-	font-size: .5rem;
-	text-align: left;
-}
-
-hr {
-	margin: .5rem 0;
 }
