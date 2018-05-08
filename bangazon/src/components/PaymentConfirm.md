@@ -1,5 +1,5 @@
-PaymentCC example:
+PaymentConfirm example:
 
 ```js
-<PaymentCC />
+<PaymentConfirm />
 ```
