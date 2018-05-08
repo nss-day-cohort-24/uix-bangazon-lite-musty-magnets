@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProductSellFormTemplate.css';
 import Buttons from "./Buttons";
 import { NavLink } from 'react-router-dom';
+import productImage from '../images/productImage.png'
 
  let  ProductSellFormTemplate = (props) => {
 
@@ -14,7 +15,7 @@ import { NavLink } from 'react-router-dom';
                 <div className="row">
                   <div className="col-5">
 
-                    <img src="http://via.placeholder.com/250x250" alt=""></img>
+                    <img src={productImage} alt=""></img>
 
                     <FormGroup> {/*Image URL*/}
                         <Label for="imageURL">Image URL</Label>
@@ -25,8 +26,8 @@ import { NavLink } from 'react-router-dom';
                       <FormGroup className="col">{/*Price per Unit*/}
                           <Label for="prodPrice">Product Price</Label>
                           <InputGroup>
-                            <InputGroupAddon addonType="prepend">$</InputGroupAddon>
-                            <Input placeholder="Dollar Amount" type="number" step="1" className="priceInput" name="prodPrice" id="prodPrice" />
+                            <InputGroupAddon addonType="prepend" className="prependDollar">$</InputGroupAddon>
+                            <Input placeholder="ex 10.00" type="number" step="1" className="priceInput" name="prodPrice" id="prodPrice" />
                         </InputGroup>
                       </FormGroup>
 
