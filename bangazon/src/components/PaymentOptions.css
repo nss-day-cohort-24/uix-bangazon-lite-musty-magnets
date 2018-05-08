@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
+.payment_box {
+	width: 100%;
+	padding: 1rem;
+}
+
+.btn-secondary {
+	width: 100%;
+	margin-bottom: .5rem;
+	
+}
+
+.btn-light {
+	width: 4rem;
+	margin: 0;
+}
