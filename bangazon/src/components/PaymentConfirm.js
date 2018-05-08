@@ -3,7 +3,7 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './PaymentConfirm.css';
 
-export default function PaymentCC() {
+export default function PaymentConfirm() {
 	return (
 		<div className="col-12 payment_box">
 
