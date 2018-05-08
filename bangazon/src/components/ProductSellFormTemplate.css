@@ -31,3 +31,13 @@ img {
 	font-weight: 400;
 	/* font-size: 1.3rem; */
 }
+
+.form-control:focus{
+	border: 1px solid #ff5e41;
+    box-shadow: 0 0 10px rgba(255, 94, 65, .3);
+}
+
+.priceInputGroup:focus{
+	border: 1px solid rgb(75, 229, 167);
+    box-shadow: 0 0 10px rgba(75, 229, 167, .3);
+}
