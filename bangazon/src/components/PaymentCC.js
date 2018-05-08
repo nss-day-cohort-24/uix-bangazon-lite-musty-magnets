@@ -47,9 +47,13 @@ export default function PaymentCC() {
 						</div>
 
 					</div>				
-				</fieldset>
+				</fieldset>				
 
-			</form>					
+			</form>	
+
+			<div className="cc_done">		
+				<button type="button" className="btn btn-dark">Add Card</button>
+			</div>
 
 		</div>
 		)
