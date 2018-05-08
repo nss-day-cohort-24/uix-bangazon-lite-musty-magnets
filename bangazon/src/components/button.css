@@ -143,3 +143,20 @@ Button {
     color: #ff5e41;
     background-color: transparent;
   }
+
+.circleInfo{
+    background: #ff5e41;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3px;
+    vertical-align: middle;
+    padding: 10px;
+    font-size: .7rem;
+  }
+
+  .circleInfo:hover {
+    background: #4BE5A7;
+  }

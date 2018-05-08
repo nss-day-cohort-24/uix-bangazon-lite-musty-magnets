@@ -33,7 +33,7 @@ let CategoryProdTemplate = (props) => {
             <div className="card-body ">
                 <div className="row">
                     <p className="card-text col text-left">${product.price}</p>
-                    <p className="card-text col text-right prod-qty">{product.quantity}</p>
+                    <p className="card-text col text-right prod-qty">qty {product.quantity}</p>
                 </div>
                 <i className="fas fa-shopping-cart cart-small" id={"add_" + product.id} onClick={((e) => handleClick(product))}></i>
                 <ProductDetail 

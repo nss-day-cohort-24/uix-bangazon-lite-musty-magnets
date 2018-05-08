@@ -329,8 +329,8 @@
       "name": "I Don't Know",
       "category": "Outdoor",
       "image": "http://cdn.shopify.com/s/files/1/1365/2497/products/unicorn-squirrel-feeder_grande.jpg?v=1520535227",
-      "description": "a;ldskgh;ahga",
-      "quantity": "",
+      "description": "Keep it outside.",
+      "quantity": "1",
       "price": "15.00",
       "id": 18
     },
@@ -431,6 +431,12 @@
       "userId": 23498809787097096,
       "sellerId": 56721,
       "id": 10
+    },
+    {
+      "productId": 19,
+      "userId": 23498809787097096,
+      "sellerId": 56721,
+      "id": 11
     }
   ]
 }

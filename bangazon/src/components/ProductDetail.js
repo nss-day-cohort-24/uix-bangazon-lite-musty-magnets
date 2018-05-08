@@ -27,7 +27,7 @@ class ProductDetail extends React.Component  {
       return (
 
         <div>
-          <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}</Button>
+        <i class="fas fa-info circleInfo" onClick={this.toggle}></i>
         <Modal className="Product-Item-modal" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}></ModalHeader>
           <ModalBody>
