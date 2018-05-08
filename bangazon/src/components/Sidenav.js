@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import './sidenav.css';
 import { NavLink } from 'react-router-dom';
+import TopProds from './TopProds';
+
 
 
 class Sidenav extends Component {
@@ -35,6 +37,7 @@ class Sidenav extends Component {
         this.setState({
             BookArray: data
         })
+        console.log(this.state.BookArray[0].name);
         
         });
         fetch('http://localhost:3000/product?category=Outdoor')
@@ -69,6 +72,7 @@ class Sidenav extends Component {
         
     }
     render() {
+        const { CategoriesLoaded, ElectArray, BookArray, OutdoorArray, VidGameArray,  MiscArray} = this.state;
         return(
             <div className="sideNav col-2">
                 <div className="sideNav-wrap">
@@ -78,6 +82,9 @@ class Sidenav extends Component {
                     <li className="d-flex justify-content-between align-items-center">
                         <NavLink className="nav-link" to={{ pathname: '/CategoryProduct', state: { objresult: this.state.BookArray    } }}>Books</NavLink>
                         <span className="badge badge-primary badge-pill">{Object.keys(this.state.BookArray).length}</span>
+                        <div>
+                            {console.log('bookarray', this.state.BookArray[0])}
+                        </div>
                     </li>
                     <li className="d-flex justify-content-between align-items-center">
                         <NavLink className="nav-link" to={{ pathname: '/CategoryProduct', state: { objresult: this.state.ElectArray    } }} >Electronics</NavLink>
