@@ -10,12 +10,12 @@ uix-bangazon-lite-musty-magnets created by GitHub Classroom
 ## How to use? 
 
 ## Team Members
-Taylor Bailey
-Arthur Smith
-Ben Atkins
-Dan Watson
-Jesie Oldenburg
-Phonetip Liu Hobson
-Ryan Bristentine
-Sam Kimball
-Amber Sharpe
+*Taylor Bailey
+*Arthur Smith
+*Ben Atkins
+*Dan Watson
+*Jesie Oldenburg
+*Phonetip Liu Hobson
+*Ryan Bristentine
+*Sam Kimball
+*Amber Sharpe
