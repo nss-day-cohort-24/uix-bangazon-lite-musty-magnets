@@ -1,11 +1,12 @@
+.payment_box {
+	padding: 0 1rem;
+}
+
 label {
     display:block;
     margin-bottom: 0
 }
 
-.payment_box {
-	padding: 0 1rem;
-}
 
 fieldset {
 	margin-bottom: 2.4rem;
@@ -15,3 +16,9 @@ legend {
 	font-size: 1.2rem;
 	font-weight: 500;
 }
+
+.cc_done {
+	display: flex;
+	justify-content: flex-end;
+}
+
