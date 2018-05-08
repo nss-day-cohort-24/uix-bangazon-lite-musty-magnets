@@ -1,0 +1,11 @@
+.userDiv p {
+    color: #212529;
+    font-family: 'Helvettica', sans-serif;
+    margin-bottom: 0px;
+    font-size: .8rem;
+    
+}
+
+.createAccountDiv {
+    padding-top: 30px;
+}

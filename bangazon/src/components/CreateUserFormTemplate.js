@@ -50,7 +50,7 @@ let CreateUserFormTemplate = (props) => {
           <Input type="number" name="userCRV" id="userCRV" placeholder="456" />
         </FormGroup>
 
-        <Button onClick={() => { props.getNewUserValues() }}>Submit</Button>
+        <Button color="success" className="float-right" onClick={() => { props.getNewUserValues() }}>Create Account</Button>
       </Form>
     );
   }

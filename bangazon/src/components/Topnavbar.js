@@ -3,7 +3,7 @@ import CartDropDown from './CartDropDown';
 import { Input } from 'reactstrap';
 import { NavLink } from 'react-router-dom';
 import './topnav.css';
-import UserModal from './UserModal';
+import UserNestedModal from './UserNestedModal';
 
 
 
@@ -18,7 +18,7 @@ class topNavbar extends Component {
                     <p>sell</p>
                     </NavLink>
                     <CartDropDown />
-                    <UserModal />
+                    <UserNestedModal />
                 </div>
             </div>
         )
