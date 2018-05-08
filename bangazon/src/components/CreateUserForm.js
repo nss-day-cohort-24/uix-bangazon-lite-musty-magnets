@@ -57,8 +57,21 @@ getExistingUser(existingUser){
     this.setState( {User}, function(){
         console.log("Logged in:", this.state);
     });
+    console.log("Fetching...");
+    fetch('http://localhost:3000/user?id=4',{
+        method: "PATCH",
+        headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+            },
+        body: JSON.stringify({
+            "isActive?" : true 
+        })
 
+    }).then((resp)=>{
+        console.log("Response: ", resp.statusText,".", resp);
 
+    });
 }
 getNewUserValues() {
     let firstName = document.getElementById('firstName').value;
@@ -103,7 +116,7 @@ getNewUserValues() {
                         
                     }}
                     catch(e){
-                        console.log("It broke! What DID you DO???!?!");
+                        console.log("Well, the world's ending... I guess.");
                     }    
                 });
                 
@@ -143,6 +156,23 @@ getNewUserValues() {
                 
                     }).then((resp)=>{ 
                         console.log("Response: ", resp.statusText,".", resp);
+                        //TEST
+                        fetch('http://localhost:3000/user',{
+                            method: "PUT",
+                            headers: {
+                                'Accept': 'application/json',
+                                'Content-Type': 'application/json'
+                                },
+                            body: JSON.stringify({
+                                "id" : 4,
+                                "isActive?" : true 
+                            })
+
+                        }).then((resp)=>{
+                            console.log("Response: ", resp.statusText,".", resp);
+
+                        });
+                        //END OF TEST
                         }).catch((error)=>{
                             console.log("Error :", error.statusText,".");;
                         }); 

@@ -8,6 +8,7 @@
   "user": [
     {
       "id": 1,
+      "isActive?": false,
       "uid": 56721,
       "email": "triquelmedesouzax@cul0.ga",
       "password": "uo8nnehwql",
@@ -23,6 +24,7 @@
     },
     {
       "id": 2,
+      "isActive?": false,
       "uid": 26154,
       "email": "KWunsch@gmail.com",
       "password": "k0jyhxtyvl",
@@ -38,6 +40,7 @@
     },
     {
       "id": 3,
+      "isActive?": false,
       "uid": 18681,
       "email": "macbren@comcast.net",
       "password": "6m9vw4a4xz",
@@ -53,6 +56,7 @@
     },
     {
       "id": 4,
+      "isActive?": false,
       "uid": 66233,
       "email": "bikinglover@gmail.com",
       "password": "escll3rafh",
@@ -68,6 +72,7 @@
     },
     {
       "id": 5,
+      "isActive?": false,
       "uid": 30343,
       "email": "thomyorke@gmail.com",
       "password": "r0exj8d8ti",
@@ -83,6 +88,7 @@
     },
     {
       "id": 6,
+      "isActive?": false,
       "uid": 96932,
       "email": "cubsfan132@comcast.net",
       "password": "pl034rxdev",
@@ -98,6 +104,7 @@
     },
     {
       "id": 7,
+      "isActive?": false,
       "uid": 58028,
       "email": "ilovethebeach1943@gmail.com",
       "password": "6hxr64u7xu",
@@ -113,6 +120,7 @@
     },
     {
       "id": 8,
+      "isActive?": false,
       "uid": 40551,
       "email": "dinosaurusrex965@comcast.net",
       "password": "2swtq6qm6q",
@@ -128,6 +136,7 @@
     },
     {
       "id": 9,
+      "isActive?": false,
       "uid": 16429,
       "email": "cali4lyfe568@comcast.net",
       "password": "2f3g4whhml",
@@ -143,6 +152,7 @@
     },
     {
       "id": 10,
+      "isActive?": false,
       "uid": 65542,
       "email": "heythisisanemail@gmail.com",
       "password": "6b9djyf8pv",
@@ -157,7 +167,7 @@
       "crv": 188
     },
     {
-      "uid": 68303,
+      "uid": 36039,
       "id": 11,
       "first_name": "",
       "last_name": "",

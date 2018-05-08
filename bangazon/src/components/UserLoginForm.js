@@ -1,11 +1,29 @@
 import React from 'react';
 import UserLoginFormTemplate from './UserLoginFormTemplate';
 let count = 0;
-let User = { useremail: null, userpassword: null};
+let User = {
+
+    // id: null,
+    // auth: null,
+    // first_name : null,
+    // last_name : null,
+    // email: null,
+    // userpassword : null,
+    // address : null,
+    // seller : null,
+    // city : null,  
+    // phone : null, 
+    // cardnumber : null,
+    // crv : null
+};
+
 class UserLoginForm extends React.Component {
     constructor(props){
         super(props);
-        this.state = {User};
+        this.state = {
+            User : {},
+            auth: false
+        };
         this.getUserValues = this.getUserValues.bind(this);
 
     }
@@ -18,38 +36,26 @@ class UserLoginForm extends React.Component {
         let userPassword = document.getElementById('userPassword').value;
         
         //Get the user.
-        fetch("http://localhost:3000/user",
+        fetch(`http://localhost:3000/user?email=${userEmail}&&password=${userPassword}`,
         {
             method: "GET"
         }).then((resp)=>{ 
             resp.json().then(
                 (resolved) =>{
-                    console.log(resolved);
-                    resolved.forEach(element => {
-                        try{
-                            if(element.useremail.includes(userEmail)){
-                                // Do Something here.
-                                console.log("Login found user. Email:", userEmail," Password:", userPassword);
-                                User = {useremail: userEmail, userpassword: userPassword}
-                                this.setState({User},function(){
-                                    console.log("User is now registered in updated state: ", this);
-                                    });  
-                                }
-                            }
-                            catch(e){
-                                if(count>=1){
-                                    console.log("ERROR:", e, count);
-                                    count++;
-                                }
-                            }
-                            finally{
-                                if(count>1){
-                                    
-                                    console.log("No element matched the query key. Are you sure the element you're searching for exists in the db.json?");
-                                    count++;
-                                }
-                            }
+                    console.log("Returned? ", resolved);
+                    if (resolved.length === 0 ){
+                        console.log("No users. ");
+                    }
+
+                    else{
+                        console.log("New User, set the state.");
+                        this.setState({
+                            User : resolved[0], 
+                            auth: true
                         });
+
+                    }
+               
                     },
                     (rejected) =>{
                         console.log("ERROR 6295: This number has been disconnected.");
@@ -61,12 +67,21 @@ class UserLoginForm extends React.Component {
         
         render() {
             
-            return (
-                <div>
-                <UserLoginFormTemplate
-                getUserValues = {this.getUserValues}/>
-            </div>
-        );
+            if(!this.state.auth){
+                return (
+                    <div>
+                    <UserLoginFormTemplate
+                    getUserValues = {this.getUserValues}/>
+                </div>
+            );  
+            }
+            else{
+
+                console.log("APP GOES HERE.");
+                return(
+                    <div>{this.state.User.first_name}</div>
+                );
+            }
     }
 }
 

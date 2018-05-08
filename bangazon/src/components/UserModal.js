@@ -10,7 +10,20 @@ class UserModal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      modal: false
+      modal: false,
+      User: {
+        id: null,
+        first_name : null,
+        last_name : null,
+        email: null,
+        userpassword : null,
+        address : null,
+        seller : null,
+        city : null,  
+        phone : null, 
+        cardnumber : null,
+        crv : null
+      }
     };
 
     this.toggle = this.toggle.bind(this);
@@ -32,8 +45,8 @@ class UserModal extends React.Component {
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
           <ModalBody>
-                    <UserLoginForm login = {this.state.existingUser}/>
-                    <CreateUserForm />
+                    <UserLoginForm login = {this.state}/>
+                    <CreateUserForm login = {this.state} />
           </ModalBody>
           <ModalFooter>
           </ModalFooter>
