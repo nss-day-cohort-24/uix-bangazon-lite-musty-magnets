@@ -46,7 +46,12 @@ class UserNestedModal extends React.Component {
                 <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
                     <ModalHeader toggle={this.toggle}>User Login</ModalHeader>
                     <ModalBody>
-                        <UserLoginForm className="userLoginForm" />
+                        <UserLoginForm 
+                            className="userLoginForm" 
+                            toggle={this.toggle} 
+                            getUserValues={this.props.getUserValues}
+                            auth={this.props.auth}
+                            />
                         <br/>
                         <div className="createAccountDiv">
                             <p>Don't have an account yet? No problem!</p>
