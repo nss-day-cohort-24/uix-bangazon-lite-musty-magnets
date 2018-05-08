@@ -3,12 +3,9 @@ import './sidenav.css';
 import { NavLink } from 'react-router-dom';
 
 
-
 class Sidenav extends Component {
-
     constructor(props){
         super(props);
-
         this.state = {
             CategoriesLoaded: false,
             ElectArray: [],
@@ -17,15 +14,9 @@ class Sidenav extends Component {
             VidGameArray: [],
             MiscArray: []
         }
-
-
-
     }
-
     componentDidMount = () => {
      
-
-
         fetch('http://localhost:3000/product?category=Electronics')
         .then(function(response) {
         return response.json();
@@ -55,8 +46,6 @@ class Sidenav extends Component {
             OutdoorArray: data
         })
         });
-
-
         fetch('http://localhost:3000/product?category=Miscellaneous')
         .then(function(response) {
         return response.json();
@@ -67,7 +56,6 @@ class Sidenav extends Component {
         })
         
         });
-
         fetch('http://localhost:3000/product?category=Video Games')
         .then(function(response) {
         return response.json();
@@ -78,15 +66,8 @@ class Sidenav extends Component {
         })
         
         });
-
-
         
-
-
-
     }
-
-
     render() {
         return(
             <div className="sideNav col-2">
@@ -117,9 +98,7 @@ class Sidenav extends Component {
                     </div>
             </div>
         )
-
     }
-
 }
 
 export default Sidenav;

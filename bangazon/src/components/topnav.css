@@ -22,7 +22,7 @@ h2.bang-logo{
 
 input#search:focus{
     outline: none !important;
-    box-shadow: 0 0 10px rgb(75, 229, 167);
+    box-shadow: 0 0 10px rgba(255, 94, 65, .5);
 }
 
 .fa-tag{
@@ -42,8 +42,13 @@ input#search:focus{
     font-family: 'Helvettica', sans-serif;
     margin-bottom: 0px;
     font-size: .8rem;
+    letter-spacing: 2px;
 }
 
 .navIcons {
     margin-bottom: -1rem;
+}
+
+#search {
+    border: 1px solid #ff5e41;
 }
