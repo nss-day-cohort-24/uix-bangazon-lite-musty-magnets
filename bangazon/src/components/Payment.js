@@ -2,16 +2,10 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Payment.css';
 
-import {
-	BrowserRouter,
-	Route
-} from 'react-router-dom';
-
 import ChoosePayment from './ChoosePayment.js';
 
 export default function Payment() {
 	return (
-		<BrowserRouter>
 			<div className="container mx-auto choose_payment">
 
 				<div>
@@ -19,7 +13,7 @@ export default function Payment() {
 					<hr />
 				</div>
 
-				<Route path="/" component={ChoosePayment} />
+				<ChoosePayment />
 
 				<div className="bottom_rule">
 					<hr />
@@ -27,7 +21,6 @@ export default function Payment() {
 				</div>
 
 			</div>
-		</BrowserRouter>
 
 		)
 }
