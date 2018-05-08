@@ -37,7 +37,7 @@ img {
     box-shadow: 0 0 10px rgba(255, 94, 65, .3);
 }
 
-.priceInputGroup:focus{
+.priceInput:focus{
 	border: 1px solid rgb(75, 229, 167);
     box-shadow: 0 0 10px rgba(75, 229, 167, .3);
 }

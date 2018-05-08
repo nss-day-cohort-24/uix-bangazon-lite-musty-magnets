@@ -3,6 +3,7 @@ import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import UserLoginForm from './UserLoginForm';
 import CreateUserForm from "./CreateUserForm";
 import './UserNestedModal.css';
+import Buttons from './Buttons';
 
 class UserNestedModal extends React.Component {
     constructor(props) {
@@ -50,19 +51,17 @@ class UserNestedModal extends React.Component {
                         <br/>
                         <div className="createAccountDiv">
                             <p>Don't have an account yet? No problem!</p>
-                            <Button color="success" onClick={this.toggleNested}>Create Account</Button>
+                            <Buttons class="btn-create-account" function={this.toggleNested} label={"Create Account"}/>
                         </div>
                         <Modal isOpen={this.state.nestedModal} toggle={this.toggleNested} onClosed={this.state.closeAll ? this.toggle : undefined}>
                             <ModalHeader>Create Your User Account</ModalHeader>
                             <ModalBody>
                                 <CreateUserForm />
-                                <Button color="secondary" onClick={this.toggleAll}>Cancel</Button>
+                                <Buttons class={`btn-account-cancel`} label={"Cancel"} function={this.toggleAll} />
                             </ModalBody>
                         </Modal>
                     </ModalBody>
-                    <ModalFooter>
-                        <Button color="primary" onClick={this.toggle}>Close</Button>
-                    </ModalFooter>
+                    <ModalFooter></ModalFooter>
                 </Modal>
             </div>
         );

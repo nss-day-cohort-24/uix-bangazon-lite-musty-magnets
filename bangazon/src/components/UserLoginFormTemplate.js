@@ -16,8 +16,7 @@ let UserLoginFormTemplate = (props) => {
         <Label for="userPassword">Password</Label>
         <Input type="password" name="userPassword" id="userPassword" placeholder="Enter your password" />
       </FormGroup>
-  {/* <Buttons class={`btn-cancel`} label={"Cancel"} /> */}
-      <Button className="float-right" onClick={() => { props.getUserValues() }}>Login</Button>
+      <Buttons class={"btn-login float-right"} function={props.getUserValues} label={"Login"} />
     </Form>
   );
 }

@@ -3,7 +3,7 @@ Button {
     font-weight: bold;
   }
   
-  .btn-account-save,  .btn-list-item {
+  .btn-account-save,  .btn-list-item, .btn-create-account {
     background-color: transparent;
     font-size: 1rem;
     width: 15rem;
@@ -15,12 +15,29 @@ Button {
     line-height: 1px;
   }
 
-  .btn-account-save:hover,  .btn-list-item:hover {
+  .btn-account-save:hover,  .btn-list-item:hover,.btn-create-account:hover {
     background-color: #4BE5A7;
     border: 2px solid #4BE5A7;
     /* color: #0B110B; */
   }  
-  
+
+  .btn-login{
+    background-color: transparent;
+    font-size: 1rem;
+    width: 5rem;
+    border-radius: 2px;
+    border: 2px solid #4BE5A7;
+    height: 36px;
+    font-weight: bold;
+    color: #0B110B;
+    line-height: 1px;
+  }
+
+  .btn-login:hover{
+    background-color: #4BE5A7;
+    border: 2px solid #4BE5A7;
+  }
+
   .btn-cancel{
     background-color: transparent;
     font-size: 1rem;
@@ -34,6 +51,23 @@ Button {
   }
 
   .btn-cancel:hover {
+    border: 2px solid #ff5e41;
+    background-color: #ff5e41;
+  }
+
+  .btn-account-cancel {
+    background-color: transparent;
+    font-size: 1rem;
+    width: 8rem;
+    border-radius: 2px;
+    border: 2px solid #ff5e41;
+    font-weight: bold;
+    height: 36px;
+    line-height: 1px;
+    color: #0B110B;
+  }
+
+  .btn-account-cancel:hover{
     border: 2px solid #ff5e41;
     background-color: #ff5e41;
   }
