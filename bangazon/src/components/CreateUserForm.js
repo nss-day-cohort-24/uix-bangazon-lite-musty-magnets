@@ -22,16 +22,12 @@ function getRandomInt(max) {
   }
 
 export default class CreateUserForm extends React.Component {
-<<<<<<< HEAD
 constructor(props){
         super(props);
         this.state = {User};
         this.getNewUserValues = this.getNewUserValues.bind(this);
         this.getExistingUser = this.getExistingUser.bind(this);
     }
-=======
-
->>>>>>> 12c9a08006d19175d85524fafa1fb8b48609e283
 
 componentDidMount(){
     // this.setState({existingUser});

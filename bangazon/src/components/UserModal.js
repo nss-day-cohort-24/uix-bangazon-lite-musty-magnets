@@ -45,7 +45,7 @@ class UserModal extends React.Component {
         <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}>Modal title</ModalHeader>
           <ModalBody>
-                    <UserLoginForm login = {this.state}/>
+                    <UserLoginForm login = {this.state} />
                     <CreateUserForm login = {this.state} />
           </ModalBody>
           <ModalFooter>
