@@ -1,8 +1,10 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Form, FormGroup, Label, Input, InputGroup, InputGroupAddon } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './ProductSellFormTemplate.css';
 import Buttons from "./Buttons";
+import { NavLink } from 'react-router-dom';
+import productImage from '../images/productImage.png'
 
  let  ProductSellFormTemplate = (props) => {
 
@@ -13,7 +15,7 @@ import Buttons from "./Buttons";
                 <div className="row">
                   <div className="col-5">
 
-                    <img src="http://via.placeholder.com/250x250"></img>
+                    <img src={productImage} alt=""></img>
 
                     <FormGroup> {/*Image URL*/}
                         <Label for="imageURL">Image URL</Label>
@@ -23,7 +25,10 @@ import Buttons from "./Buttons";
                     <div className="row align-self-end">
                       <FormGroup className="col">{/*Price per Unit*/}
                           <Label for="prodPrice">Product Price</Label>
-                          <Input type="text" name="prodPrice" id="prodPrice" placeholder="$0.00" />
+                          <InputGroup>
+                            <InputGroupAddon addonType="prepend" className="prependDollar">$</InputGroupAddon>
+                            <Input placeholder="ex 10.00" type="number" step="1" className="priceInput" name="prodPrice" id="prodPrice" />
+                        </InputGroup>
                       </FormGroup>
 
                       <FormGroup className="col"> {/*Quantity*/}
@@ -42,7 +47,7 @@ import Buttons from "./Buttons";
                     <FormGroup> {/*Category*/}
                         <Label for="prodCategory">Product Category</Label>
                         <Input type="select" name="prodCategory" id="prodCategory">
-                            <option selected>Select a category</option>
+                            <option>Select a category</option>
                             <option>Electronics</option>
                             <option>Outdoor</option>
                             <option>Books</option>
@@ -58,7 +63,7 @@ import Buttons from "./Buttons";
                     <div className="row mx-auto sell_product_buttons align-items-start">
 
                       <Buttons class={`btn-cancel`} label={"Cancel"} />
-                      <Buttons class={'btn-list-item'} label={"List Product"} onClick={() => { props.getValues() }} />
+                      <NavLink to="/"><Buttons class={'btn-list-item'} label={"List Product"} function={props.getValues} /></NavLink>
 
                     </div>
 

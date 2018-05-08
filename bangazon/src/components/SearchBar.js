@@ -4,26 +4,6 @@ import { Input } from 'reactstrap';
 import  ProductThumbnail from './ProductThumbnail';
 
 
-let searchProducts = () => {
-const productSearch = document.getElementById("search");
-
-productSearch.addEventListener("keyup", function(e) {
-    if (e.keyCode === 13 && e.target.value !="") {
-        let userSearch = e.target.value.toLowerCase();
-    
-        /* need to call a function to complete user search */
-
-    } else if (e.keyCode === 13) {
-        window.alert("Please enter product to search for.");
-    }
-});
-}
-
-
-
-
-
-
 class SearchBar extends React.Component {
    
     constructor(props) {
@@ -33,6 +13,21 @@ class SearchBar extends React.Component {
             products: [],
         };
     }
+
+    searchProducts = () => {
+        const productSearch = document.getElementById("search");
+        
+        productSearch.addEventListener("keyup", function(e) {
+            if (e.keyCode === 13 && e.target.value !="") {
+                let userSearch = e.target.value.toLowerCase();
+            
+                /* need to call a function to complete user search */
+        
+            } else if (e.keyCode === 13) {
+                window.alert("Please enter product to search for.");
+            }
+        });
+        }
 
     /* Event handler for search entry */
     handleChange = (e) => {

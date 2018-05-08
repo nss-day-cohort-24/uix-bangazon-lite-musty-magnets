@@ -8,7 +8,6 @@ import { BrowserRouter } from 'react-router-dom';
 import Topnavbar from './components/Topnavbar';
 import Sidenav from './components/Sidenav';
 import Display from './components/Display';
-import UserModal from './components/UserModal';
 
 import './components/button.css';
 
@@ -22,8 +21,7 @@ class App extends Component {
               
               <div className="row">
                 <Sidenav className="col-2"/>
-               
-                <Display />
+                <Display className="col-10" />
               </div>
              
         </div>

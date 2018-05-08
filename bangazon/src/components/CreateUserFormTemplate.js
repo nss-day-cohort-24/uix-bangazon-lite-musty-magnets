@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input, FormText } from 'reactstrap';
+import { Button, Form, FormGroup, Label, Input } from 'reactstrap';
 
 let CreateUserFormTemplate = (props) => {
 
@@ -50,7 +50,7 @@ let CreateUserFormTemplate = (props) => {
           <Input type="number" name="userCRV" id="userCRV" placeholder="456" />
         </FormGroup>
 
-        <Button onClick={() => { props.getNewUserValues() }}>Submit</Button>
+        <Button color="success" className="float-right" onClick={() => { props.getNewUserValues() }}>Create Account</Button>
       </Form>
     );
   }

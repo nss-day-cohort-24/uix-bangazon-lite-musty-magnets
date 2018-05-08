@@ -12,6 +12,10 @@
     /* position: relative; */
 }
 
+.card-img-top{
+    margin-bottom: 0px;
+}
+
 .card-title{
     background-color: rgba(119, 249, 210, .85);
     padding: .2rem .3rem;
@@ -37,6 +41,7 @@
     margin: .3rem;
     letter-spacing: 1px;
     align-self: center;
+    /* padding: 0; */
 }
 
 .card-body .prod-qty {
