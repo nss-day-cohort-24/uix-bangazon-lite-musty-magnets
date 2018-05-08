@@ -29,9 +29,9 @@ export default function PaymentCC() {
 				<fieldset>
 					<legend>Card Info</legend>					
 
-					<div>
+					<div className="">
 						<label for="cc_number">Card Number</label>
-						<input type="text" id="cc_number" placeholder="Card Number" />
+						<input  className="col-12 cc_number" type="text" id="cc_number" placeholder="Card Number" />
 					</div>
 
 					<div className="row">

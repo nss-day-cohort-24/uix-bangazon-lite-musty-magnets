@@ -13,6 +13,10 @@ h1.bang-logo{
     letter-spacing: .1rem;
 }
 
+.bottom-rule {
+    display: flex-end;
+}
+
 p.copyright {
 	font-family: 'Montserrat', sans-serif;
 	font-size: .5rem;
