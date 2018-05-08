@@ -11,6 +11,11 @@ Button {
     border: none;
     font-weight: bold;
   }
+
+  .btn-account-save:hover,  .btn-list-item:hover {
+    background-color: #4BE5A7;
+    /* color: #0B110B; */
+  }  
   
   .btn-cancel{
     background-color: transparent;
@@ -22,6 +27,11 @@ Button {
     height: 36px;
     line-height: 1px;
     color: #0B110B;
+  }
+
+  .btn-cancel:hover {
+    border: 2px solid #ff5e41;
+    background-color: #ff5e41;
   }
   
   .btn-remove{
