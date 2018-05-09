@@ -77,7 +77,7 @@ class Sidenav extends Component {
         return(
             <div className="sideNav col-2">
                 <div className="d-flex sideNav-wrap justify-content-center">
-                <h5 className="sideNav-label">Product Categories</h5>
+                <h5 className="sideNav-label">Best Sellers</h5>
                 </div>
                 <div className="">
                     <li className="d-flex flex-column">
