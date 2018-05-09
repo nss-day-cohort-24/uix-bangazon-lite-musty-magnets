@@ -127,7 +127,7 @@ getNewUserValues() {
                 first_name : firstName,
                 last_name : lastName,
                 email: newUserEmail,
-                userpassword : newUserPass,
+                password : newUserPass,
                 address : userAddress,
                 city : userCity,  
                 phone : userTel, 
