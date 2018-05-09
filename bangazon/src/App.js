@@ -8,6 +8,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Topnavbar from './components/Topnavbar';
 import Sidenav from './components/Sidenav';
 import Display from './components/Display';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 import './components/button.css';
 
@@ -44,7 +45,10 @@ toggleAll() {
     this.setState({
         nestedModal: !this.state.nestedModal,
         closeAll: true
+    }, function(){
+        console.log("You clicked submit!", this);
     });
+    
 }
 
 getUserValues() {
