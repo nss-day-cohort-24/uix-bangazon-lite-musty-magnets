@@ -14,7 +14,7 @@ class Display extends Component {
                 <Route exact path='/' component={ProductHomePage} />
                 <Route path='/ProductsSellForm' component={ProductSellForm} />
                 <Route path='/CategoryProduct' component={CategoryProds} />
-                <Route path='/SearchBar' component={SearchBar} />
+                {/* <Route path='/SearchBar' component={SearchBar} /> */}
             </div>
 
             //</BrowserRouter>

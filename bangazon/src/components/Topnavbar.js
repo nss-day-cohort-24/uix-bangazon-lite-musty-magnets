@@ -18,7 +18,8 @@ class TopNavbar extends Component {
                 {/* <Input className="col-6" type="search" name="search" id="search" placeholder="Search..." /> */}
 
                  {/* user input product search */}
-                 <SearchBar className="col-6" />  
+                 <SearchBar className="col-6"
+                 />  
 
                 <div className="navIcons col-3 d-flex text-center">
                     <NavLink className="nav-link" to="/ProductsSellForm" ><i className="fas fa-tag"></i>
