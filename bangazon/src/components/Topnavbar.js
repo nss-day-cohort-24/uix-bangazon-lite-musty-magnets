@@ -9,6 +9,7 @@ import UserNestedModal from './UserNestedModal';
 
 class topNavbar extends Component {
     render() {
+        console.log("MY PROPS BABY",this.props);
         return(
             <div className="d-flex align-items-center justify-content-between navbar">
                 <NavLink to="/"><h2 className="col-2 bang-logo">BANGAZON</h2></NavLink>  

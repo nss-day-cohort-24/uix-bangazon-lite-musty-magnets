@@ -13,7 +13,6 @@ class Display extends Component {
             <div className="col-9">
                 <Route exact path='/' component={ProductHomePage} />
                 <Route path='/ProductsSellForm' component={ProductSellForm} />
-                <Route path='/CategoryProduct' component={CategoryProds} />
                 <Route exact path="/CategoryProduct" render={props => <CategoryProds user={this.props.user} auth={this.props.auth} {...props} />} />
             </div>
 

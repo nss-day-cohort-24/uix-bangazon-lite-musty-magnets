@@ -20,22 +20,23 @@ export default class CartDropDown extends React.Component {
     });
     this.update();
   }
-  componentDidMount() {
+//   componentDidMount() {
 
-    let userID = 23498809787097096
+//     let userID = 23498809787097096
+//     console.log("hey man these props should work",this.props);
     
-    fetch(`http://localhost:3000/orders_Products?userId=${userID}`)
-  .then(function(response) {
-    return response.json();
-  })
-  .then(data => this.setState({dropdownItems:data,
-dropdownLoaded:true}))
-  };
+//     fetch(`http://localhost:3000/orders_Products?userId=${userID}`)
+//   .then(function(response) {
+//     return response.json();
+//   })
+//   .then(data => this.setState({dropdownItems:data,
+// dropdownLoaded:true}))
+//   };
 
   update() {
-    // let userID = 23498809787097096
-    let userID = this.props.user.uid;
-    console.log(userID);
+        console.log(this.props,"LOOKAT ME");
+    let userID = this.props.user.id;
+    console.log("USERID",userID);
     
     fetch(`http://localhost:3000/orders_Products?userId=${userID}`)
   .then(function(response) {
@@ -48,7 +49,7 @@ dropdownLoaded:true}))
 
   render() {
 
-    if(this.state.dropdownLoaded == true){
+    if(this.props.auth == true){
     return (
       <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
         <DropdownToggle
@@ -68,9 +69,13 @@ dropdownLoaded:true}))
         </DropdownMenu>
       </Dropdown>
     );
-  }else if(!this.state.dropdownLoaded) {
+  }else{
     return(
-    <div>Loading...</div>
+      <div className="cartDiv align-items-center justify-content-center">
+      <i className="fas fa-shopping-cart"></i>
+      <p>cart</p>
+      </div>
+
     )
   }
   }

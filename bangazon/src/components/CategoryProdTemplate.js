@@ -7,13 +7,13 @@ import './cartdropdown.css';
 
 let CategoryProdTemplate = (props) => {
 
-    function handleClick(data,props) {
+    function handleClick(data) {
         console.log("data",data);
         console.log("yolanda",props);
-if(props.uid){
+        if(props.auth){
         let addCartObj = {
             "productId": data.id,
-            "userId": props.uid,
+            "userId": props.user.id,
             "sellerId": 56721,
             "productName":data.name,
             "productImage":data.image
@@ -31,8 +31,8 @@ if(props.uid){
 
         window.alert("Added to Cart")
         console.log("barry young",props.user,props.auth);
-
     }else{
+
         window.alert("Please Log In");
     }
     }
@@ -47,7 +47,7 @@ if(props.uid){
                     <p className="card-text col text-left">${product.price}</p>
                     <p className="card-text col text-right prod-qty">qty {product.quantity}</p>
                 </div>
-                <i className="fas fa-shopping-cart cart-small" id={"add_" + product.id} onClick={((e) => handleClick(product,props))}></i>
+                <i className="fas fa-shopping-cart cart-small" id={"add_" + product.id} onClick={(() => handleClick(product))}></i>
                 <ProductDetail 
                 image={product.image}
                 price={product.price}
