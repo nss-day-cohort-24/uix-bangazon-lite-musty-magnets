@@ -1,0 +1,5 @@
+PaymentConfirm example:
+
+```js
+<PaymentConfirm />
+```
