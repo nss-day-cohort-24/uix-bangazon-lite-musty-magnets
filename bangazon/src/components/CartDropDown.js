@@ -33,9 +33,9 @@ dropdownLoaded:true}))
   };
 
   update() {
-    let userID = 23498809787097096
-    // let userID = this.props.user.uid;
-    // console.log(userID);
+    // let userID = 23498809787097096
+    let userID = this.props.user.uid;
+    console.log(userID);
     
     fetch(`http://localhost:3000/orders_Products?userId=${userID}`)
   .then(function(response) {

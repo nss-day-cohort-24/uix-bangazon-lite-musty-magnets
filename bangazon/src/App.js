@@ -57,7 +57,7 @@ getUserValues() {
 
 
   render() {
-      console.log("this auth",this.state.User);
+
     return (
        <BrowserRouter>
         <div className="App">

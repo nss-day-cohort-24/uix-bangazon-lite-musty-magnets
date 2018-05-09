@@ -271,7 +271,6 @@
       "id": 8
     },
     {
-
       "name": "Reactxcaliber",
       "category": "Miscellaneous",
       "image": "https://www.karatemart.com/images/products/large/foam-toy-sword.jpg",
@@ -353,7 +352,6 @@
       "id": 17
     },
     {
-
       "name": "I Don't Know",
       "category": "Outdoor",
       "image": "http://cdn.shopify.com/s/files/1/1365/2497/products/unicorn-squirrel-feeder_grande.jpg?v=1520535227",
@@ -381,7 +379,6 @@
       "id": 20
     },
     {
-
       "name": "Electron",
       "category": "Electronics",
       "image": "https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2016/11/11170007/om_071116_schultze_naturephysics_pressebild.jpg.jpg",
@@ -398,7 +395,6 @@
       "quantity": "3",
       "price": "3.00",
       "id": 22
-
     }
   ],
   "orders_Products": [
@@ -425,6 +421,13 @@
       "productName": "Mega Man Helmet",
       "productImage": "https://img.etsystatic.com/il/1d6c53/1511628405/il_570xN.1511628405_4nd1.jpg?version=1",
       "id": 3
+    },
+    {
+      "productId": 17,
+      "sellerId": 56721,
+      "productName": "VR Headset",
+      "productImage": "https://i.pinimg.com/originals/17/68/68/176868b81e1244edd6e9ad6e3c68c619.jpg",
+      "id": 4
     }
   ]
 }
