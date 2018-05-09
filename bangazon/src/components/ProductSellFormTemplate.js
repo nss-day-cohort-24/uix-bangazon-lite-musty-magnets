@@ -62,7 +62,7 @@ import productImage from '../images/productImage.png'
 
                     <div className="row mx-auto sell_product_buttons align-items-start">
 
-                      <Buttons class={`btn-cancel`} label={"Cancel"} />
+                      <NavLink to="/"><Buttons class={`btn-cancel`} label={"Cancel"} function={props.getValues}/></NavLink>
                       <NavLink to="/"><Buttons class={'btn-list-item'} label={"List Product"} function={props.getValues} /></NavLink>
 
                     </div>

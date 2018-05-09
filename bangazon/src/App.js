@@ -17,38 +17,12 @@ class App extends Component {
     this.state = {
         User : {},
         auth: false,
-        modal: false,
-        nestedModal: false,
-        closeAll: false
+        
     };
     this.getUserValues = this.getUserValues.bind(this);
-    this.toggle = this.toggle.bind(this);
-    this.toggleNested = this.toggleNested.bind(this);
-    this.toggleAll = this.toggleAll.bind(this);
+   
 }
 
-toggle() {
-    this.setState({
-        modal: !this.state.modal
-    });
-}
-
-toggleNested() {
-    this.setState({
-        nestedModal: !this.state.nestedModal,
-        closeAll: false
-    });
-}
-
-toggleAll() {
-    this.setState({
-        nestedModal: !this.state.nestedModal,
-        closeAll: true
-    }, function(){
-        console.log("You clicked submit!", this);
-    });
-    
-}
 
 getUserValues() {
     let userEmail = document.getElementById('userEmail').value;

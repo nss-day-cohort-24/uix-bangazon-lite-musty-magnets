@@ -13,6 +13,7 @@ class UserLoginForm extends React.Component {
                     <div>
                     <UserLoginFormTemplate
                         toggleAll={this.props.toggleAll}
+                        toggle={this.props.toggle}
                         getUserValues={this.props.getUserValues} 
                     />
                 </div>
