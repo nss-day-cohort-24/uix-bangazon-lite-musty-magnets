@@ -1,11 +1,12 @@
 .sideNav {
     background-color: #eeeeee;
-    height: 700px;
     z-index: 1;
+    margin-left: 15px;
 }
 
 .sideNav-wrap {
     margin: 1rem auto;
+    border-bottom: 1px solid #ff5e41;
 }
 
 h5.sideNav-label {
@@ -21,6 +22,7 @@ h5.sideNav-label {
 
 .nav-link {
     color: #5d5d5d;
+    font-weight: 700;
 }
 
 .nav-link:hover {
@@ -32,4 +34,18 @@ h5.sideNav-label {
     color: #ff5e41;
     font-size: .9rem;
     border-radius: 4px;
+}
+
+small {
+    margin-left: 1.5rem;
+}
+
+.sideNav i {
+    margin-right: 0px;
+}
+
+.sideNav li {
+    padding-bottom: 1rem;
+    padding-top: .5rem;
+    border-bottom: 1px solid #ff5e41;
 }

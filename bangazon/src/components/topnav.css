@@ -54,6 +54,15 @@ input#search:focus{
     letter-spacing: 2px;
 }
 
+.navIcons .nav-link {
+    color: #212529;
+    font-family: 'Helvettica', sans-serif;
+    margin-bottom: 0px;
+    font-size: .8rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
 .navIcons {
     margin-bottom: -1rem;
 }

@@ -7,7 +7,6 @@ import CategoryProds from './CategoryProds';
 
 export default function Display() {
         return(
-            <BrowserRouter>
             
             <div className="col-9">
                 <Route exact path='/' component={ProductHomePage} />
@@ -15,6 +14,5 @@ export default function Display() {
                 <Route path='/CategoryProduct' component={CategoryProds} />
             </div>
 
-            </BrowserRouter>
         )
     }
