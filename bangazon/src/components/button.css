@@ -155,6 +155,8 @@ Button {
     vertical-align: middle;
     padding: 10px;
     font-size: .7rem;
+    float: left;
+    margin: .6rem .6rem;
   }
 
   .circleInfo:hover {

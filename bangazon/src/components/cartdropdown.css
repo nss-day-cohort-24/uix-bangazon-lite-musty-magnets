@@ -22,8 +22,9 @@
 .cart-small {
     font-size: 1.6rem;
     color: rgb(75, 229, 167);
-    margin: 0 !important;
+    margin: .6rem .6rem;
     padding: 0 !important;
+    float: right;
 }
 
 .cart-small:hover {
