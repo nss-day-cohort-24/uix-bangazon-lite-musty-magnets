@@ -53,6 +53,10 @@
     width: 50%;
 }
 
-.btn-remove {
+hr {
+    margin: 0;
+}
 
+.btn-checkout {
+    margin: auto;  
 }
