@@ -308,6 +308,14 @@
       "productName": "Mega Man Helmet",
       "productImage": "https://img.etsystatic.com/il/1d6c53/1511628405/il_570xN.1511628405_4nd1.jpg?version=1",
       "id": 3
+    },
+    {
+      "productId": 7,
+      "userId": 23498809787097096,
+      "sellerId": 56721,
+      "productName": "Witchcraft Book",
+      "productImage": "https://img.etsystatic.com/il/278656/1077616975/il_570xN.1077616975_ycqy.jpg?version=0",
+      "id": 4
     }
   ]
 }

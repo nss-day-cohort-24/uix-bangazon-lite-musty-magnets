@@ -17,7 +17,7 @@ class topNavbar extends Component {
                     <NavLink className="nav-link" to="/ProductsSellForm" ><i className="fas fa-tag"></i>
                     <p>sell</p>
                     </NavLink>
-                    <CartDropDown />
+                    <CartDropDown auth={this.props.auth} user={this.props.user} />
                     <UserNestedModal getUserValues={this.props.getUserValues} auth={this.props.auth}/>
                 </div>
             </div>

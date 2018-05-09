@@ -18,6 +18,7 @@ export default class CartDropDown extends React.Component {
     this.setState({
       dropdownOpen: !this.state.dropdownOpen
     });
+    this.update();
   }
   componentDidMount() {
 
@@ -31,9 +32,22 @@ export default class CartDropDown extends React.Component {
 dropdownLoaded:true}))
   };
 
+  update() {
+    let userID = 23498809787097096
+    // let userID = this.props.user.uid;
+    // console.log(userID);
+    
+    fetch(`http://localhost:3000/orders_Products?userId=${userID}`)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(data => this.setState({dropdownItems:data,
+    dropdownLoaded:true}))
+    console.log("cartprops",this.props);
+  }
+
   render() {
-    console.log(this.state.dropdownItems, "dropdownItems");
-    console.log(this.props,"this.propsssss");
+
     if(this.state.dropdownLoaded == true){
     return (
       <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>

@@ -27,6 +27,7 @@ let CategoryProdTemplate = (props) => {
         })
 
         window.alert("Added to Cart")
+        console.log("this.propsmahfckah",props);
 
 
     }

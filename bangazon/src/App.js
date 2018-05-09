@@ -58,15 +58,16 @@ getUserValues() {
 
 
   render() {
+      console.log("this auth",this.state.User);
     return (
        <BrowserRouter>
         <div className="App">
               <UserInfo />
-              <Topnavbar getUserValues={this.getUserValues} auth={this.state.auth}/>
+              <Topnavbar getUserValues={this.getUserValues} auth={this.state.auth} user={this.state.User}/>
               
               <div className="row">
                 <Sidenav className="col-2"/>
-                <Display className="col-10" />
+                <Display className="col-10" auth={this.state.auth} user={this.state.User} />
               </div>
              
         </div>

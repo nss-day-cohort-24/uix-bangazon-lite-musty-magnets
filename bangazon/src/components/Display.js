@@ -7,12 +7,13 @@ import CategoryProds from './CategoryProds';
 
 class Display extends Component {
     render() {
+        console.log("theeeesee props",this.props);
         return(
             //<BrowserRouter>
             <div className="col-9">
                 <Route exact path='/' component={ProductHomePage} />
                 <Route path='/ProductsSellForm' component={ProductSellForm} />
-                <Route path='/CategoryProduct' component={CategoryProds} />
+                <Route path='/CategoryProduct' render={CategoryProds}  />
             </div>
 
             //</BrowserRouter>
