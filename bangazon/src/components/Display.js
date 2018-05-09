@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ProductSellForm from './ProductSellForm';
-import { Route } from 'react-router-dom';
+import { Route, BrowserRouter } from 'react-router-dom';
 import ProductHomePage from './ProductHomePage';
 import './display.css'
 import CategoryProds from './CategoryProds';
