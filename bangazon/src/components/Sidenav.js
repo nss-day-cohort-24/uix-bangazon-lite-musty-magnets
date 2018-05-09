@@ -38,7 +38,7 @@ class Sidenav extends Component {
         this.setState({
             BookArray: data
         })
-        console.log(this.state.BookArray[0].name);
+        console.log('bookarray', this.state.BookArray);
         
         });
         fetch('http://localhost:3000/product?category=Outdoor')
@@ -70,8 +70,8 @@ class Sidenav extends Component {
         })
         
         });
-        
     }
+    
     render() {
         const { CategoriesLoaded, ElectArray, BookArray, OutdoorArray, VidGameArray,  MiscArray} = this.state;
         return(
@@ -86,7 +86,9 @@ class Sidenav extends Component {
                             <span className="badge badge-primary badge-pill">{Object.keys(this.state.BookArray).length}</span>
                         </div>
                         <div>
-                            <TopProds data={this.state.BookArray}/>
+                            <TopProds 
+                            data={this.state.BookArray}
+                            length={Object.keys(this.state.BookArray).length} />
                         </div>
                     </li>
                     <li className="d-flex flex-column">
@@ -95,7 +97,8 @@ class Sidenav extends Component {
                             <span className="badge badge-primary badge-pill">{Object.keys(this.state.ElectArray).length}</span>
                         </div>
                         <div>
-                            <TopProds data={this.state.ElectArray}/>
+                            <TopProds data={this.state.ElectArray}
+                            length={Object.keys(this.state.ElectArray).length}/>
                         </div>
                     </li>
                     <li className="d-flex flex-column">
@@ -104,7 +107,8 @@ class Sidenav extends Component {
                             <span className="badge badge-primary badge-pill">{Object.keys(this.state.OutdoorArray).length}</span>
                         </div>
                         <div>
-                            <TopProds data={this.state.OutdoorArray}/>
+                            <TopProds data={this.state.OutdoorArray}
+                            length={Object.keys(this.state.OutdoorArray).length}/>
                         </div>
                     </li>
                     <li className=" d-flex flex-column">
@@ -113,7 +117,8 @@ class Sidenav extends Component {
                             <span className="badge badge-primary badge-pill">{Object.keys(this.state.VidGameArray).length}</span>
                         </div>
                         <div>
-                            <TopProds data={this.state.VidGameArray}/>
+                            <TopProds data={this.state.VidGameArray}
+                            length={Object.keys(this.state.VidGameArray).length}/>
                         </div>
                     </li>
                     <li className=" d-flex flex-column">
@@ -122,7 +127,8 @@ class Sidenav extends Component {
                             <span className="badge badge-primary badge-pill">{Object.keys(this.state.MiscArray).length}</span>
                         </div>
                         <div>
-                            <TopProds data={this.state.MiscArray}/>
+                            <TopProds data={this.state.MiscArray}
+                            length={Object.keys(this.state.MiscArray).length}/>
                         </div>
                     </li>
                     </div>

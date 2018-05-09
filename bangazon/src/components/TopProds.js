@@ -2,15 +2,17 @@ import React from 'react';
 
 
 let TopProds = (props) => {
-    const topProds = props.data.map((product, index) =>
+    const products = props.data.slice(0,3);
+    const topProds = products.map((product, index) =>
         <div key={index} className="">
             <small>{product.name}</small>
         </div>
-    )
+   )
     return(
         <div>
-            {topProds}
+        {topProds}
         </div>
+        
     )
 }
 
