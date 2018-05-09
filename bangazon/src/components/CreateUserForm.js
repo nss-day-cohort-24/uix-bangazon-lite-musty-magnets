@@ -26,7 +26,7 @@ constructor(props){
         super(props);
         this.state = {User};
         this.getNewUserValues = this.getNewUserValues.bind(this);
-        this.getExistingUser = this.getExistingUser.bind(this);
+        // this.getExistingUser = this.getExistingUser.bind(this);
     }
 
 componentDidMount(){
@@ -37,42 +37,6 @@ componentDidMount(){
 
 
 
-getExistingUser(existingUser){
-// Set existing user to login
-    User = {
-        uid: getRandomInt(99999 - 10000),
-        id: existingUser.id,
-        first_name : existingUser.first_name,
-        last_name : existingUser.last_Name,
-        email: existingUser.email,
-        userpassword : existingUser.password,
-        address : existingUser.address,
-        seller: existingUser.seller,  
-        phone : existingUser.phone, 
-        cardnumber : existingUser.cardnumber,
-        crv : existingUser.crv
-    }
-
-    console.log("Logging in existing user.");
-    this.setState( {User}, function(){
-        console.log("Logged in:", this.state);
-    });
-    console.log("Fetching...");
-    fetch('http://localhost:3000/user?id=4',{
-        method: "PATCH",
-        headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-            },
-        body: JSON.stringify({
-            "isActive?" : true 
-        })
-
-    }).then((resp)=>{
-        console.log("Response: ", resp.statusText,".", resp);
-
-    });
-}
 getNewUserValues() {
     let firstName = document.getElementById('firstName').value;
     let lastName = document.getElementById('lastName').value;
@@ -103,7 +67,7 @@ getNewUserValues() {
                         if(element.email.includes(newUserEmail)){ //if it is true that email includes this string...
                         newRegistration=false; //set to false
                         console.log("User found. Not a new address", element, "new Registration set to", newRegistration);
-                        this.getExistingUser(element);
+                        
                     }// if the email doesn't include the string
                     else if(!element.email.includes(newUserEmail)){ //if false then run this block of code
                         count++;
@@ -126,8 +90,8 @@ getNewUserValues() {
                 id: count,
                 first_name : firstName,
                 last_name : lastName,
-                email: newUserEmail,
-                userpassword : newUserPass,
+                email: newUserEmail, //change
+                password : newUserPass,
                 address : userAddress,
                 city : userCity,  
                 phone : userTel, 
@@ -154,26 +118,12 @@ getNewUserValues() {
                         body: JSON.stringify(User)
                         // Id field added to Db.json users
                 
-                    }).then((resp)=>{ 
-                        console.log("Response: ", resp.statusText,".", resp);
-                        //TEST
-                        fetch('http://localhost:3000/user',{
-                            method: "PUT",
-                            headers: {
-                                'Accept': 'application/json',
-                                'Content-Type': 'application/json'
-                                },
-                            body: JSON.stringify({
-                                "id" : 4,
-                                "isActive?" : true 
-                            })
-
-                        }).then((resp)=>{
+                    }).then((resp)=>{
                             console.log("Response: ", resp.statusText,".", resp);
 
-                        });
+                        }
                         //END OF TEST
-                        }).catch((error)=>{
+                        ).catch((error)=>{
                             console.log("Error :", error.statusText,".");;
                         }); 
                         
@@ -193,7 +143,7 @@ getNewUserValues() {
     return (
         <div>
             <CreateUserFormTemplate 
-            getNewUserValues = {this.getNewUserValues}/>
+            getNewUserValues = {this.getNewUserValues} toggleAll = {this.props.toggleAll}/>
         </div>
     );
   }

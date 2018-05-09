@@ -93,11 +93,18 @@ Button {
 
   .btn-add-to-cart{
     background-color: #3A3A3A;
-    height: 50px;
-    border-radius: 2px;
+    color: white;
+    height: 3.8rem;
+    width: 4rem !important;
+    border-radius: 4px 0px 0px 4px;
     border: none;
-    font-size: 1rem;
+    font-size: .8rem;
     font-weight: bold;
+    padding: 4px 4px;
+  }
+
+  .btn-add-to-cart:hover{
+    background-color: #4BE5A7;
   }
   
   .btn-keep-shopping{
@@ -142,4 +149,24 @@ Button {
   .btn-close:hover {
     color: #ff5e41;
     background-color: transparent;
+  }
+
+.circleInfo{
+    background: #ff5e41;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 3px;
+    vertical-align: middle;
+    padding: 10px;
+    font-size: .7rem;
+    float: left;
+    margin: .6rem .6rem;
+  }
+
+  .circleInfo:hover {
+    background: #4BE5A7;
+    cursor: pointer;
   }

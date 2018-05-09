@@ -2,12 +2,12 @@ import React, { Component } from 'react';
 import './App.css';
 
 import { UserInfo } from './components/db';
-import  ProductDetail from './components/ProductDetail';
 
 import { BrowserRouter } from 'react-router-dom';
 import Topnavbar from './components/Topnavbar';
 import Sidenav from './components/Sidenav';
 import Display from './components/Display';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 import './components/button.css';
 
@@ -16,11 +16,39 @@ class App extends Component {
     super(props);
     this.state = {
         User : {},
-        auth: false
+        auth: false,
+        // modal: false,
+        // nestedModal: false,
+        // closeAll: false
     };
     this.getUserValues = this.getUserValues.bind(this);
-
+    // this.toggle = this.toggle.bind(this);
+    // this.toggleNested = this.toggleNested.bind(this);
+    // this.toggleAll = this.toggleAll.bind(this);
 }
+
+// toggle() {
+//     this.setState({
+//         modal: !this.state.modal
+//     });
+// }
+
+// toggleNested() {
+//     this.setState({
+//         nestedModal: !this.state.nestedModal,
+//         closeAll: false
+//     });
+// }
+
+// toggleAll() {
+//     this.setState({
+//         nestedModal: !this.state.nestedModal,
+//         closeAll: true
+//     }, function(){
+//         console.log("You clicked submit!", this);
+//     });
+    
+// }
 
 getUserValues() {
     let userEmail = document.getElementById('userEmail').value;
@@ -43,7 +71,7 @@ getUserValues() {
                         User : resolved[0], 
                         auth: true
                     }, function(){
-                        console.log("You're registered: ", this.state.User);
+                        console.log("You're registered: ", this.state.User, this.state.auth);
                     });
 
                 }
@@ -62,7 +90,7 @@ getUserValues() {
        <BrowserRouter>
         <div className="App">
               <UserInfo />
-              <Topnavbar getUserValues={this.getUserValues} auth={this.state.auth}/>
+              <Topnavbar getUserValues={this.getUserValues}  auth={this.state.auth} />
               
               <div className="row">
                 <Sidenav className="col-2"/>

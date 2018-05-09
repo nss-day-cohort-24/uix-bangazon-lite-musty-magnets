@@ -51,7 +51,7 @@ let CreateUserFormTemplate = (props) => {
           <Input type="number" name="userCRV" id="userCRV" placeholder="456" />
         </FormGroup>
 
-        <Buttons class="btn-create-account float-right" function={props.getNewUserValues} label={"Create Account"}/>
+        <Buttons class="btn-create-account float-right" function={props.getNewUserValues} onClick={()=>{props.toggleAll()}} label={"Create Account"}/>
       </Form>
     );
   }

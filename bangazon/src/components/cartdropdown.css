@@ -20,7 +20,11 @@
     padding-left: .4rem;
 }
 .cart-small {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
+    color: rgb(75, 229, 167);
+    margin: .6rem .6rem;
+    padding: 0 !important;
+    float: right;
 }
 
 .dropdown-menu {
@@ -59,4 +63,7 @@ hr {
 
 .btn-checkout {
     margin: auto;  
+}
+.cart-small:hover {
+    color: #ff5e41;
 }

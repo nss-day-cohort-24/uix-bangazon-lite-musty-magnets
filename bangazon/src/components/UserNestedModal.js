@@ -44,7 +44,7 @@ class UserNestedModal extends React.Component {
             <div className="userDiv">
                 <i class="fas fa-user" onClick={this.toggle}>{this.props.buttonLabel}</i>
                 <p>profile</p>
-                <Modal isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+                <Modal isOpen={this.state.modal} toggle={this.state.toggle} className={this.props.className}>
                     <ModalHeader toggle={this.toggle}>User Login</ModalHeader>
                     <ModalBody>
                         <UserLoginForm 
@@ -52,6 +52,7 @@ class UserNestedModal extends React.Component {
                             toggle={this.toggle} 
                             getUserValues={this.props.getUserValues}
                             auth={this.props.auth}
+                            toggleAll={this.toggleAll}
                             />
                         <br/>
                         <div className="createAccountDiv">
@@ -61,8 +62,8 @@ class UserNestedModal extends React.Component {
                         <Modal isOpen={this.state.nestedModal} toggle={this.toggleNested} onClosed={this.state.closeAll ? this.toggle : undefined}>
                             <ModalHeader>Create Your User Account</ModalHeader>
                             <ModalBody>
-                                <CreateUserForm />
-                                <Buttons class={`btn-account-cancel`} label={"Cancel"} function={this.toggleAll} />
+                                <CreateUserForm toggle={this.toggle}/>
+                                <Buttons class={`btn-account-cancel`} label={"Cancel"} function={this.toggleAll} toggle={this.toggle}/>
                             </ModalBody>
                         </Modal>
                     </ModalBody>
