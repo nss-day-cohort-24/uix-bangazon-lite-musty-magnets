@@ -58,11 +58,11 @@
 }
 
 hr {
-    margin: 0;
+    margin-bottom: .5rem;
 }
 
 .btn-checkout {
-    margin: auto;  
+    margin: auto;
 }
 .cart-small:hover {
     color: #ff5e41;
