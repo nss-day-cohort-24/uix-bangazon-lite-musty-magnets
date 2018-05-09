@@ -8,9 +8,14 @@ import CategoryProdTemplate from './CategoryProdTemplate'
 
 let CategoryProds = (props) => {
     let data = props.location.state;
+    let user = props.user;
+    let auth = props.auth;
+    console.log("hey props",props)
+
+
         return(
             <div>
-                <CategoryProdTemplate data={data.objresult} />
+                <CategoryProdTemplate data={data.objresult} user={user} auth={auth}/>
             </div>
         )
 }
