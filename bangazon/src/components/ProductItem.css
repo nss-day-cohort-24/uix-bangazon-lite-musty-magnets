@@ -36,7 +36,7 @@ Modal.Product-Item-modal {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 3.2rem;
-    color: rgb(75, 229, 167);
+    color: #77f9d2;
 }
 
 .product-item-Qty {
@@ -77,6 +77,6 @@ Modal.Product-Item-modal {
 }
 
 #cartInput:focus {
-    border: 1px solid rgb(75, 229, 167);
+    border: 1px solid #77f9d2;
     box-shadow: 0 0 10px rgba(75, 229, 167, .3);
 }
