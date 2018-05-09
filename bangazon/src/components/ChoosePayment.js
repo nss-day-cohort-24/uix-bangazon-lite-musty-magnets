@@ -19,8 +19,8 @@ export default function ChoosePayment() {
 				<h2 className="col-12 body-title"><span>Payment Information</span><button className="btn btn-light">Back</button></h2>
 
 					<PaymentOptions />
-					<PaymentCC />
-					<PaymentConfirm />
+					{/*<PaymentCC />*/}
+					{/*<PaymentConfirm />*/}
 				
 			</div>
 
