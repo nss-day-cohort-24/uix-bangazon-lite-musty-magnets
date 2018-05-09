@@ -1,23 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
 .choose_payment{
 	height: 500px;
-	border: 1px solid black;
-	border-radius: 5px;
-	padding: 0;
 }
 
-.payment_col {
-	height: 100%;
+.main_body {
+	padding: 1rem;
 }
 
-.header {
-	background-color: grey;
+
+.body-title {
 	margin: 0;
-	padding: 0;
-	height: 10%;
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: space-between;
+	padding: 0 1rem;
 }
 
-.header h1 {
-	color: white;
-	text-align: center;
-	/*text-transform: uppercase;*/
+.body-title > * {
+	flex: 0 1 auto;
+}
+
+h2.body-title {
+	font-size: 1.5em;
+	font-weight: bold;
+}
+
+.btn-light {
+	width: 4rem;
+	margin: 0;
 }
