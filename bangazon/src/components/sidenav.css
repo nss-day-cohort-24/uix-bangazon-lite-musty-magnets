@@ -1,19 +1,35 @@
 .sideNav {
-    background-color: #cdcdcd;
+    background-color: #eeeeee;
     height: 700px;
-    z-index: -1;
+    z-index: 1;
 }
 
 .sideNav-wrap {
-    margin: 4rem 3rem;
+    margin: 1rem auto;
 }
 
 h5.sideNav-label {
     font-family: Helvetica, sans-serif;
     font-weight: bolder;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color:#707070;
+    font-size: 1.1rem;
+    /* text-transform: uppercase; */
+    color:#5d5d5d;
     padding-bottom: 1rem;
     text-align: left;
+    margin-top: 1rem;
+}
+
+.nav-link {
+    color: #5d5d5d;
+}
+
+.nav-link:hover {
+    color: #292929;
+}
+
+.badge-pill {
+    background-color: white;
+    color: #ff5e41;
+    font-size: .9rem;
+    border-radius: 4px;
 }

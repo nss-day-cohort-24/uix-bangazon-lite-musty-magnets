@@ -1,3 +1,15 @@
+.userDiv p {
+    color: #212529;
+    font-family: 'Helvettica', sans-serif;
+    margin-bottom: 0px;
+    font-size: .8rem;
+    
+}
+
+.createAccountDiv {
+    padding-top: 30px;
+}
+
 .fa-user{
     color: #ff5e41;
     font-size: 2rem;
@@ -9,12 +21,4 @@
     cursor: pointer;
     color: rgb(75, 229, 167);
     transition: .1s ease-in-out;
-}
-
-.userDiv p {
-    color: #212529;
-    font-family: 'Helvettica', sans-serif;
-    margin-bottom: 0px;
-    font-size: .8rem;
-    letter-spacing: 2px;
 }
