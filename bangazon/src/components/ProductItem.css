@@ -16,4 +16,67 @@ Modal.Product-Item-modal {
  .Product-item-img{
      object-fit: cover;
      width: 100%;
+     border-radius: 4px;
  }
+
+ @media (min-width: 576px) {
+     .modal-dialog {
+         max-width: 70%;
+         height: 80vh;
+         margin: 1.75rem auto;
+        }
+    }
+
+.modal-dialog img {
+    height: 410px;
+    margin-bottom: .1rem;
+}
+
+.Product-item-row h2 {
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 3.2rem;
+    color: #77f9d2;
+}
+
+.product-item-Qty {
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-right: 0px;
+}
+
+.pd-name{
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-top: -.8rem;
+    word-break: break-word;
+    /* line-height:2.5rem; */
+    /* letter-spacing: .3rem; */
+}
+
+.pd-category {
+    margin-top: .5rem;
+    color: #ff5e41;
+    display: block;
+    border-bottom: 1px solid #ff5e41;
+    padding-bottom: 1rem;
+    padding-top: .3rem;
+}
+
+.description-h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    margin-top: 2rem;
+}
+
+.cartInput {
+    width: 4rem;
+    height: 3.8rem;
+    border-radius: 0 4px 4px 0;
+}
+
+#cartInput:focus {
+    border: 1px solid #77f9d2;
+    box-shadow: 0 0 10px rgba(75, 229, 167, .3);
+}

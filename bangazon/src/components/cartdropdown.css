@@ -7,7 +7,7 @@
 
 .fa-shopping-cart:hover{
     cursor: pointer;
-    color: rgb(75, 229, 167);
+    color: #77f9d2;
     transition: .1s ease-in-out;
 }
 
@@ -21,7 +21,7 @@
 }
 .cart-small {
     font-size: 1.6rem;
-    color: rgb(75, 229, 167);
+    color: #77f9d2;
     margin: .6rem .6rem;
     padding: 0 !important;
     float: right;

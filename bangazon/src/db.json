@@ -271,7 +271,7 @@
       "name": "Lightsabre",
       "category": "Electronics",
       "image": "https://img.etsystatic.com/il/65e2f7/1062570773/il_570xN.1062570773_bh24.jpg?version=1",
-      "description": "Buy this for Brenda and she will get you a job. You will become a billionaire. Also she will save the world. ",
+      "description": "Buy this for Brenda and she will get you a job. You will become a billionaire. Also she will save the world. Be sure to spell lightsaber right though, we're American not English, by gawd.",
       "quantity": "1",
       "price": "250.00",
       "id": 4
@@ -437,6 +437,24 @@
       "quantity": "3",
       "price": "3.00",
       "id": 22
+    },
+    {
+      "name": "",
+      "category": "Select a category",
+      "image": "",
+      "description": "",
+      "quantity": "",
+      "price": "",
+      "id": 23
+    },
+    {
+      "name": "",
+      "category": "Select a category",
+      "image": "",
+      "description": "",
+      "quantity": "",
+      "price": "",
+      "id": 24
     }
   ],
   "orders_Products": [

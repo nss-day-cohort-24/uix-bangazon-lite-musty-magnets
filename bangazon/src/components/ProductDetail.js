@@ -56,7 +56,7 @@ class ProductDetail extends React.Component  {
 
         <div>
         <i class="fas fa-info circleInfo" onClick={this.toggle}></i>
-        <Modal className="Product-Item-modal" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+        <Modal className="Product-item-modal" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}></ModalHeader>
           <ModalBody>
                 
@@ -69,12 +69,7 @@ class ProductDetail extends React.Component  {
             description={this.props.description}/>
                     
           </ModalBody>
-          
-          <ModalFooter>
-            <Button color="btn-add-to-cart" onClick={this.addToCart}>Add to cart</Button>{' '}
-            <Buttons className={`btn-cancel`} label={"Cancel"} function={this.toggle} />
-          </ModalFooter>
-         
+        
         </Modal>
       </div>
     )
