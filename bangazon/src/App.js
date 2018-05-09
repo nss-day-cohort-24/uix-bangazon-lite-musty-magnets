@@ -5,19 +5,22 @@ import { UserInfo } from './components/db';
 import  ProductDetail from './components/ProductDetail';
 
 import { BrowserRouter } from 'react-router-dom';
-import Topnavbar from './components/Topnavbar';
+import TopNavbar from './components/Topnavbar';
 import Sidenav from './components/Sidenav';
 import Display from './components/Display';
 
 import './components/button.css';
 
+
 class App extends Component {
+  /* Event handler for search entry */
+  
   render() {
     return (
        <BrowserRouter>
         <div className="App">
               <UserInfo />
-              <Topnavbar />
+              <TopNavbar />
               
               <div className="row">
                 <Sidenav className="col-2"/>
