@@ -87,7 +87,7 @@ getUserValues() {
        <BrowserRouter>
         <div className="App">
               <UserInfo />
-              <Topnavbar getUserValues={this.getUserValues}  auth={this.state.auth} toggle={this.toggle} toggleAll={this.toggleAll} toggleNested={this.toggleNested}/>
+              <Topnavbar getUserValues={this.getUserValues} modal={this.state.modal} nestedModal={this.state.nestedModal} closeAll={this.state.closeAll} auth={this.state.auth} toggle={this.toggle} toggleAll={this.toggleAll} toggleNested={this.toggleNested}/>
               
               <div className="row">
                 <Sidenav className="col-2"/>
