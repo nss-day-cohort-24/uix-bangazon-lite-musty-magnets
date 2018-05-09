@@ -5,9 +5,9 @@ import ProductDetail from './ProductDetail';
 let TopProds = (props) => {
     const products = props.data.slice(0,3);
     const topProds = products.map((product, index) =>
-        <div key={index} className="">
+        <div key={index} className="d-flex align-items-center justify-content-between">
+            <small>{product.name}</small>
             <ProductDetail 
-                buttonLabel={<small>{product.name}</small>}
                 image={product.image}
                 price={product.price}
                 quantity={product.quantity}

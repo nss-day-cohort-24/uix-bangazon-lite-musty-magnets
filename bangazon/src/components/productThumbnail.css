@@ -22,6 +22,7 @@
     font-size: 1.1rem !important;
     margin: 0 auto;
     width: 100%;
+    height: 50px;
     /* position: absolute; */
     /* bottom: -12px; */
 
@@ -31,6 +32,8 @@
     background-color:white;
     color: #313131;
     padding: 0;
+    width: 100%;
+    margin: 0px .5rem;
     /* margin-top: 2rem; */
     border: none !important;
 }
