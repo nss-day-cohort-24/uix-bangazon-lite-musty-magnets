@@ -18,7 +18,7 @@ class topNavbar extends Component {
                     <p>sell</p>
                     </NavLink>
                     <CartDropDown />
-                    <UserNestedModal getUserValues={this.props.getUserValues} auth={this.props.auth} />
+                    <UserNestedModal getUserValues={this.props.getUserValues} auth={this.props.auth} User={this.props.User} />
                 </div>
             </div>
         )
