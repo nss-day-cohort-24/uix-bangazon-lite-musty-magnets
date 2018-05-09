@@ -6,7 +6,7 @@ import './button.css';
 let Buttons = (props) => {
         return (
             <div>
-                <Button className={props.class} onClick={() => { props.function()  }}>{props.label}</Button>{' '}
+                <Button className={props.class} onClick={() => { props.function(), props.toggle() }}>{props.label}</Button>{' '}
             </div>
         );
 }
