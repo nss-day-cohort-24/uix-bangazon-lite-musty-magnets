@@ -183,6 +183,7 @@
       "crv": ""
     },
     {
+<<<<<<< HEAD
       "uid": 52754,
       "id": 12,
       "first_name": "Richard",
@@ -206,6 +207,17 @@
       "address": "asdf",
       "city": "asdf",
       "phone": "23453252",
+=======
+      "uid": 60468,
+      "id": 12,
+      "first_name": "arthur",
+      "last_name": "smith",
+      "email": "arthurrankin1992@gmail.com",
+      "userpassword": "1234",
+      "address": "3222 windsor green drive",
+      "city": "murfreesboro",
+      "phone": "6152257853",
+>>>>>>> 1671defa62e89e18e7336a616a53e46d5c02afc4
       "cardnumber": "",
       "seller": null,
       "crv": ""
@@ -218,16 +230,16 @@
       "image": "https://www.newdinosaurs.com/wp-content/uploads/2016/01/27_stegosaurus_tom_miller.jpg",
       "description": "Your very own handmade living Stegosaurus. Your kids will love it!",
       "quantity": "34",
-      "price": "$985,599.00",
+      "price": "985.00",
       "id": 1
     },
     {
       "name": "Mega Man Helmet",
       "category": "Electronics",
       "image": "https://img.etsystatic.com/il/1d6c53/1511628405/il_570xN.1511628405_4nd1.jpg?version=1",
-      "description": "This is what you need! Get it while they are still in stock!",
+      "description": "This helmet will give you the awesome power of staying a virgin for the rest of your life!",
       "quantity": "3",
-      "price": "$79.99",
+      "price": "79.99",
       "id": 2
     },
     {
@@ -236,7 +248,7 @@
       "image": "https://img.etsystatic.com/il/0577d2/1416188684/il_570xN.1416188684_t7yh.jpg?version=1",
       "description": "These are beautiful and unique and great and stellar and outstanding and you should purchase them. Oh you don't like Pokemon? Deal with it. Buy these anyways.",
       "quantity": "40",
-      "price": "$39.99",
+      "price": "39.99",
       "id": 3
     },
     {
@@ -245,7 +257,7 @@
       "image": "https://img.etsystatic.com/il/65e2f7/1062570773/il_570xN.1062570773_bh24.jpg?version=1",
       "description": "Buy this for Brenda and she will get you a job. You will become a billionaire. Also she will save the world. ",
       "quantity": "1",
-      "price": "$250.00",
+      "price": "250.00",
       "id": 4
     },
     {
@@ -254,7 +266,7 @@
       "image": "https://img.etsystatic.com/il/864565/941087594/il_570xN.941087594_70dj.jpg?version=0",
       "description": "It's literally exactly what it sounds like. Not that cool, but its cheap atleast.",
       "quantity": "99",
-      "price": "$2.50",
+      "price": "2.50",
       "id": 5
     },
     {
@@ -263,7 +275,7 @@
       "image": "https://img.etsystatic.com/il/e26ddb/1062302642/il_570xN.1062302642_audy.jpg?version=0",
       "description": "This is called food. Put it into your mouth and chew as much as necessary. Then contract your esophageal muscles to force the soft moist \"food\" matter into body to be used as energy.",
       "quantity": "45",
-      "price": "$34.00",
+      "price": "34.00",
       "id": 6
     },
     {
@@ -272,32 +284,115 @@
       "image": "https://img.etsystatic.com/il/278656/1077616975/il_570xN.1077616975_ycqy.jpg?version=0",
       "description": "Take a break from programming and learn to hack the laws of the universe.",
       "quantity": "666",
-      "price": "$6.66",
+      "price": "6.66",
       "id": 7
     },
     {
       "name": "Fried Bologna Sandwichs",
       "category": "Miscellaneous",
-      "image": "",
+      "image": "https://food.fnr.sndimg.com/content/dam/images/food/fullset/2015/7/21/2/RO0102H_Carl-Johns-Fried-Bologna-Sandwich_s4x3.jpg.rend.hgtvcom.616.462.suffix/1437511817800.jpeg",
       "description": "Recession Special, served with a PBR and a bag of chips.",
       "quantity": "10",
       "price": "5.00",
       "id": 8
     },
     {
+
+      "name": "Reactxcaliber",
+      "category": "Miscellaneous",
+      "image": "https://www.karatemart.com/images/products/large/foam-toy-sword.jpg",
+      "description": "Foam swords made of many components.",
+      "quantity": "3",
+      "price": "19.99",
+      "id": 9
+    },
+    {
+      "name": "iWig",
+      "category": "Miscellaneous",
+      "image": "http://www.coolmenhairstyles.com/wp-content/uploads/Ghetto-Hairstyles-for-Men-7.jpg",
+      "description": "Only usable with proprietary Mac Producs",
+      "quantity": "999",
+      "price": "2700",
+      "id": 10
+    },
+    {
+      "name": "Darker Souls",
+      "category": "Video Games",
+      "image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/4004211/31444dc4703f36dd2eb2c583be2be6f201129278.jpg",
+      "description": "It's like Dark Souls, but harder, and DARKER.  It's basically the dark souls of dark souls.",
+      "quantity": "9",
+      "price": "59.99",
+      "id": 11
+    },
+    {
+      "name": "Sanic Heghog",
+      "category": "Video Games",
+      "image": "https://vignette.wikia.nocookie.net/meme/images/4/42/1385136139955.png/revision/latest?cb=20150207013804",
+      "description": "Sanic Heghod, fasterst mammal on grlobe. Collec, Respec, Inspec.  Runner fas.",
+      "quantity": "15",
+      "price": ".50",
+      "id": 12
+    },
+    {
+      "name": "King Arthur's Text Game",
+      "category": "Video Games",
+      "image": "https://steemitimages.com/DQmT6ffNwStqRHuahM9wXFoLFNa71tm5euBafrN3cm3mwpr/guilde-100006853-orig.png",
+      "description": "It's the only game I could make without Marc's help.  He's on the other team.",
+      "quantity": "57",
+      "price": "29.99",
+      "id": 13
+    },
+    {
+      "name": "The Glove",
+      "category": "Electronics",
+      "image": "https://i.ytimg.com/vi/IrePSVBU3G0/maxresdefault.jpg",
+      "description": "You aren't person enough to wear this glove.",
+      "quantity": "4",
+      "price": "399.99",
+      "id": 14
+    },
+    {
+      "name": "Lindsay",
+      "category": "Books",
+      "image": "https://image.ibb.co/d9UeJn/lindsay.png",
+      "description": "See in you HTMhelL",
+      "quantity": "70",
+      "price": "4.00",
+      "id": 15
+    },
+    {
+      "name": "Real Fake Door(Outdoor)",
+      "category": "Outdoor",
+      "image": "https://images.homedepot-static.com/productImages/98050f3e-7e51-4c7d-9882-37a80bb4a8cf/svn/unfinished-krosswood-doors-prehung-doors-ka-305v-16-68-138-lh-64_1000.jpg",
+      "description": "It's a 100% genuine real fake door for outdoor use only.  Keeps the wind out of your yard for good!",
+      "quantity": "6",
+      "price": "299.97",
+      "id": 16
+    },
+    {
+      "name": "VR Headset",
+      "category": "Video Games",
+      "image": "https://i.pinimg.com/originals/17/68/68/176868b81e1244edd6e9ad6e3c68c619.jpg",
+      "description": "You'll always look like a fool.",
+      "quantity": "1",
+      "price": "599.99",
+      "id": 17
+    },
+    {
+
       "name": "I Don't Know",
       "category": "Outdoor",
       "image": "http://cdn.shopify.com/s/files/1/1365/2497/products/unicorn-squirrel-feeder_grande.jpg?v=1520535227",
-      "description": "a;ldskgh;ahga",
-      "quantity": "",
+      "description": "Keep it outside.",
+      "quantity": "1",
       "price": "15.00",
       "id": 18
     },
     {
-      "name": "I Know",
+      "name": "The Red Dragon",
       "category": "Video Games",
       "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/800x480-Y_Ddraig_Goch.png/500px-800x480-Y_Ddraig_Goch.png",
-      "description": "You know what I'm doing.",
+      "description": "Be a red dragon and do red dragon stuff.",
       "quantity": "13",
       "price": "13.00",
       "id": 19
@@ -306,10 +401,30 @@
       "name": "The Greatest Movie Of All Time",
       "category": "Electronics",
       "image": "https://upload.wikimedia.org/wikipedia/en/5/55/Braveheart_imp.jpg",
-      "description": "\nBraveheart\nBraveheart imp.jpg\nNorth American theatrical release poster\nDirected by\tMel Gibson\nProduced by\t\nMel Gibson\nAlan Ladd, Jr.\nBruce Davey\nWritten by\tRandall Wallace\nStarring\t\nMel Gibson\nSophie Marceau\nPatrick McGoohan\nCatherine McCormack\nMusic by\tJames Horner\nCinematography\tJohn Toll\nEdited by\tSteven Rosenblum\nProduction\ncompany\nIcon Productions\nThe Ladd Company\nDistributed by\t\nParamount Pictures\n(North America)\n20th Century Fox (International)\nRelease date\nMay 18, 1995 (Seattle)\nMay 24, 1995 (United States)\nRunning time\n178 minutes\nCountry\tUnited States[1]\nLanguage\tEnglish\nBudget\t$65–70 million[2][3]\nBox office\t$210.4 million[2]\nBraveheart is a 1995 American epic war film directed by Mel Gibson, who stars as William Wallace, a late 13th-century Scottish warrior who led the Scots in the First War of Scottish Independence against King Edward I of England. The story is inspired by Blind Harry's epic poem The Actes and Deidis of the Illustre and Vallyeant Campioun Schir William Wallace and was adapted for the screen by Randall Wallace.",
+      "description": "\nBraveheart\nBraveheart imp.jpg\nNorth American theatrical release poster\nDirected by\tMel Gibson\nProduced by\t\nMel Gibson\nAlan Ladd, Jr.\nBruce Davey\nWritten by\tRandall Wallace\nStarring\t\nMel Gibson\nSophie Marceau\nPatrick McGoohan\nCatherine McCormack\nMusic by\tJames Horner\nCinematography\tJohn Toll\nEdited by\tSteven Rosenblum\nProduction\ncompany\nIcon Productions\nThe Ladd Company\nDistributed by\t\nParamount Pictures\n(North America)\n20th Century Fox (International)\nRelease date\nMay 18, 1995 (Seattle)\nMay 24, 1995 (United States)\nRunning time\n178 minutes\nCountry\tUnited States[1]\nLanguage\tEnglish\nBudget\t65–70 million[2][3]\nBox office\t210.4 million[2]\nBraveheart is a 1995 American epic war film directed by Mel Gibson, who stars as William Wallace, a late 13th-century Scottish warrior who led the Scots in the First War of Scottish Independence against King Edward I of England. The story is inspired by Blind Harry's epic poem The Actes and Deidis of the Illustre and Vallyeant Campioun Schir William Wallace and was adapted for the screen by Randall Wallace.",
       "quantity": "900",
       "price": "20.00",
       "id": 20
+    },
+    {
+
+      "name": "Electron",
+      "category": "Electronics",
+      "image": "https://d1o50x50snmhul.cloudfront.net/wp-content/uploads/2016/11/11170007/om_071116_schultze_naturephysics_pressebild.jpg.jpg",
+      "description": "What if every electron was the same electron?  What if you had enough time and energy to care?  You don't, me either.",
+      "quantity": "?",
+      "price": "0.00",
+      "id": 21
+    },
+    {
+      "name": "The Story of the Year",
+      "category": "Books",
+      "image": "https://upload.wikimedia.org/wikipedia/en/thumb/2/2d/Hoobastank_-_The_Reason_%28song%29.jpg/220px-Hoobastank_-_The_Reason_%28song%29.jpg",
+      "description": "1. Nothin' Wrong with Me, 2. Nothin' Wrong with Me, 3. Nothin' Wrong with Me...",
+      "quantity": "3",
+      "price": "3.00",
+      "id": 22
+
     }
   ],
   "orders_Products": [
@@ -336,6 +451,58 @@
       "productName": "Mega Man Helmet",
       "productImage": "https://img.etsystatic.com/il/1d6c53/1511628405/il_570xN.1511628405_4nd1.jpg?version=1",
       "id": 3
+    },
+    {
+      "productId": 20,
+      "userId": 23498809787097096,
+      "sellerId": 56721,
+      "productName": "The Greatest Movie Of All Time",
+      "productImage": "https://upload.wikimedia.org/wikipedia/en/5/55/Braveheart_imp.jpg",
+      "id": 4
+
+    },
+    {
+      "productId": 6,
+      "userId": 23498809787097096,
+      "sellerId": 56721,
+      "id": 5
+    },
+    {
+      "productId": 7,
+      "userId": 23498809787097096,
+      "sellerId": 56721,
+      "id": 6
+    },
+    {
+      "productId": 4,
+      "userId": 23498809787097096,
+      "sellerId": 56721,
+      "id": 7
+    },
+    {
+      "productId": 3,
+      "userId": 23498809787097096,
+      "sellerId": 56721,
+      "id": 8
+    },
+    {
+      "productId": 3,
+      "userId": 23498809787097096,
+      "sellerId": 56721,
+      "id": 9
+    },
+    {
+      "productId": 3,
+      "userId": 23498809787097096,
+      "sellerId": 56721,
+      "id": 10
+    },
+    {
+      "productId": 19,
+      "userId": 23498809787097096,
+      "sellerId": 56721,
+      "id": 11
+
     }
   ]
 }

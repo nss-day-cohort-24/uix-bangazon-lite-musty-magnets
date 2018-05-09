@@ -42,7 +42,11 @@ class UserNestedModal extends React.Component {
     render() {
         return (
             <div className="userDiv">
+<<<<<<< HEAD
                 <i class="fas fa-user" onClick={this.props.toggle}>{this.props.buttonLabel}</i>
+=======
+                <i className="fas fa-user" onClick={this.toggle}>{this.props.buttonLabel}</i>
+>>>>>>> 1671defa62e89e18e7336a616a53e46d5c02afc4
                 <p>profile</p>
                 <Modal isOpen={this.props.modal} toggle={this.props.toggle} className={this.props.className}>
                     <ModalHeader toggle={this.toggle}>User Login</ModalHeader>

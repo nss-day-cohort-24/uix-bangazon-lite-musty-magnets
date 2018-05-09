@@ -35,13 +35,13 @@ getValues() {
     body: JSON.stringify(newProduct)
 })
 .then(() => {
-    document.getElementById("prodName").value = "";
-    document.getElementById("prodCategory").value = "";
-    document.getElementById("imageURL").value = "";
-    document.getElementById("prodDescription").value = "";
-    document.getElementById("prodQuantity").value = "";
-    document.getElementById("prodPrice").value = "";
-    alert("Product Added")
+    // document.getElementById("prodName").value = "";
+    // document.getElementById("prodCategory").value = "";
+    // document.getElementById("imageURL").value = "";
+    // document.getElementById("prodDescription").value = "";
+    // document.getElementById("prodQuantity").value = "";
+    // document.getElementById("prodPrice").value = "";
+    // alert("Product Added")
 }
 )
 
