@@ -1,19 +1,51 @@
 .sideNav {
-    background-color: #cdcdcd;
-    height: 700px;
+    background-color: #eeeeee;
     z-index: 1;
+    margin-left: 15px;
 }
 
 .sideNav-wrap {
-    margin: 4rem 3rem;
+    margin: 1rem auto;
+    border-bottom: 1px solid #ff5e41;
 }
 
 h5.sideNav-label {
     font-family: Helvetica, sans-serif;
     font-weight: bolder;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color:#707070;
+    font-size: 1.1rem;
+    /* text-transform: uppercase; */
+    color:#5d5d5d;
     padding-bottom: 1rem;
     text-align: left;
+    margin-top: 1rem;
+}
+
+.nav-link {
+    color: #5d5d5d;
+    font-weight: 700;
+}
+
+.nav-link:hover {
+    color: #292929;
+}
+
+.badge-pill {
+    background-color: white;
+    color: #ff5e41;
+    font-size: .9rem;
+    border-radius: 4px;
+}
+
+small {
+    margin-left: 1.5rem;
+}
+
+.sideNav i {
+    margin-right: 0px;
+}
+
+.sideNav li {
+    padding-bottom: 1rem;
+    padding-top: .5rem;
+    border-bottom: 1px solid #ff5e41;
 }

@@ -1,5 +1,4 @@
 import React from 'react';
-import ProductThumbnail from "./ProductThumbnail.js";
 import CategoryProdTemplate from './CategoryProdTemplate.js';
 
 class ProductHomePage extends React.Component {

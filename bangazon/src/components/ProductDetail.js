@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Form, FormGroup, Label, Input, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import ProductItem from './ProductItem';
 import './ProductItem.css';
@@ -15,20 +15,48 @@ class ProductDetail extends React.Component  {
       };
   
       this.toggle = this.toggle.bind(this);
+      this.addToCart = this.addToCart.bind(this);
     }
   
     toggle() {
       this.setState({
         modal: !this.state.modal
       });
+      
+
     }
-  
+
+    addToCart(){
+      console.log("these here props",this.props);
+      let addCartObj = {
+          "productId": this.props.id,
+          "userId": 23498809787097098,
+          "sellerId": 56721,
+          "productName":this.props.name,
+          "productImage":this.props.image
+      }
+
+      fetch("http://localhost:3000/orders_Products",
+      {
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          method: "POST",
+          body: JSON.stringify(addCartObj)
+      })
+
+      this.setState({
+        modal: !this.state.modal
+      });
+
+    }
     render() {
       return (
 
         <div>
-          <Button color="danger" onClick={this.toggle}>{this.props.buttonLabel}</Button>
-        <Modal className="Product-Item-modal" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
+        <i class="fas fa-info circleInfo" onClick={this.toggle}></i>
+        <Modal className="Product-item-modal" isOpen={this.state.modal} toggle={this.toggle} className={this.props.className}>
           <ModalHeader toggle={this.toggle}></ModalHeader>
           <ModalBody>
                 
@@ -41,12 +69,7 @@ class ProductDetail extends React.Component  {
             description={this.props.description}/>
                     
           </ModalBody>
-          
-          <ModalFooter>
-            <Button color="btn-add-to-cart" onClick={this.toggle}>Add to cart</Button>{' '}
-            <Buttons className={`btn-cancel`} label={"Cancel"} function={this.toggle} />
-          </ModalFooter>
-         
+        
         </Modal>
       </div>
     )

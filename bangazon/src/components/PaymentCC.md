@@ -1,0 +1,5 @@
+PaymentCC example:
+
+```js
+<PaymentCC />
+```

@@ -24,7 +24,7 @@ class SearchBar extends Component {
                     this.setState({
                         productArray: data
                     },  
-                 ReturnProductItems)
+                    )
                     console.log ("what is in productArray?", this.state);
                 })
     }     
@@ -38,8 +38,8 @@ class SearchBar extends Component {
     }
 
 
-    ReturnProductItems = (props) => {
-        const ProductItems = props.productArray.map((product, index) => {
+    ReturnProductItems = () => {
+        const ProductItems = this.state.productArray.map((product, index) => {
         
             <div key={index} >
 
@@ -64,9 +64,9 @@ class SearchBar extends Component {
                <Input 
                className="Search-bar" type="text" onKeyPress={this.handleInputChange} id="search" placeholder="Search..." /> 
                 
-                <Display /> 
+                {/* <Display />  */}
                  <div className="d-flex flex-wrap">
-                    { ReturnProductItems }
+                    { ProductItems }
                 </div>
                 
             </div>

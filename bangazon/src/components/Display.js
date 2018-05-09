@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import ProductSellForm from './ProductSellForm';
-import { Route } from 'react-router-dom';
+import { Route, BrowserRouter } from 'react-router-dom';
 import ProductHomePage from './ProductHomePage';
 import './display.css'
 import CategoryProds from './CategoryProds';
 import SearchBar from './SearchBar';
 
-class Display extends Component {
-    render() {
+export default function Display() {
         return(
-            //<BrowserRouter>
+            
             <div className="col-9">
                 <Route exact path='/' component={ProductHomePage} />
                 <Route path='/ProductsSellForm' component={ProductSellForm} />
@@ -17,10 +16,5 @@ class Display extends Component {
                 {/* <Route path='/SearchBar' component={SearchBar} /> */}
             </div>
 
-            //</BrowserRouter>
         )
     }
-
-}
-
-export default Display;

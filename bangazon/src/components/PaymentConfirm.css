@@ -1,0 +1,24 @@
+
+@import url('https://use.fontawesome.com/releases/v5.0.12/css/all.css');
+
+.payment_box {
+	padding: 0 1rem;
+}
+
+.checkmark {
+	padding: 1rem;
+	display: flex;
+	justify-content: center;
+}
+
+.fa-check-circle {
+	font-size: 6rem;
+	color: #F2682E;
+}
+
+h2{
+	text-align: center;
+}
+
+
+

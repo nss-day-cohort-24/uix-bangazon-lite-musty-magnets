@@ -1,0 +1,5 @@
+Payment example:
+
+```js
+<Payment />
+```

@@ -25,7 +25,7 @@ import productImage from '../images/productImage.png'
                     <div className="row align-self-end">
                       <FormGroup className="col">{/*Price per Unit*/}
                           <Label for="prodPrice">Product Price</Label>
-                          <InputGroup>
+                          <InputGroup className="priceInputGroup">
                             <InputGroupAddon addonType="prepend" className="prependDollar">$</InputGroupAddon>
                             <Input placeholder="ex 10.00" type="number" step="1" className="priceInput" name="prodPrice" id="prodPrice" />
                         </InputGroup>
