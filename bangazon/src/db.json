@@ -282,6 +282,33 @@
       "quantity": "900",
       "price": "20.00",
       "id": 20
+    },
+    {
+      "name": "",
+      "category": "Select a category",
+      "image": "",
+      "description": "",
+      "quantity": "",
+      "price": "",
+      "id": 21
+    },
+    {
+      "name": "",
+      "category": "Select a category",
+      "image": "",
+      "description": "",
+      "quantity": "",
+      "price": "",
+      "id": 22
+    },
+    {
+      "name": "",
+      "category": "Select a category",
+      "image": "",
+      "description": "",
+      "quantity": "",
+      "price": "",
+      "id": 23
     }
   ],
   "orders_Products": [
@@ -308,6 +335,14 @@
       "productName": "Mega Man Helmet",
       "productImage": "https://img.etsystatic.com/il/1d6c53/1511628405/il_570xN.1511628405_4nd1.jpg?version=1",
       "id": 3
+    },
+    {
+      "productId": 20,
+      "userId": 23498809787097096,
+      "sellerId": 56721,
+      "productName": "The Greatest Movie Of All Time",
+      "productImage": "https://upload.wikimedia.org/wikipedia/en/5/55/Braveheart_imp.jpg",
+      "id": 4
     }
   ]
 }
