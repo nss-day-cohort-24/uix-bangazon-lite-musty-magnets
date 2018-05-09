@@ -1,5 +1,7 @@
 import React from 'react';
 import { Dropdown, DropdownMenu, DropdownToggle } from 'reactstrap';
+import Buttons from './Buttons.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './cartdropdown.css';
 
 export default class CartDropDown extends React.Component {
@@ -43,14 +45,37 @@ dropdownLoaded:true}))
           data-toggle="dropdown"
           aria-expanded={this.state.dropdownOpen}
         >
-        <div className="cartDiv align-items-center justify-content-center">
-        <i className="fas fa-shopping-cart"></i>
-        <p>cart</p>
-        </div>
+          <div className="cartDiv align-items-center justify-content-center">
+            <i className="fas fa-shopping-cart"></i>
+            <p>cart</p>
+          </div>
+
         </DropdownToggle>
+
         <DropdownMenu>
-        {this.state.dropdownItems.map((product,index) =>
-        <div key={index} onClick={this.toggle}><img src={product.productImage} className="w-25 h-25" />{product.productName}</div>)}
+
+          <div>
+            {this.state.dropdownItems.map((product,index) =>
+            <div class="dropdown_cart_item" key={index} onClick={this.toggle}>
+
+              <div className="imageThumb">
+                <img src={product.productImage} />
+              </div>
+
+
+              <div className="cart_item_desc">
+                <h6>{product.productName}</h6>
+                <p>{product.productDescription}</p>
+              </div>
+
+              <Buttons class="btn-remove" label="Remove"/>
+
+            </div>)}
+
+            <hr />
+              <Buttons class="btn-checkout" label="Checkout" />
+          </div>
+
         </DropdownMenu>
       </Dropdown>
     );

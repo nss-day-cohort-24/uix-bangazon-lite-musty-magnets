@@ -13,7 +13,7 @@
 
 .cartDiv p {
     color: #212529;
-    font-family: 'Helvettica', sans-serif;
+    font-family: 'Helvetica', sans-serif;
     margin-bottom: 0px;
     font-size: .8rem;
     letter-spacing: 2px;
@@ -27,6 +27,43 @@
     float: right;
 }
 
+.dropdown-menu {
+    width: 350px;
+}
+
+.dropdown_cart_item {
+    display: flex;
+    /*justify-content: space-between;*/
+    padding: 1rem;
+    height: 6rem;
+}
+
+.imageThumb {
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+    height: 100%;
+    width: 25%;
+    overflow: hidden;
+    margin-right: 1rem;
+}
+
+.imageThumb img {
+    width: 100%;
+}
+
+.cart_item_desc {
+    margin-right: 1rem;
+    width: 50%;
+}
+
+hr {
+    margin-bottom: .5rem;
+}
+
+.btn-checkout {
+    margin: auto;
+}
 .cart-small:hover {
     color: #ff5e41;
 }
