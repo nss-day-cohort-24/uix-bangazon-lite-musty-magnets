@@ -143,7 +143,7 @@ getNewUserValues() {
     return (
         <div>
             <CreateUserFormTemplate 
-            getNewUserValues = {this.getNewUserValues}/>
+            getNewUserValues = {this.getNewUserValues} toggleAll = {this.props.toggleAll}/>
         </div>
     );
   }

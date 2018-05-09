@@ -62,8 +62,8 @@ class UserNestedModal extends React.Component {
                         <Modal isOpen={this.state.nestedModal} toggle={this.toggleNested} onClosed={this.state.closeAll ? this.toggle : undefined}>
                             <ModalHeader>Create Your User Account</ModalHeader>
                             <ModalBody>
-                                <CreateUserForm />
-                                <Buttons class={`btn-account-cancel`} label={"Cancel"} toggleAll={this.toggleAll} toggle={this.toggle}/>
+                                <CreateUserForm toggle={this.toggle}/>
+                                <Buttons class={`btn-account-cancel`} label={"Cancel"} function={this.toggleAll} toggle={this.toggle}/>
                             </ModalBody>
                         </Modal>
                     </ModalBody>
