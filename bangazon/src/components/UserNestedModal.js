@@ -5,6 +5,7 @@ import CreateUserForm from "./CreateUserForm";
 import './UserNestedModal.css';
 import '../App.css';
 import Buttons from './Buttons';
+import "./userModal.css";
 
 class UserNestedModal extends React.Component {
     constructor(props) {
@@ -79,7 +80,7 @@ class UserNestedModal extends React.Component {
             return (
                 <div className="userDiv">
                     <i class="fas fa-user" onClick={this.toggle}>{this.props.buttonLabel}</i>
-                    <p>Profile</p>
+                    <p>profile</p>
                     <Modal isOpen={this.state.modal} toggle={this.state.toggle} className={this.props.className}>
                         <ModalHeader toggle={this.toggle}>User Login</ModalHeader>
                         <ModalBody>
