@@ -6,6 +6,32 @@ import './button.css';
 
 
 let ProductItem = (props) => {
+
+    function addToCart(){
+        let cartQuant = document.getElementById("cartInput").value;
+        let addCartObj = {
+            "productId": props.id,
+            "userId": props.user,
+            "sellerId": 56721,
+            "productName":props.name,
+            "productImage":props.image,
+            "quantity":cartQuant
+        }
+  
+        fetch("http://localhost:3000/orders_Products",
+        {
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+            method: "POST",
+            body: JSON.stringify(addCartObj)
+        })
+  
+        window.alert("Added to Cart");
+  
+      }
+
     return (  
     
         <div className="Product-item">
@@ -19,7 +45,7 @@ let ProductItem = (props) => {
                     <div className="row Product-item-row">
                         <h2 className="col-6 text-left">${props.price}</h2>
                         <div className="col d-flex justify-content-end">
-                            <Button className="btn-add-to-cart col-5" onClick={this.addToCart}>Add to cart</Button>{' '}
+                            <Button className="btn-add-to-cart col-5" onClick={addToCart}>Add to cart</Button>{' '}
                             <Input placeholder="ex 10" type="number" step="1" className="cartInput" name="cartInput" id="cartInput" />
                         </div>
                     </div>

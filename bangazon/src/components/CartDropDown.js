@@ -36,9 +36,9 @@ export default class CartDropDown extends React.Component {
 //   };
 
   update() {
-        console.log(this.props,"LOOKAT ME");
+
     let userID = this.props.user.id;
-    console.log("USERID",userID);
+
     
     fetch(`http://localhost:3000/orders_Products?userId=${userID}`)
   .then(function(response) {
@@ -46,7 +46,7 @@ export default class CartDropDown extends React.Component {
   })
   .then(data => this.setState({dropdownItems:data,
     dropdownLoaded:true}))
-    console.log("cartprops",this.props);
+
   }
 
   render() {
