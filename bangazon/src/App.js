@@ -60,15 +60,16 @@ getUserValues() {
 
 
   render() {
+    console.log("THISSTATE",this.state);
     return (
        <BrowserRouter>
         <div className="App">
               <UserInfo />
-              <Topnavbar getUserValues={this.getUserValues} User={this.state.User} auth={this.state.auth} />
+              <Topnavbar getUserValues={this.getUserValues} modal={this.state.modal} nestedModal={this.state.nestedModal} closeAll={this.state.closeAll} auth={this.state.auth} toggle={this.toggle} toggleAll={this.toggleAll} toggleNested={this.toggleNested} user={this.state.User}/>
               
               <div className="row">
                 <Sidenav className="col-2"/>
-                <Display className="col-10" />
+                <Display className="col-10" auth={this.state.auth} user={this.state.User} />
               </div>
              
         </div>
