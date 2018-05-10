@@ -52,7 +52,7 @@ dropdownLoaded:true}))
 
         </DropdownToggle>
 
-        <DropdownMenu>
+        <DropdownMenu right>
 
           <div>
             {this.state.dropdownItems.map((product,index) =>
