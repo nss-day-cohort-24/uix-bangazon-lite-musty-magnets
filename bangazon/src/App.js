@@ -60,7 +60,6 @@ getUserValues() {
 
 
   render() {
-    console.log("THISSTATE",this.state);
     return (
        <BrowserRouter>
         <div className="App">

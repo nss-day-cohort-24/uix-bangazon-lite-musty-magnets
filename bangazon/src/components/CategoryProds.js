@@ -10,7 +10,7 @@ let CategoryProds = (props) => {
     let data = props.location.state;
     let user = props.user;
     let auth = props.auth;
-    console.log("hey props",props)
+
 
 
         return(

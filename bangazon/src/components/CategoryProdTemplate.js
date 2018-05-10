@@ -8,8 +8,7 @@ import './cartdropdown.css';
 let CategoryProdTemplate = (props) => {
 
     function handleClick(data) {
-        console.log("data",data);
-        console.log("yolanda",props);
+
         if(props.auth){
         let addCartObj = {
             "productId": data.id,
@@ -30,13 +29,13 @@ let CategoryProdTemplate = (props) => {
         })
 
         window.alert("Added to Cart")
-        console.log("barry young",props.user,props.auth);
+
     }else{
 
         window.alert("Please Log In");
     }
     }
-    console.log("CatProd Props",props)
+
     const categoryItems = props.data.map((product, index) =>
     <div key={index} className="card mt-4 mr-2 ml-2 product-card" >
             <img className="card-img-top" src={product.image} alt="Card cap" />
@@ -55,7 +54,8 @@ let CategoryProdTemplate = (props) => {
                 name={product.name}
                 category={product.category}
                 description={product.description}
-                id={product.id}/>         
+                id={product.id}
+                user={props.user.id} />         
 
             </div>
     </div>

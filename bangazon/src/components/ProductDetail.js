@@ -15,7 +15,6 @@ class ProductDetail extends React.Component  {
       };
   
       this.toggle = this.toggle.bind(this);
-      this.addToCart = this.addToCart.bind(this);
     }
   
     toggle() {
@@ -26,31 +25,6 @@ class ProductDetail extends React.Component  {
 
     }
 
-    addToCart(){
-      console.log("these here props",this.props);
-      let addCartObj = {
-          "productId": this.props.id,
-          "userId": 23498809787097098,
-          "sellerId": 56721,
-          "productName":this.props.name,
-          "productImage":this.props.image
-      }
-
-      fetch("http://localhost:3000/orders_Products",
-      {
-          headers: {
-            'Accept': 'application/json',
-            'Content-Type': 'application/json'
-          },
-          method: "POST",
-          body: JSON.stringify(addCartObj)
-      })
-
-      this.setState({
-        modal: !this.state.modal
-      });
-
-    }
     render() {
       return (
 
@@ -66,7 +40,8 @@ class ProductDetail extends React.Component  {
             quantity={this.props.quantity}
             name={this.props.name}
             category={this.props.category}
-            description={this.props.description}/>
+            description={this.props.description}
+            user={this.props.user}/>
                     
           </ModalBody>
         
