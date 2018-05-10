@@ -67,7 +67,7 @@ export default class CartDropDown extends React.Component {
 
         </DropdownToggle>
 
-        <DropdownMenu>
+        <DropdownMenu right>
 
           <div>
             {this.state.dropdownItems.map((product,index) =>

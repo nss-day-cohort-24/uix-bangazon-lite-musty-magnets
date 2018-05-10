@@ -11,6 +11,12 @@
     transition: .1s ease-in-out;
 }
 
+.fa-shopping-cart:active {
+    cursor: pointer;
+    color: #77f9d2;
+    transition: .1s ease-in-out;
+}
+
 .cartDiv p {
     color: #212529;
     font-family: 'Helvetica', sans-serif;
@@ -29,6 +35,7 @@
 
 .dropdown-menu {
     width: 350px;
+    box-shadow: 4px 4px 20px -5px rgba(0,0,0,0.75);
 }
 
 .dropdown_cart_item {
