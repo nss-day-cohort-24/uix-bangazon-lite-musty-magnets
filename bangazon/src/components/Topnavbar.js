@@ -19,6 +19,8 @@ class TopNavbar extends Component {
 
                  {/* user input product search */}
                  <SearchBar className="col-6"
+                 handleInputChange={this.props.handleInputChange}
+                 data={this.props.data}
                  />  
 
                 <div className="navIcons col-3 d-flex text-center">
