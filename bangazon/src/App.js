@@ -33,7 +33,7 @@ class App extends Component {
     this.toggleAll = this.toggleAll.bind(this);
 }
 
-    SearchResults = () => {
+    SearchResults = (props) => {
         Object.keys(this.state.productArray).map((product, index) => (
 
         <div key={index} >
@@ -46,7 +46,6 @@ class App extends Component {
         </div>     
     ));
     }
-
 
 getProduct = (taco) => {
     console.log ("what is taco in getProduct?", taco);
@@ -90,7 +89,6 @@ toggleAll() {
     }, function(){
         console.log("You clicked submit!", this);
     });
-    
 }
 
 getUserValues() {
@@ -128,7 +126,6 @@ getUserValues() {
 
   render() {
       
-    
     return (
        <BrowserRouter>
         <div className="App">

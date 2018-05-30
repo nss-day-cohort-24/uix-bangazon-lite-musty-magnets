@@ -21,17 +21,17 @@ class Sidenav extends Component {
     componentDidMount = () => {
      
         fetch('http://localhost:3000/product?category=Electronics')
-        .then(function(response) {
+        .then(response => {
         return response.json();
         })
         .then((data) => {
         this.setState({
-            ElectArray:data 
+            ElectArray: data 
         })
         
         });
         fetch('http://localhost:3000/product?category=Books')
-        .then(function(response) {
+        .then(response => {
         return response.json();
         })
         .then((data) => {
@@ -42,7 +42,7 @@ class Sidenav extends Component {
         
         });
         fetch('http://localhost:3000/product?category=Outdoor')
-        .then(function(response) {
+        .then((response) => {
         return response.json();
         })
         .then((data) => {
@@ -51,7 +51,7 @@ class Sidenav extends Component {
         })
         });
         fetch('http://localhost:3000/product?category=Miscellaneous')
-        .then(function(response) {
+        .then((response) => {
         return response.json();
         })
         .then((data) => {
@@ -61,7 +61,7 @@ class Sidenav extends Component {
         
         });
         fetch('http://localhost:3000/product?category=Video Games')
-        .then(function(response) {
+        .then((response) => {
         return response.json();
         })
         .then((data) => {

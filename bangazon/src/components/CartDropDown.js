@@ -24,9 +24,9 @@ export default class CartDropDown extends React.Component {
     let userID = 23498809787097096
     
     fetch(`http://localhost:3000/orders_Products?userId=${userID}`)
-  .then(function(response) {
+  .then(response => {
     return response.json();
-  })
+    })
   .then(data => this.setState({dropdownItems:data,
 dropdownLoaded:true}))
   };

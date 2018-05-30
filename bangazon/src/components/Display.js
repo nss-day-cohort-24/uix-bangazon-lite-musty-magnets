@@ -16,7 +16,7 @@ export default function Display() {
                 <Route exact path='/' component={ProductHomePage} />
                 <Route path='/ProductsSellForm' component={ProductSellForm} />
                 <Route path='/CategoryProduct' component={CategoryProds} />
-                <Route path='/SearchResults' component={SearchResults} />
+                <Route path='/SearchResults' component={() => <SearchResults data={this.state.productArray} />} />
                 
             </Switch>
             </div>
