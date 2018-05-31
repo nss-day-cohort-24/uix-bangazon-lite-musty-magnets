@@ -19,18 +19,11 @@ class App extends Component {
     this.state = {
         User : {},
         auth: false,
-        modal: false,
-        nestedModal: false,
-        closeAll: false,
-        searchString: '',
-        productArray : []
-        // results: []
+        
     };
     this.getProduct = this.getProduct.bind(this);
     this.getUserValues = this.getUserValues.bind(this);
-    this.toggle = this.toggle.bind(this);
-    this.toggleNested = this.toggleNested.bind(this);
-    this.toggleAll = this.toggleAll.bind(this);
+   
 }
 
     SearchResults = (props) => {
@@ -125,10 +118,10 @@ getUserValues() {
 
 
   render() {
-      
+    console.log("THISSTATE",this.state);
     return (
        <BrowserRouter>
-        <div className="App">
+        {/* <div className="App"> */}
               <UserInfo />
               <TopNavbar 
                getUserValues={this.getUserValues}
@@ -145,12 +138,20 @@ getUserValues() {
               <div className="row">
                 <Sidenav className="col-3"/>
                 <Display className="col-9 " data={this.state.productArray} />
+              <Topnavbar getUserValues={this.getUserValues} modal={this.state.modal} nestedModal={this.state.nestedModal} closeAll={this.state.closeAll} auth={this.state.auth} toggle={this.toggle} toggleAll={this.toggleAll} toggleNested={this.toggleNested} user={this.state.User}/>
+              
+              <div className="row">
+                <Sidenav className="col-2"/>
+                <Display className="col-10" auth={this.state.auth} user={this.state.User} />
               </div>
              
-        </div>
-      </BrowserRouter>
-    );
+            </div>
+        {/* </div> */}
+
+        </BrowserRouter>
+    )
   }
 }
+  
 
 export default App;

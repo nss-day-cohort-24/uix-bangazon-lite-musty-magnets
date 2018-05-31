@@ -5,8 +5,8 @@ import './button.css';
 
 let Buttons = (props) => {
         return (
-            <div className="d-flex">
-                <Button className={props.class} onClick={() => { props.function()  }}>{props.label}</Button>{' '}
+            <div>
+                <Button className={props.class} onClick={() => { props.function(), props.toggle() }}>{props.label}</Button>{' '}
             </div>
         );
 }

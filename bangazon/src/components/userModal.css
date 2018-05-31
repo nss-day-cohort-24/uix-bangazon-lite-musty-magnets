@@ -7,14 +7,15 @@
 
 .fa-user:hover{
     cursor: pointer;
-    color: rgb(75, 229, 167);
+    color: #77f9d2;
     transition: .1s ease-in-out;
 }
 
-.userDiv p {
+.userDiv p, .userDiv .fa-user p {
     color: #212529;
     font-family: 'Helvettica', sans-serif;
     margin-bottom: 0px;
     font-size: .8rem;
-    letter-spacing: 2px;
+    letter-spacing: 2px !important;
+    text-transform: lowercase;
 }

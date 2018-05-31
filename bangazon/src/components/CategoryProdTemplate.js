@@ -6,11 +6,14 @@ import './cartdropdown.css';
 
 
 let CategoryProdTemplate = (props) => {
+
     function handleClick(data) {
         console.log("data",data);
+        console.log("yolanda",props);
+        if(props.auth){
         let addCartObj = {
             "productId": data.id,
-            "userId": 23498809787097098,
+            "userId": props.user.id,
             "sellerId": 56721,
             "productName":data.name,
             "productImage":data.image
@@ -27,9 +30,13 @@ let CategoryProdTemplate = (props) => {
         })
 
         window.alert("Added to Cart")
+        console.log("barry young",props.user,props.auth);
+    }else{
 
-
+        window.alert("Please Log In");
     }
+    }
+    console.log("CatProd Props",props)
     const categoryItems = props.data.map((product, index) =>
     <div key={index} className="card mt-4 mr-2 ml-2 product-card" >
             <img className="card-img-top" src={product.image} alt="Card cap" />
@@ -40,7 +47,7 @@ let CategoryProdTemplate = (props) => {
                     <p className="card-text col text-left">${product.price}</p>
                     <p className="card-text col text-right prod-qty">qty {product.quantity}</p>
                 </div>
-                <i className="fas fa-shopping-cart cart-small" id={"add_" + product.id} onClick={((e) => handleClick(product))}></i>
+                <i className="fas fa-shopping-cart cart-small" id={"add_" + product.id} onClick={(() => handleClick(product))}></i>
                 <ProductDetail 
                 image={product.image}
                 price={product.price}

@@ -37,42 +37,6 @@ componentDidMount(){
 
 
 
-// getExistingUser(existingUser){
-// // Set existing user to login
-//     User = {
-//         uid: getRandomInt(99999 - 10000),
-//         id: existingUser.id,
-//         first_name : existingUser.first_name,
-//         last_name : existingUser.last_Name,
-//         email: existingUser.email,
-//         userpassword : existingUser.password,
-//         address : existingUser.address,
-//         seller: existingUser.seller,  
-//         phone : existingUser.phone, 
-//         cardnumber : existingUser.cardnumber,
-//         crv : existingUser.crv
-//     }
-
-//     console.log("Logging in existing user.");
-//     this.setState( {User}, function(){
-//         console.log("Logged in:", this.state);
-//     });
-//     console.log("Fetching...");
-//     fetch('http://localhost:3000/user?id=4',{
-//         method: "PATCH",
-//         headers: {
-//             'Accept': 'application/json',
-//             'Content-Type': 'application/json'
-//             },
-//         body: JSON.stringify({
-//             "isActive?" : true 
-//         })
-
-//     }).then((resp)=>{
-//         console.log("Response: ", resp.statusText,".", resp);
-
-//     });
-// }
 getNewUserValues() {
     let firstName = document.getElementById('firstName').value;
     let lastName = document.getElementById('lastName').value;
@@ -126,7 +90,7 @@ getNewUserValues() {
                 id: count,
                 first_name : firstName,
                 last_name : lastName,
-                email: newUserEmail,
+                email: newUserEmail, //change
                 password : newUserPass,
                 address : userAddress,
                 city : userCity,  
@@ -179,7 +143,7 @@ getNewUserValues() {
     return (
         <div>
             <CreateUserFormTemplate 
-            getNewUserValues = {this.getNewUserValues}/>
+            getNewUserValues = {this.getNewUserValues} toggleAll = {this.props.toggleAll}/>
         </div>
     );
   }

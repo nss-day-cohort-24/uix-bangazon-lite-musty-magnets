@@ -16,6 +16,7 @@ Modal.Product-Item-modal {
  .Product-item-img{
      object-fit: cover;
      width: 100%;
+     border-radius: 4px;
  }
 
  @media (min-width: 576px) {
@@ -35,7 +36,7 @@ Modal.Product-Item-modal {
     font-size: 4.5rem;
     font-weight: 700;
     line-height: 3.2rem;
-    color: rgb(75, 229, 167);
+    color: #77f9d2;
 }
 
 .product-item-Qty {
@@ -45,7 +46,7 @@ Modal.Product-Item-modal {
 }
 
 .pd-name{
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
     text-transform: uppercase;
     margin-top: -.8rem;
@@ -76,6 +77,6 @@ Modal.Product-Item-modal {
 }
 
 #cartInput:focus {
-    border: 1px solid rgb(75, 229, 167);
+    border: 1px solid #77f9d2;
     box-shadow: 0 0 10px rgba(75, 229, 167, .3);
 }

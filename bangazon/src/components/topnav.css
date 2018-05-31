@@ -9,7 +9,7 @@ h2.bang-logo{
 
 h2.bang-logo:hover {
       text-decoration: none;
-      color: rgb(75, 229, 167);
+      color: #77f9d2;
   }
 
   a:hover {
@@ -25,7 +25,7 @@ h2.bang-logo:hover {
 }
 
 .Lte{
-    color: rgb(75, 229, 167);
+    color: #77f9d2;
     font-weight: 700;
 }
 
@@ -42,7 +42,7 @@ input.Search-bar:focus{
 }
 
 .fa-tag:hover{
-    color: rgb(75, 229, 167);
+    color: #77f9d2;
     transition: .1s ease-in-out;
 }
 
