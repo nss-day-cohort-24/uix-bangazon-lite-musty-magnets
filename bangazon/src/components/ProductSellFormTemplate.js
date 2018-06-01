@@ -6,7 +6,7 @@ import Buttons from "./Buttons";
 import { NavLink } from 'react-router-dom';
 import productImage from '../images/productImage.png'
 
- let  ProductSellFormTemplate = (props) => {
+const  ProductSellFormTemplate = (props) => {
 
     return (
         <div className="col-10 mx-auto pt-3 sell_product_window">

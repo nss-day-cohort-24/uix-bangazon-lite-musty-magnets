@@ -24,10 +24,10 @@ class App extends Component {
     this.getProduct = this.getProduct.bind(this);
     this.getUserValues = this.getUserValues.bind(this);
    
-}
+    }
 
-    SearchResults = (props) => {
-        Object.keys(this.state.productArray).map((product, index) => (
+SearchResults = (props) => {
+    Object.keys(this.state.productArray).map((product, index) => (
 
         <div key={index} >
             <ProductThumbnail 
@@ -38,7 +38,7 @@ class App extends Component {
             />
         </div>     
     ));
-    }
+}
 
 getProduct = (taco) => {
     console.log ("what is taco in getProduct?", taco);
@@ -46,7 +46,7 @@ getProduct = (taco) => {
         fetch(`http://localhost:3000/product?q=${taco}`)
                 .then(response => response.json())
                 .then((data) => {
-                    console.log ("what data do we have?", data);
+                    console.log ("what search data results do we have?", data);
                     this.setState({
                         productArray: data
                     })
@@ -121,32 +121,30 @@ getUserValues() {
     console.log("THISSTATE",this.state);
     return (
        <BrowserRouter>
-        {/* <div className="App"> */}
-              <UserInfo />
-              <TopNavbar 
-               getUserValues={this.getUserValues}
-               modal={this.state.modal} 
-               nestedModal={this.state.nestedModal} 
-               closeAll={this.state.closeAll} 
-               auth={this.state.auth} 
-               toggle={this.toggle} 
-               toggleAll={this.toggleAll} 
-               toggleNested={this.toggleNested}
-               handleInputChange={this.handleInputChange}
-               data={this.state.productArray}/>
-              
-              <div className="row">
-                <Sidenav className="col-3"/>
-                <Display className="col-9 " data={this.state.productArray} />
-              <Topnavbar getUserValues={this.getUserValues} modal={this.state.modal} nestedModal={this.state.nestedModal} closeAll={this.state.closeAll} auth={this.state.auth} toggle={this.toggle} toggleAll={this.toggleAll} toggleNested={this.toggleNested} user={this.state.User}/>
-              
-              <div className="row">
-                <Sidenav className="col-2"/>
-                <Display className="col-10" auth={this.state.auth} user={this.state.User} />
-              </div>
-             
-            </div>
-        {/* </div> */}
+
+            <div className="App">
+                <UserInfo 
+                    auth={this.state.auth} 
+                    user={this.state.User}/>
+
+                <TopNavbar 
+                    getUserValues={this.getUserValues}
+                    modal={this.state.modal} 
+                    nestedModal={this.state.nestedModal} 
+                    closeAll={this.state.closeAll} 
+                    auth={this.state.auth} 
+                    toggle={this.toggle} 
+                    toggleAll={this.toggleAll} 
+                    toggleNested={this.toggleNested}
+                    handleInputChange={this.handleInputChange}
+                    data={this.state.productArray}/>
+            
+                <div className="row">
+                    <Sidenav className="col-3"/>
+                    <Display className="col-9 " 
+                        data={this.state.productArray} />
+                </div>  
+            </div> 
 
         </BrowserRouter>
     )

@@ -21,7 +21,7 @@ class Sidenav extends Component {
     componentDidMount = () => {
      
         fetch('http://localhost:3000/product?category=Electronics')
-        .then(response => {
+        .then((response) => {
         return response.json();
         })
         .then((data) => {
@@ -31,7 +31,7 @@ class Sidenav extends Component {
         
         });
         fetch('http://localhost:3000/product?category=Books')
-        .then(response => {
+        .then((response) => {
         return response.json();
         })
         .then((data) => {
@@ -58,8 +58,8 @@ class Sidenav extends Component {
         this.setState({
             MiscArray: data
         })
-        
         });
+        
         fetch('http://localhost:3000/product?category=Video Games')
         .then((response) => {
         return response.json();

@@ -1,7 +1,7 @@
 import React from 'react';
 import "./productThumbnail.css"
 
-let ProductThumbnail = (props) => {
+const ProductThumbnail = (props) => {
     return(
         <div className="card mt-4 mr-2 ml-2 product-card" >
             <div className="productImageDiv">

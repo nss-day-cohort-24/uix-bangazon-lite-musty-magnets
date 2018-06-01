@@ -14,14 +14,13 @@ class Display extends Component {
         return(
             //<BrowserRouter>
             <div className="col-9">
-            <Switch>
+            {/* <Switch> */}
                 <Route exact path='/' component={ProductHomePage} />
                 <Route path='/ProductsSellForm' component={ProductSellForm} />
                 <Route exact path="/CategoryProduct" render={props => <CategoryProds user={this.props.user} auth={this.props.auth} {...props} />} />
-                <Route path='/CategoryProduct' component={CategoryProds} />
-                <Route path='/SearchResults' component={() => <SearchResults data={this.state.productArray} />} />
+                <Route path='/SearchResults' render={props => <SearchResults data={this.props.productArray} />} />
                 
-            </Switch>
+            {/* </Switch> */}
                 
             </div>
 
